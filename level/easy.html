@@ -1,0 +1,66 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#16232c"><title>初級の推理クイズ｜未解決ファイル</title><meta name="description" content="初級の推理クイズをまとめています。"><meta property="og:title" content="初級の推理クイズ｜未解決ファイル"><meta property="og:description" content="初級の推理クイズをまとめています。"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700;800&family=Zen+Kaku+Gothic+New:wght@400;700&family=Courier+Prime:wght@700&display=swap" rel="stylesheet"><style>
+:root{--desk:#16232c;--desk2:#1e3039;--paper:#e7e9e2;--ink:#1d2227;--mute:#5d676e;--folder:#be9f63;--stamp:#b3302a;--tag:#e2b43e;--line:#c6cbc2;--hi:#f3efe2}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--desk);color:var(--hi);font:16px/1.85 "Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;background-image:radial-gradient(circle at 50% -10%,#27414f 0,transparent 55%)}
+a{color:inherit}h1,h2,h3{font-family:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;line-height:1.35;margin:0}
+.top{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;max-width:860px;margin:0 auto}
+.logo{text-decoration:none;font:800 1.2rem/1.25 "Shippori Mincho B1","Yu Mincho",serif;letter-spacing:.04em;color:var(--folder)}.logo small{display:block;font:700 .72rem/1.4 "Zen Kaku Gothic New",sans-serif;letter-spacing:.02em;color:#b9c4c6}
+.rs{border:2px solid var(--stamp);color:#e5675e;font:700 .72rem/1 "Courier Prime","Courier New",monospace;padding:4px 6px;transform:rotate(-4deg);letter-spacing:.12em}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 40px}
+/* トップ */
+.hero{position:relative;display:block;border-radius:6px;overflow:hidden;aspect-ratio:4/4.6;max-height:540px;width:100%;box-shadow:0 12px 40px #0008;text-decoration:none}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0000 35%,#050b0fe6 92%)}
+.hero .cap{position:absolute;left:0;right:0;bottom:0;padding:18px 18px 20px;z-index:1}
+.kick{display:inline-block;background:var(--stamp);color:#fff;font-weight:700;font-size:.78rem;padding:2px 9px;border-radius:2px;margin-bottom:8px}
+.hero h2{font-size:1.9rem}.hero p{margin:6px 0 12px;color:#d6d9d0;font-size:.95rem;line-height:1.6}
+.go{display:inline-block;background:var(--hi);color:var(--ink);font-weight:700;padding:9px 20px;border-radius:3px}
+.lead{margin:22px 2px 6px;color:#c3cbc8;font-size:.95rem}
+.row{margin:28px 0 0}.row h2{font-size:1.1rem;margin:0 2px 10px}
+.rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 16px;padding:2px 16px 12px;margin:0 -16px;scrollbar-width:none}.rail::-webkit-scrollbar{display:none}
+.card{flex:0 0 42%;max-width:190px;min-width:146px;scroll-snap-align:start;position:relative;border-radius:4px;overflow:hidden;aspect-ratio:4/5;text-decoration:none;background:#0a1218;box-shadow:0 6px 18px #0007}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0000 45%,#050b0fee 100%)}
+.card .m{position:absolute;left:0;right:0;bottom:0;padding:10px;z-index:1}.card b{display:block;font:700 .95rem/1.35 "Shippori Mincho B1","Yu Mincho",serif}
+.card span{font-size:.72rem;color:#c9d0c8;margin-right:8px}.card .st{color:var(--tag);letter-spacing:.05em}
+.card.done:before{content:"解決済";position:absolute;top:8px;right:8px;z-index:2;background:#2f7d57;color:#fff;font:700 .68rem/1 sans-serif;padding:4px 7px;border-radius:2px;letter-spacing:.05em;transform:rotate(4deg)}
+.more{float:right;font-size:.82rem;font-weight:400;color:#9fb4be;text-decoration:none;border-bottom:1px solid #6f8794}.prog{color:#9fb4be;font-size:.82rem;margin:6px 2px 0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.grid .card{flex:none;max-width:none;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips a{border:1px solid #4b6270;border-radius:99px;padding:5px 14px;text-decoration:none;font-size:.9rem}
+.foot{max-width:860px;margin:0 auto;padding:24px 16px 40px;color:#8ea0a8;font-size:.8rem}
+/* 事件ページ */
+.cover{position:relative;height:min(78vw,430px);overflow:hidden}.cover img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0a121866 0,#0a121800 30%,var(--desk) 100%)}
+.cover .cap{position:absolute;left:0;right:0;bottom:0;z-index:1;max-width:860px;margin:0 auto;padding:0 16px 14px}
+.cover h1{font-size:1.75rem;text-shadow:0 2px 12px #000}.fileno{font:700 .8rem "Courier Prime","Courier New",monospace;color:#e5675e;border:2px solid #e5675e;display:inline-block;padding:1px 8px;transform:rotate(-3deg);margin-bottom:8px;letter-spacing:.1em}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:.85rem;color:#d3d9d0}.meta .st{color:var(--tag)}.meta a{text-decoration:none;border-bottom:1px dotted #8aa}
+.sheet{background:var(--paper);color:var(--ink);border-radius:3px;padding:18px 16px 16px;margin:16px 0;position:relative;box-shadow:0 8px 24px #0006}
+.sheet:before{content:"";position:absolute;top:-9px;left:24px;width:74px;height:18px;background:#d8cf9faa;transform:rotate(-3deg)}
+.sheet h2{font-size:1.15rem;margin-bottom:10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}
+.sheet p{margin:.7em 0}.sheet blockquote{margin:12px 0;padding:6px 14px;border-left:4px solid var(--folder);background:#dfe1d8;color:#33393e}
+.memo{background:var(--folder);color:#2b2210;border-radius:3px;padding:14px 16px;margin:16px 0;font-weight:700}
+.evi{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 4px;padding:6px 4px 14px;margin:0 -4px;scrollbar-width:none}.evi::-webkit-scrollbar{display:none}
+.pol{flex:0 0 66%;max-width:260px;scroll-snap-align:start;background:#f6f4ec;padding:10px 10px 12px;box-shadow:0 6px 14px #0004;transform:rotate(-1.4deg)}.pol:nth-child(2){transform:rotate(1.2deg)}.pol:nth-child(3){transform:rotate(-.6deg)}
+.pol .ph{background:#2b3a42;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.pol .ph svg{width:46%}.pol .ph img{width:100%;height:100%;object-fit:cover}
+.pol .no{position:absolute;top:6px;left:6px;background:var(--tag);color:#2b2210;font:700 .7rem "Courier Prime","Courier New",monospace;padding:1px 6px}
+.pol b{display:block;margin-top:8px;font-size:.92rem;line-height:1.4}.pol small{display:block;color:var(--mute);line-height:1.55;margin-top:2px}
+.fig{background:#f6f4ec;padding:8px;border:1px solid var(--line);overflow-x:auto}.fig svg{display:block;width:100%;min-width:470px;height:auto}.fig img{display:block;width:100%;height:auto}
+.fig figcaption{font-size:.8rem;color:var(--mute);margin-top:4px}
+.tl{list-style:none;margin:6px 0 0;padding:0 0 0 20px;border-left:3px solid var(--ink)}.tl li{position:relative;margin:0 0 14px;padding-left:14px}.tl li:before{content:"";position:absolute;left:-29px;top:.55em;width:11px;height:11px;background:var(--paper);border:3px solid var(--stamp);border-radius:50%}
+.tl time{display:block;font:700 .8rem "Courier Prime","Courier New",monospace;color:var(--stamp)}
+button.o{display:block;width:100%;text-align:left;background:#f6f4ec;color:var(--ink);border:2px solid var(--ink);border-radius:3px;padding:13px 14px;font:700 1rem "Zen Kaku Gothic New",sans-serif;margin:10px 0;cursor:pointer;min-height:48px}
+button.o:active{transform:translateY(1px)}button.o.ok{background:#d3e6c9;border-color:#2c7a3f}button.o.ng{background:#efd0cc;border-color:var(--stamp);text-decoration:line-through;color:#7b2b26}
+button.open.ghost{background:none;color:var(--ink);border:2px solid var(--ink);margin-top:6px;font-size:.95rem}button.open{width:100%;background:var(--stamp);color:#fff;border:0;border-radius:3px;padding:14px;font:700 1.05rem "Shippori Mincho B1","Yu Mincho",serif;cursor:pointer;min-height:52px}
+.env{margin:10px 0;border:2px dashed #8f8a73;background:#efeadb;border-radius:3px}.env summary{cursor:pointer;padding:12px 14px;font-weight:700;list-style:none;min-height:46px}.env summary::-webkit-details-marker{display:none}
+.env summary:before{content:"✉ ";}.env[open] summary:before{content:"✉ 開封済み　";color:var(--stamp)}.env p{margin:0;padding:0 14px 14px}
+#truth{display:none}#truth.on{display:block}.solved{position:absolute;right:12px;top:-6px;border:3px solid var(--stamp);color:var(--stamp);font:800 1.6rem "Shippori Mincho B1","Yu Mincho",serif;padding:0 12px;transform:rotate(-8deg);background:#e7e9e2cc;animation:stamp .42s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes stamp{from{transform:rotate(-8deg) scale(2.2);opacity:0}to{transform:rotate(-8deg) scale(1);opacity:1}}
+.ansline{font:800 1.3rem "Shippori Mincho B1","Yu Mincho",serif;margin:2px 0 10px;padding-right:90px}
+ul.pt{margin:6px 0;padding-left:1.2em}ul.plain{list-style:none;padding:0;margin:0}ul.plain li{margin:.6em 0}
+.fine{font-size:.78rem;color:var(--mute)}.pr{background:var(--tag);color:#2b2210;padding:0 6px;font-size:.7rem;border-radius:2px;vertical-align:middle}
+.nav{display:flex;justify-content:space-between;gap:12px;margin:18px 0}.nav a{color:#d3d9d0;text-decoration:none;border-bottom:1px solid #6f8794}
+.rel{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rel .card{max-width:none;flex:none}
+@media(min-width:700px){.card{flex-basis:30%}.hero{aspect-ratio:16/9}.cover{height:380px}.pol{flex-basis:30%}}
+@media(prefers-reduced-motion:reduce){.solved{animation:none}}
+:focus-visible{outline:3px solid var(--tag);outline-offset:2px}
+</style><body><header class="top"><a class="logo" href="../index.html"><b>未解決ファイル</b><small>　- 図面と証拠で解く推理クイズ -</small></a><span class="rs">REOPENED</span></header><div class="wrap"><h1 style="font-size:1.5rem;margin:14px 0">初級の未解決ファイル</h1><div class="grid"><a class="card" data-s="elevator-teleport" href="../q/elevator-teleport.html"><img src="../img/p001.jpg" alt="瞬間移動する新人のアイキャッチ" loading="lazy"><span class="m"><b>瞬間移動する新人</b><span class="st">★☆☆</span><span>約5分</span></span></a><a class="card" data-s="red-light-signal" href="../q/red-light-signal.html"><img src="../img/p002.png" alt="赤信号の合図のアイキャッチ" loading="lazy"><span class="m"><b>赤信号の合図</b><span class="st">★☆☆</span><span>約3分</span></span></a><a class="card" data-s="bird-park-notice" href="../q/bird-park-notice.html"><img src="../img/p005.png" alt="怪盗の嘘つきな予告状のアイキャッチ" loading="lazy"><span class="m"><b>怪盗の嘘つきな予告状</b><span class="st">★☆☆</span><span>約3分</span></span></a><a class="card" data-s="hill-commute" href="../q/hill-commute.html"><img src="../img/p006.png" alt="夫婦の自転車ふしぎ通勤のアイキャッチ" loading="lazy"><span class="m"><b>夫婦の自転車ふしぎ通勤</b><span class="st">★☆☆</span><span>約5分</span></span></a><a class="card" data-s="resort-postcard" href="../q/resort-postcard.html"><img src="../img/p009.png" alt="避暑地のホテルでのアイキャッチ" loading="lazy"><span class="m"><b>避暑地のホテルで</b><span class="st">★☆☆</span><span>約3分</span></span></a><a class="card" data-s="exam-unit" href="../q/exam-unit.html"><img src="../img/p010.svg" alt="試験中の質問のアイキャッチ" loading="lazy"><span class="m"><b>試験中の質問</b><span class="st">★☆☆</span><span>約3分</span></span></a></div></div><div class="foot"><a href="../privacy.html">プライバシーポリシー</a><br>© 未解決ファイル　- 図面と証拠で解く推理クイズ -</div><script>(function(){try{var d=JSON.parse(localStorage.getItem("solved")||"[]");document.querySelectorAll("a.card[data-s]").forEach(function(a){if(d.indexOf(a.dataset.s)>-1)a.classList.add("done")});var p=document.getElementById("prog");if(p)p.textContent="解決済み "+d.filter(function(x){return p.dataset.l.split(",").indexOf(x)>-1}).length+" / "+p.dataset.t+" 件"}catch(e){}})()</script></body></html>
