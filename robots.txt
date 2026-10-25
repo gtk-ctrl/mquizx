@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mquizx.com/sitemap.xml
