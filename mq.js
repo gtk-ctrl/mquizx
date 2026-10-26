@@ -10,7 +10,7 @@ function fin(n,lo,hi){n=+n;return isFinite(n)?Math.min(hi,Math.max(lo,Math.round
 function sanitize(o){var r=blank();if(!o||typeof o!=="object"||o.version!==1||!o.cases||typeof o.cases!=="object")return r;
 Object.keys(o.cases).forEach(function(k){if(!/^\d{3}$/.test(k))return;var c=o.cases[k];if(!c||typeof c!=="object"||!ST[c.status])return;
 r.cases[k]={status:c.status,bestHintCount:(c.bestHintCount==null?null:fin(c.bestHintCount,0,9)),xpAwarded:fin(c.xpAwarded,0,400),hintsOpened:fin(c.hintsOpened,0,9),wrongs:fin(c.wrongs,0,99)};
-if(typeof c.firstSolvedAt==="string")r.cases[k].firstSolvedAt=c.firstSolvedAt.slice(0,40);if(c.legacy)r.cases[k].legacy=true});
+if(typeof c.firstSolvedAt==="string")r.cases[k].firstSolvedAt=c.firstSolvedAt.slice(0,40);if(c.legacy)r.cases[k].legacy=true;if(c.ans)r.cases[k].ans=1});
 if(o.legacyDone)r.legacyDone=true;return r}
 function recalc(){var t=0;Object.keys(state.cases).forEach(function(k){t+=state.cases[k].xpAwarded||0});state.totalXp=t}
 function load(){var raw=null;try{raw=localStorage.getItem(KEY)}catch(e){persist=false;return mem||(mem=blank())}
@@ -27,10 +27,12 @@ function rec(id){return state.cases[id]||(state.cases[id]={status:"unseen",bestH
 function status(id){var c=state.cases[id];return c?c.status:"unseen"}
 function rankOf(x){var R=CF.ranks[LANG],i=0;for(var k=0;k<R.length;k++)if(x>=R[k][0])i=k;return{i:i,name:R[i][1],next:(R[i+1]||null)}}
 function fmt(s,o){return s.replace(/\{(\w+)\}/g,function(m,k){return o[k]!=null?o[k]:m})}
-var EVK={case_id:1,locale:1,category:1,difficulty:1,hint_index:1,result:1,hint_count:1,wrong_count:1,xp_awarded:1,after_reveal:1,from_case_id:1,to_case_id:1,recommendation_type:1};
+var EVK={case_id:1,locale:1,category:1,difficulty:1,hint_index:1,result:1,hint_count:1,wrong_count:1,xp_awarded:1,after_reveal:1,from_case_id:1,to_case_id:1,recommendation_type:1,is_correct:1,hint_used:1,clean_correct:1,answer_seconds:1};
 function ev(n,p){try{var o={};for(var k in p)if(EVK[k]&&p[k]!=null)o[k]=p[k];if(typeof window.gtag==="function")window.gtag("event",n,o);else if(window.dataLayer){o.event=n;window.dataLayer.push(o)}}catch(e){}}
 var MQ={
- ev:ev,
+ ev:ev,root:ROOT,
+ answeredBefore:function(id){var c=state.cases[id];return !!(c&&c.ans)},
+ markAnswered:function(id){var c=rec(id);c.ans=1;save()},
  persist:function(){return persist},status:status,
  touch:function(id){var c=rec(id);if(c.status==="unseen"){c.status="attempted";save()}},
  wrong:function(id){var c=rec(id);if(c.status==="solved")return;if(c.status==="unseen")c.status="attempted";c.wrongs=Math.min(99,(c.wrongs||0)+1);save()},
