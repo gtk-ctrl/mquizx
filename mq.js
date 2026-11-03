@@ -56,7 +56,10 @@ var MQ={
   ln(T.solved+(LANG==="en"?": ":"　"),n+" / "+LIST.length);ln(T.nohint+(LANG==="en"?": ":"　"),String(nh));p.appendChild(a2)}},
  recommend:function(id){var cur=null,ci=-1;LIST.forEach(function(c,i){if(c.id===id){cur=c;ci=i}});var N=LIST.length,a=[];
   LIST.forEach(function(c,i){if(c.id===id)return;var s=status(c.id),tier=s==="solved"?2:(s==="revealed"?1:0),sg=cur&&c.genre===cur.genre?0:1,dd=cur?c.d-cur.d:0,dr=(dd===0||dd===1)?0:1,dist=ci<0?i:((i-ci+N)%N);a.push({c:c,tier:tier,k:[tier,sg,dr,dist],type:(tier<2?(sg===0?"unsolved_same_genre":"unsolved_other"):"solved_fallback")})});
-  a.sort(function(x,y){for(var i=0;i<4;i++)if(x.k[i]!==y.k[i])return x.k[i]-y.k[i];return 0});return a.slice(0,3)},
+  function by(f){return function(x,y){var u=f(x),v=f(y);for(var i=0;i<u.length;i++)if(u[i]!==v[i])return u[i]-v[i];return 0}}
+  /* 「次の未解決事件」は、いま開いている問題とジャンル・難しさがなるべく違う問題（未解決を優先）。ほかの2件は従来どおり近い問題 */
+  var first=a.slice().sort(by(function(x){return[x.k[0],x.k[1]===0?1:0,cur&&x.c.d===cur.d?1:0,x.k[3]]}))[0];
+  var rest=a.filter(function(x){return x!==first}).sort(by(function(x){return x.k})).slice(0,2);return[first].concat(rest)},
  renderNext:function(box,id){if(!box)return;var r=MQ.recommend(id);box.textContent="";if(!r.length)return;
   function card(x,big){var c=x.c,a=document.createElement("a");a.className="card nx"+(big?" big":"");a.href=ROOT+c.href;a.dataset.t=x.type;a.dataset.id=c.id;
    var im=document.createElement("img");im.src=ROOT+c.th;im.alt=c.title;im.loading="lazy";im.width=480;im.height=600;a.appendChild(im);
