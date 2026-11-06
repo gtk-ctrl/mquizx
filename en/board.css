@@ -20,8 +20,8 @@
 .xb svg.xln{position:absolute;left:0;top:0;overflow:visible;pointer-events:none;z-index:4}
 .xb .xln path{fill:none;stroke-linecap:round}
 .xb .xln .sh{stroke:#000;stroke-opacity:.5;stroke-width:3.4}
-.xb .xln .st.story{stroke:#c0392b;stroke-width:2.4}
-.xb .xln .st.group{stroke:#4d86c9;stroke-width:2;stroke-dasharray:7 6}
+.xb .xln .st.story{stroke:#4d86c9;stroke-width:2.4}
+.xb .xln .st.group{stroke:#c0392b;stroke-width:2;stroke-dasharray:7 6}
 .xb svg.xfm{position:absolute;left:0;top:0;overflow:visible;pointer-events:none;z-index:1}
 .xb .xfm path{stroke-linejoin:round;stroke-width:7}
 .xb .xfm path.cp{fill:#e2b43e18;stroke:#e2b43e;stroke-dasharray:14 8;filter:drop-shadow(0 0 8px #e2b43e66)}
@@ -58,11 +58,12 @@
 .xb .xvw.zm{touch-action:none;cursor:grab}.xb .xvw.zm:active{cursor:grabbing}
 .xb .xhint{flex-basis:100%;order:9;color:#8fa5b0;font-size:.74rem;margin-top:-2px}
 .xb .xwd.ov .xlb b{display:none}
-.xb .xwd.ov .xlb small{font-size:calc(13px / var(--s));line-height:1.1;letter-spacing:.04em;color:#1f1a10}
-.xb .xwd.ov .xtag{font-size:calc(12px / var(--s))}
-.xb .xwd.ov .xstamp b{font-size:calc(15px / var(--s))}.xb .xwd.ov .xstamp small{font-size:calc(11px / var(--s))}
+.xb .xwd.ov .xlb small{font-size:min(calc(12px / var(--s)),32px);line-height:1.1;letter-spacing:0;white-space:nowrap;color:#1f1a10}
+.xb .xwd.ov .xtag{font-size:min(calc(12px / var(--s)),26px)}
+.xb .xwd.ov .xstamp b{font-size:min(calc(15px / var(--s)),28px)}.xb .xwd.ov .xstamp small{font-size:min(calc(11px / var(--s)),20px)}
 .xb .xtag{position:absolute;z-index:6;transform:translate(-50%,-50%) rotate(var(--r,-2deg));padding:4px 10px;background:linear-gradient(180deg,#f1e6c6,#dccfa5);color:#2a2217;font:800 .8rem/1.2 "Shippori Mincho B1",serif;white-space:nowrap;box-shadow:0 3px 8px #000a;pointer-events:none;border:1px solid #a89a70;opacity:0;transition:opacity .25s}
-.xb .xtag.blue{background:linear-gradient(180deg,#dfe9f5,#b9cde4);border-color:#7d9bc0;color:#10243d}
+.xb .xtag.stb{background:linear-gradient(180deg,#dfe9f5,#b9cde4);border-color:#7d9bc0;color:#10243d}
+.xb .xtag.grp{background:linear-gradient(180deg,#f7e0dc,#e6b9b3);border-color:#c08a84;color:#3d1410}
 .xb .xtag.on{opacity:1}
 @keyframes xtag{0%,80%{opacity:1}100%{opacity:0}}
 .xb .xtag.nw{animation:xtag 6.5s ease-out .6s 1 forwards;opacity:0}
@@ -73,5 +74,13 @@
 .xb .xinf ul{margin:4px 0 0;padding-left:1.2em}
 .xb .xinf .r{color:#ef8a7f}.xb .xinf .b{color:#8db6ea}
 .xb .xbk{display:inline-block;margin:12px 0 0;color:#e2b43e}
+dialog.xpop{border:1px solid #4a6676;border-radius:10px;padding:16px 18px;max-width:min(92vw,440px);width:100%;box-sizing:border-box;background:#16232c;color:#dfe9ee;box-shadow:0 20px 60px #000c;line-height:1.7;font-size:.92rem}
+dialog.xpop::backdrop{background:#000b}
+dialog.xpop h2{margin:0 0 8px;font-size:1.05rem;color:#e2b43e;line-height:1.4}
+dialog.xpop a.xgo{display:block;text-align:center;padding:12px;border-radius:6px;background:#b3302a;color:#fff;font-weight:700;text-decoration:none;margin:6px 0 12px}
+dialog.xpop .xh{margin:8px 0 2px;color:#9fb4be}
+dialog.xpop ul{margin:2px 0 10px;padding-left:1.1em;max-height:40vh;overflow:auto}
+dialog.xpop .sb{color:#8db6ea}dialog.xpop .gr{color:#ef8a7f}
+dialog.xpop .xcl{display:block;width:100%;padding:11px;border:0;border-radius:6px;background:#24404f;color:#fff;font:inherit;cursor:pointer;min-height:44px}
 @media (prefers-reduced-motion:reduce){.xb .xstamp.nw{animation:none}.xb .xln g.nw .st.story,.xb .xln g.nw .st.group{animation:none;stroke-dasharray:none;stroke-dashoffset:0}.xb .xtag.nw,.xb .xtag.nw.on{animation:none}.xb .xc,.xb .xln g{transition:none}}
 @media (max-width:620px){.xb .xfr{border-width:6px}.xb .xban{left:10px;top:10px;padding:6px 12px}.xb .xban b{font-size:1.05rem}.xb .xtb .xst{margin-left:0;flex-basis:100%}}
