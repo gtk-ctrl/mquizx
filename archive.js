@@ -45,16 +45,20 @@ function lkId(a,b){var p=[a,b].sort();return"LK-"+p[0]+"_"+p[1]}
 function chrome(){var b=document.getElementById("mqrec");if(b&&b.parentNode){var a=document.createElement("a");a.className="rec";a.id="mqrec";a.href=ROOT+"board.html";a.textContent="捜査ボード";b.parentNode.replaceChild(a,b)}
 var p=document.getElementById("prog");if(p)p.style.display="none"}
 /* ---------- ホーム：捜査記録カード ---------- */
-function home(root,onBoard){var D=derive();root.textContent="";root.hidden=false;
-var h=el("h2",null,"◈ 捜査記録 ");h.appendChild(el("small",null,"INVESTIGATION LOG"));root.appendChild(h);
-var big=el("div","big");big.appendChild(el("span",null,"解析済み事件"));big.appendChild(el("b",null,D.lv1+" / "+M.ids.length));root.appendChild(big);
-var bar=el("div","bar");var i=el("i");i.style.width=(D.lv1/M.ids.length*100)+"%";bar.appendChild(i);root.appendChild(bar);
-var row=el("div","big");var lab=el("span",null,"発見した異常記録 ");var q=el("button","qm","?");q.type="button";q.setAttribute("aria-label","異常記録の説明を見る");lab.appendChild(q);row.appendChild(lab);
-row.appendChild(el("b",D.disc?"red":null,String(D.disc)));root.appendChild(row);
-if(!onBoard){if(D.newGroup)root.appendChild(el("p","msg hot","新たな事件群が解析可能です。"));
-var go=el("a","go","捜査ボードを開く →");go.href=ROOT+"board.html";go.style.marginTop="12px";root.appendChild(go)}
-q.onclick=function(){var d=el("dialog","qd");d.appendChild(el("h2",null,"異常記録とは"));d.appendChild(el("p",null,"未解決ファイルのなかに、公開された記録が、元の記録と食い違っている事件があります。異常記録は、ほかの未解決ファイルとつながっている場合があります。"));
- var c=el("button","btn","閉じる");c.type="button";d.appendChild(c);root.appendChild(d);c.onclick=function(){d.close()};d.addEventListener("close",function(){d.remove();q.focus()});
+function home(root,onBoard){var D=derive(),EN=false,TX={"h": "捜査記録", "l1": "解析済み事件", "l2": "発見した異常記録", "qa": "異常記録の説明を見る", "msg": "新たな事件群が解析可能です。", "go": "捜査ボードを開く", "qh": "異常記録とは", "qb": "未解決ファイルのなかに、公開された記録が、元の記録と食い違っている事件があります。異常記録は、ほかの未解決ファイルとつながっている場合があります。", "close": "閉じる"},tot=M.ids.length||1;root.textContent="";root.hidden=false;root.className="arc arc2";
+var acc=el("span","aacc");acc.setAttribute("aria-hidden","true");root.appendChild(acc);
+var img=el("div","aimg");img.setAttribute("aria-hidden","true");root.appendChild(img);
+var info=el("div","ai");root.appendChild(info);
+info.appendChild(el("h2",null,TX.h));
+var big=el("div","anum");big.appendChild(el("b",null,D.lv1+" / "+M.ids.length));big.appendChild(el("span",null,TX.l1));info.appendChild(big);
+var pct=Math.max(0,Math.min(100,Math.round(D.lv1/tot*100)));
+var bar=el("div","abar");bar.setAttribute("role","progressbar");bar.setAttribute("aria-label",TX.l1);bar.setAttribute("aria-valuemin","0");bar.setAttribute("aria-valuemax",String(M.ids.length));bar.setAttribute("aria-valuenow",String(D.lv1));bar.setAttribute("aria-valuetext",D.lv1+" / "+M.ids.length+" ("+pct+"%)");
+var i=el("i");i.style.width=pct+"%";bar.appendChild(i);info.appendChild(bar);
+var row=el("div","aan");row.appendChild(el("b",D.disc?"red":null,String(D.disc)));var lab=el("span",null,TX.l2);var q=el("button","qm","?");q.type="button";q.setAttribute("aria-label",TX.qa);lab.appendChild(q);row.appendChild(lab);info.appendChild(row);
+if(!onBoard){if(D.newGroup)info.appendChild(el("p","amsg",TX.msg));
+var go=el("a","go");go.href=ROOT+"board.html";go.appendChild(document.createTextNode(TX.go));var ar=el("span",null," →");ar.setAttribute("aria-hidden","true");go.appendChild(ar);info.appendChild(go)}
+q.onclick=function(){var d=el("dialog","qd");d.appendChild(el("h2",null,TX.qh));d.appendChild(el("p",null,TX.qb));
+ var c=el("button","btn",TX.close);c.type="button";d.appendChild(c);root.appendChild(d);c.onclick=function(){d.close()};d.addEventListener("close",function(){d.remove();q.focus()});
  if(d.showModal)d.showModal();else d.setAttribute("open","")}}
 /* ---------- 捜査ボード ---------- */
 var openIds={},sel=[],msg="",msgCls="",lv2={},resetAsk=false,view=null,backY=0,view3=false,sel3=[],msg3="",ok3=false,ch3="";

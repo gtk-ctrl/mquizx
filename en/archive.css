@@ -113,3 +113,33 @@
 .bd .ev .pick{display:block;width:100%;text-align:left;background:none;border:0;padding:0;margin:0;font:inherit;color:inherit;cursor:pointer}
 .bd .ev .dtl{display:block;width:100%;margin-top:8px;padding:7px 6px;border:1px solid #9aa39d;background:#f3f1e8;color:var(--ink);border-radius:4px;font-family:inherit;font-size:.78rem;cursor:pointer;min-height:36px}
 .bd dialog h2{color:var(--ink);font-size:1.05rem;margin:0 0 6px}
+
+.arc.arc2{position:relative;display:grid;grid-template-columns:minmax(0,1fr);padding:0;overflow:hidden;margin:0 0 16px;border:1px solid #3c5565;border-radius:12px;background:#12222c;color:#e9e4d3}
+.arc.arc2:before{display:none}
+.arc2 .aacc{display:none}
+.arc2 .aimg{height:clamp(120px,38vw,160px);background-color:#0e1a21;background-image:url(../img/board-bg.webp);background-size:cover;background-position:50% 48%;position:relative}
+.arc2 .aimg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,34,44,0) 45%,#12222c 100%)}
+.arc2 .ai{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px}
+.arc2 h2{margin:0;display:block;font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;font-size:1.5rem;letter-spacing:.02em;font-weight:700;color:#f1ecda}
+.arc2 .anum{display:flex;flex-direction:column;gap:0;line-height:1.15}
+.arc2 .anum b{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;font-size:2.3rem;color:#f2bd35;font-variant-numeric:tabular-nums;font-weight:700}
+.arc2 .anum span{font-size:.95rem;color:#e9e4d3}
+.arc2 .abar{height:10px;border-radius:6px;background:#2d4452;overflow:hidden;margin:4px 0 6px}
+.arc2 .abar i{display:block;height:100%;min-width:0;background:linear-gradient(90deg,#d9a52a,#f2bd35);border-radius:6px}
+.arc2 .aan{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.arc2 .aan b{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;font-size:1.9rem;color:#f2bd35;font-variant-numeric:tabular-nums;line-height:1.1}
+.arc2 .aan b.red{color:#ff7d72}
+.arc2 .aan span{font-size:.95rem;color:#e9e4d3}
+.arc2 .amsg{margin:2px 0 4px;color:#f2bd35;font-weight:700;font-size:.92rem;line-height:1.6}
+.arc2 a.go{display:flex;align-items:center;justify-content:center;gap:4px;min-height:48px;box-sizing:border-box;margin-top:8px;padding:10px 16px;border-radius:7px;background:linear-gradient(180deg,#d33d3a,#b3262a);color:#fff;font-weight:700;font-size:1rem;text-decoration:none;border:0}
+.arc2 a.go:hover{filter:brightness(1.08)}
+.arc2 a.go:focus-visible,.arc2 .qm:focus-visible{outline:3px solid #f2bd35;outline-offset:2px}
+@media (min-width:768px){
+ .arc.arc2{grid-template-columns:minmax(0,48%) minmax(0,1fr)}
+ .arc2 .aacc{display:block;position:absolute;left:0;top:0;bottom:0;width:4px;background:#d33d3a;z-index:2}
+ .arc2 .aimg{order:2;height:auto;min-height:300px;background-position:55% 50%}
+ .arc2 .aimg:after{background:linear-gradient(90deg,#12222c 0,rgba(18,34,44,.72) 14%,rgba(18,34,44,0) 52%)}
+ .arc2 .ai{order:1;padding:26px 24px 28px 32px;gap:8px;justify-content:center}
+ .arc2 h2{font-size:2rem}.arc2 .anum b{font-size:3.1rem}.arc2 .aan b{font-size:2.3rem}
+ .arc2 a.go{align-self:flex-start;min-width:260px}
+}

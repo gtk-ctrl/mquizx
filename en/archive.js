@@ -45,18 +45,21 @@ function lkId(a,b){var p=[a,b].sort();return"LK-"+p[0]+"_"+p[1]}
 function chrome(){var b=document.getElementById("mqrec");if(b&&b.parentNode){var a=document.createElement("a");a.className="rec";a.id="mqrec";a.href=ROOT+"board.html";a.textContent="Board";b.parentNode.replaceChild(a,b)}
 var p=document.getElementById("prog");if(p)p.style.display="none"}
 
-function home(root,onBoard){var D=derive();root.textContent="";root.hidden=false;
-var h=el("h2",null,"◈ Case Records ");h.appendChild(el("small",null,"INVESTIGATION LOG"));root.appendChild(h);
-var big=el("div","big");big.appendChild(el("span",null,"Cases analyzed"));big.appendChild(el("b",null,D.lv1+" / "+M.ids.length));root.appendChild(big);
-var bar=el("div","bar");var i=el("i");i.style.width=(D.lv1/M.ids.length*100)+"%";bar.appendChild(i);root.appendChild(bar);
-var row=el("div","big");var lab=el("span",null,"Anomalies found ");var q=el("button","qm","?");q.type="button";q.setAttribute("aria-label","What is an anomaly record?");lab.appendChild(q);row.appendChild(lab);
-row.appendChild(el("b",D.disc?"red":null,String(D.disc)));root.appendChild(row);
-if(!onBoard){if(D.newGroup)root.appendChild(el("p","msg hot","A new case group can now be analyzed."));
-var go=el("a","go","Open the Investigation Board →");go.href=ROOT+"board.html";go.style.marginTop="12px";root.appendChild(go)}
-q.onclick=function(){var d=el("dialog","qd");d.appendChild(el("h2",null,"What is an anomaly record?"));d.appendChild(el("p",null,"Among the Unsolved Files are cases whose published records disagree with the original records. An anomaly record may be connected to other Unsolved Files."));
- var c=el("button","btn","Close");c.type="button";d.appendChild(c);root.appendChild(d);c.onclick=function(){d.close()};d.addEventListener("close",function(){d.remove();q.focus()});
+function home(root,onBoard){var D=derive(),EN=true,TX={"h": "Investigation Log", "l1": "Cases Solved", "l2": "Anomaly Records Found", "qa": "What is an anomaly record?", "msg": "New case groups are available.", "go": "Open Board", "qh": "What is an anomaly record?", "qb": "Among the Unsolved Files are cases whose published records disagree with the original records. An anomaly record may be connected to other Unsolved Files.", "close": "Close"},tot=M.ids.length||1;root.textContent="";root.hidden=false;root.className="arc arc2";
+var acc=el("span","aacc");acc.setAttribute("aria-hidden","true");root.appendChild(acc);
+var img=el("div","aimg");img.setAttribute("aria-hidden","true");root.appendChild(img);
+var info=el("div","ai");root.appendChild(info);
+info.appendChild(el("h2",null,TX.h));
+var big=el("div","anum");big.appendChild(el("b",null,D.lv1+" / "+M.ids.length));big.appendChild(el("span",null,TX.l1));info.appendChild(big);
+var pct=Math.max(0,Math.min(100,Math.round(D.lv1/tot*100)));
+var bar=el("div","abar");bar.setAttribute("role","progressbar");bar.setAttribute("aria-label",TX.l1);bar.setAttribute("aria-valuemin","0");bar.setAttribute("aria-valuemax",String(M.ids.length));bar.setAttribute("aria-valuenow",String(D.lv1));bar.setAttribute("aria-valuetext",D.lv1+" / "+M.ids.length+" ("+pct+"%)");
+var i=el("i");i.style.width=pct+"%";bar.appendChild(i);info.appendChild(bar);
+var row=el("div","aan");row.appendChild(el("b",D.disc?"red":null,String(D.disc)));var lab=el("span",null,TX.l2);var q=el("button","qm","?");q.type="button";q.setAttribute("aria-label",TX.qa);lab.appendChild(q);row.appendChild(lab);info.appendChild(row);
+if(!onBoard){if(D.newGroup)info.appendChild(el("p","amsg",TX.msg));
+var go=el("a","go");go.href=ROOT+"board.html";go.appendChild(document.createTextNode(TX.go));var ar=el("span",null," →");ar.setAttribute("aria-hidden","true");go.appendChild(ar);info.appendChild(go)}
+q.onclick=function(){var d=el("dialog","qd");d.appendChild(el("h2",null,TX.qh));d.appendChild(el("p",null,TX.qb));
+ var c=el("button","btn",TX.close);c.type="button";d.appendChild(c);root.appendChild(d);c.onclick=function(){d.close()};d.addEventListener("close",function(){d.remove();q.focus()});
  if(d.showModal)d.showModal();else d.setAttribute("open","")}}
-
 var openIds={},sel=[],msg="",msgCls="",lv2={},resetAsk=false,view=null,backY=0,view3=false,sel3=[],msg3="",ok3=false,ch3="";
 function lvs(gid){return lv2[gid]||(lv2[gid]={choice:"",reasons:[],res:"",ok:false})}
 var DV=null;function parseHash(){var bd=document.getElementById("board"),dv=bd?bd.getAttribute("data-view"):null;DV=dv;view=(dv&&/^G[0-9]$/.test(dv))?dv:null;view3=(dv==="000")}
