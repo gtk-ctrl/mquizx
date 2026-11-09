@@ -34,6 +34,11 @@
 @keyframes xpop{0%{transform:translate(-50%,-50%) rotate(-4deg) scale(2.2);opacity:0}60%{transform:translate(-50%,-50%) rotate(-4deg) scale(.92);opacity:1}100%{transform:translate(-50%,-50%) rotate(-4deg) scale(1)}}
 .xb .xstamp.nw{animation:xpop .6s ease-out .3s both}
 .xb .xseal{margin:12px 0 0;padding:12px 16px;border:1px solid #6b2a25;background:linear-gradient(180deg,#2a1816,#1d1211);border-radius:8px;color:#e8d9d6}
+.xb .xseal.hot{margin:12px 0 14px;padding:16px 18px;border:2px solid #d8453a;background:linear-gradient(180deg,#3a1b18,#241211);box-shadow:0 0 0 0 #d8453a88;animation:xpulse 2.4s ease-in-out infinite}
+.xb .xseal.hot b{font-size:1.1rem}.xb .xseal .xbg{display:inline-block;margin-left:10px;padding:1px 9px;border-radius:3px;background:#d8453a;color:#fff;font-size:.78rem;letter-spacing:.08em;vertical-align:middle}
+.xb .xseal .xgo{display:block;margin-top:8px;padding:12px 14px;border-radius:5px;background:#e2b43e;color:#1d1211;text-decoration:none;font-size:1.05rem}
+@keyframes xpulse{50%{box-shadow:0 0 18px 2px #d8453a99}}
+@media (prefers-reduced-motion:reduce){.xb .xseal.hot{animation:none}}
 .xb .xseal b{display:block;letter-spacing:.1em;color:#ef8a7f}.xb .xseal a{color:#e2b43e;font-weight:700}
 .xb .xln g{transition:opacity .25s}
 .xb.sel .xln g.dim{opacity:.15}
