@@ -1,5 +1,19 @@
 {
- "answers": {},
+ "answers": {
+  "L2-G2": {
+   "correct": 0,
+   "correct_rate": 0.0,
+   "en": {
+    "correct": 0,
+    "n": 0
+   },
+   "ja": {
+    "correct": 0,
+    "n": 1
+   },
+   "n": 1
+  }
+ },
  "milestones": {
   "board": {
    "en": 0,
@@ -7,6 +21,6 @@
    "total": 2
   }
  },
- "updated": "2026-11-08T04:49:12+09:00",
+ "updated": "2026-11-09T04:51:16+09:00",
  "version": 1
 }
