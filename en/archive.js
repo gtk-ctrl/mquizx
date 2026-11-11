@@ -339,7 +339,8 @@ function fS1(w,root,F){var Z=F.scenes.s1,fx=el("div","fin-fx"+(fRed()||fHas(FK1)
  var anim=fx.className.indexOf("anim")>=0;
  var ph=fFig(Z.img,"The investigation board at night. The red strings converge on the photo of one man (illustration).","dark"+(anim?" anim":""));ph.appendChild(fStamp(Z.stamp,"The investigation headquarters’ judgment"));w.appendChild(ph);
  fTexts(w,Z.text,"From the final report of the investigation headquarters");
- var b=el("div","fin-btns");fBtn(b,Z.button,function(){fSet(FK1);mile("finale-act1");fGo(root,"s2")});if(Z.zoom_img)fBtn(b,"Enlarge the photo from the final report",function(){zoomImg(imgSrc(Z.zoom_img),"The photo attached to the final report")},true);w.appendChild(b)}
+ if(Z.zoom_img)w.appendChild(fFig(Z.zoom_img,"The photo attached to the final report"));
+ var b=el("div","fin-btns");fBtn(b,Z.button,function(){fSet(FK1);mile("finale-act1");fGo(root,"s2")});w.appendChild(b)}
 
 function fS2(w,root,F){var Z=F.scenes.s2;w.appendChild(el("h1",null,Z.title));
  var ph=fFig(Z.img,"The final report photo laid on a desk (illustration).");ph.appendChild(fStamp(Z.stamp,null,"go"));w.appendChild(ph);

@@ -89,4 +89,4 @@
 .xb .xpop2 ul{margin:2px 0 0;padding-left:1.1em;max-height:150px;overflow:auto}
 .xb .xpop2 .sb{color:#2f66a8}.xb .xpop2 .gr{color:#b3302a}
 @media (prefers-reduced-motion:reduce){.xb .xstamp.nw{animation:none}.xb .xln g.nw .st.story,.xb .xln g.nw .st.group{animation:none;stroke-dasharray:none;stroke-dashoffset:0}.xb .xtag.nw,.xb .xtag.nw.on{animation:none}.xb .xc,.xb .xln g{transition:none}}
-@media (max-width:620px){.xb .xfr{border-width:6px}.xb .xban{left:10px;top:10px;padding:6px 12px}.xb .xban b{font-size:1.05rem}.xb .xtb .xst{margin-left:0;flex-basis:100%}}
+@media (max-width:620px){.xb .xfr{border-width:6px;margin-inline:-16px}.xb .xban{left:10px;top:10px;padding:6px 12px}.xb .xban b{font-size:1.05rem}.xb .xtb .xst{margin-left:0;flex-basis:100%}}

@@ -13,7 +13,7 @@ function fmt(s,o){return s.replace(/\{(\w+)\}/g,function(_,k){return o[k]})}
 var popId=null,layer="both",sel=null,zoom=1,px=0,py=0,ST={},pend=null,ptrs={};
 function readSeen(){try{var r=localStorage.getItem(SEEN);if(r===null)return null;var a=JSON.parse(r);return a&&a.forEach?a:null}catch(e){return null}}
 function writeSeen(a){try{localStorage.setItem(SEEN,JSON.stringify(a))}catch(e){}}
-function apply(){var S=ST;if(!S.view)return;var s=S.fit*zoom,cw=S.bw*s,ch=S.bh*s,h=Math.min(ch,S.vh);
+function apply(){var S=ST;if(!S.view)return;var s=S.fit*zoom,cw=S.bw*s,ch=S.bh*s,h=Math.min(ch,S.heightLimit);
  S.view.style.height=Math.round(h)+"px";
  px=cw<=S.vw?(S.vw-cw)/2:Math.min(0,Math.max(S.vw-cw,px));py=ch<=h?(h-ch)/2:Math.min(0,Math.max(h-ch,py));
  S.world.style.transform="translate("+px+"px,"+py+"px) scale("+s+") translate("+(-S.bx0)+"px,"+(-S.by0)+"px)";S.world.style.setProperty("--s",s);
@@ -45,13 +45,14 @@ function render(){
  root.className="wrap xb"+(sel&&D.cs[sel]&&solved(sel)?" sel":"");
  var frame=el("div","xfr"),view=el("div","xvw");view.setAttribute("role","region");view.setAttribute("aria-label",T.aria);view.tabIndex=0;
  var world=el("div","xwd");view.appendChild(world);frame.appendChild(view);root.appendChild(frame);
+ var mobile=window.matchMedia("(max-width:620px)").matches;
  /* 表示範囲：解いた事件の範囲に合わせる（上は看板の分をあける） */
  var bx0=0,by0=0,bx1=D.W,by1=D.H;
  if(ids.length){bx0=1e9;by0=1e9;bx1=-1e9;by1=-1e9;ids.forEach(function(c){var q=D.cs[c];bx0=Math.min(bx0,q.x-D.cw/2);bx1=Math.max(bx1,q.x+D.cw/2);by0=Math.min(by0,q.y-D.ch/2);by1=Math.max(by1,q.y+D.ch/2)});
-  CG.forEach(function(g){var cx=0,my=1e9;g.h.forEach(function(p){bx0=Math.min(bx0,p[0]);bx1=Math.max(bx1,p[0]);by0=Math.min(by0,p[1]-30);by1=Math.max(by1,p[1]);cx+=p[0];my=Math.min(my,p[1])});cx/=g.h.length;bx0=Math.min(bx0,cx-120);bx1=Math.max(bx1,cx+120);by0=Math.min(by0,my-48)});bx0-=50;bx1+=50;by0-=110;by1+=50;var minW=640;if(bx1-bx0<minW){var m=(minW-(bx1-bx0))/2;bx0-=m;bx1+=m}}
+  CG.forEach(function(g){var cx=0,my=1e9;g.h.forEach(function(p){bx0=Math.min(bx0,p[0]);bx1=Math.max(bx1,p[0]);by0=Math.min(by0,p[1]-30);by1=Math.max(by1,p[1]);cx+=p[0];my=Math.min(my,p[1])});cx/=g.h.length;bx0=Math.min(bx0,cx-120);bx1=Math.max(bx1,cx+120);by0=Math.min(by0,my-48)});var sidePad=mobile?24:50;bx0-=sidePad;bx1+=sidePad;by0-=110;by1+=50;var minW=mobile?0:640;if(bx1-bx0<minW){var m=(minW-(bx1-bx0))/2;bx0-=m;bx1+=m}}
  else{bx0=0;by0=0;bx1=720;by1=420}
- var bw=bx1-bx0,bh=by1-by0,vw=Math.max(260,view.clientWidth||(root.clientWidth-40)||960),vhc=Math.max(440,(window.innerHeight||800)*.84),fit=Math.max(.05,Math.min(1.15,vw/bw,vhc/bh));
- ST={view:view,world:world,bx0:bx0,by0:by0,bw:bw,bh:bh,fit:fit,vw:vw,vh:vhc,dragged:false};
+ var bw=bx1-bx0,bh=by1-by0,vw=Math.max(260,view.clientWidth||(root.clientWidth-40)||960),vhc=Math.max(440,(window.innerHeight||800)*.84),fit=mobile?vw/bw:Math.max(.05,Math.min(1.15,vw/bw,vhc/bh));
+ ST={view:view,world:world,bx0:bx0,by0:by0,bw:bw,bh:bh,fit:fit,vw:vw,vh:vhc,heightLimit:mobile?Math.max(vhc,bh*fit):vhc,dragged:false};
  world.style.width=D.W+"px";world.style.height=D.H+"px";
  var ban=el("div","xban");ban.style.left=(bx0+24)+"px";ban.style.top=(by0+20)+"px";ban.appendChild(el("b",null,"MQUIZX"));ban.appendChild(el("i",null,"S1 CROSSOVER"));world.appendChild(ban);
  if(!ids.length){var em=el("div","xem",T.empty);em.style.left=(bx0)+"px";em.style.width=bw+"px";world.appendChild(em)}

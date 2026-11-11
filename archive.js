@@ -340,7 +340,8 @@ function fS1(w,root,F){var Z=F.scenes.s1,fx=el("div","fin-fx"+(fRed()||fHas(FK1)
  var anim=fx.className.indexOf("anim")>=0;
  var ph=fFig(Z.img,"夜の捜査ボード。赤い糸が一人の男の写真へ集まっている（演出用の絵）","dark"+(anim?" anim":""));ph.appendChild(fStamp(Z.stamp,"捜査本部の判断"));w.appendChild(ph);
  fTexts(w,Z.text,"捜査本部　最終報告より");
- var b=el("div","fin-btns");fBtn(b,Z.button,function(){fSet(FK1);mile("finale-act1");fGo(root,"s2")});if(Z.zoom_img)fBtn(b,"最終報告の写真を拡大する",function(){zoomImg(imgSrc(Z.zoom_img),"最終報告に添えられた写真")},true);w.appendChild(b)}
+ if(Z.zoom_img)w.appendChild(fFig(Z.zoom_img,"最終報告に添えられた写真"));
+ var b=el("div","fin-btns");fBtn(b,Z.button,function(){fSet(FK1);mile("finale-act1");fGo(root,"s2")});w.appendChild(b)}
 /* 第2場：終わらなかった一枚（窓の外＝G8の背景。その場で並べて比較） */
 function fS2(w,root,F){var Z=F.scenes.s2;w.appendChild(el("h1",null,Z.title));
  var ph=fFig(Z.img,"最終報告の写真を机に置いた場面（演出用の絵）");ph.appendChild(fStamp(Z.stamp,null,"go"));w.appendChild(ph);
