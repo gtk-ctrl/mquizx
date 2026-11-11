@@ -53,17 +53,17 @@
    "n": 1
   },
   "L2-G5": {
-   "correct": 1,
+   "correct": 2,
    "correct_rate": 1.0,
    "en": {
     "correct": 0,
     "n": 0
    },
    "ja": {
-    "correct": 1,
-    "n": 1
+    "correct": 2,
+    "n": 2
    },
-   "n": 1
+   "n": 2
   },
   "L2-G6": {
    "correct": 1,
@@ -179,8 +179,8 @@
   },
   "lv2-G5": {
    "en": 0,
-   "ja": 1,
-   "total": 1
+   "ja": 2,
+   "total": 2
   },
   "lv2-G6": {
    "en": 0,
@@ -203,6 +203,6 @@
    "total": 1
   }
  },
- "updated": "2026-11-11T04:59:21+09:00",
+ "updated": "2026-11-12T05:07:43+09:00",
  "version": 1
 }
