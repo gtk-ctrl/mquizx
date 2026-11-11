@@ -1,14 +1,131 @@
 {
  "answers": {
-  "L2-G2": {
-   "correct": 0,
-   "correct_rate": 0.0,
+  "L2-G1": {
+   "correct": 1,
+   "correct_rate": 1.0,
    "en": {
     "correct": 0,
     "n": 0
    },
    "ja": {
+    "correct": 1,
+    "n": 1
+   },
+   "n": 1
+  },
+  "L2-G2": {
+   "correct": 1,
+   "correct_rate": 0.5,
+   "en": {
     "correct": 0,
+    "n": 0
+   },
+   "ja": {
+    "correct": 1,
+    "n": 2
+   },
+   "n": 2
+  },
+  "L2-G3": {
+   "correct": 1,
+   "correct_rate": 1.0,
+   "en": {
+    "correct": 0,
+    "n": 0
+   },
+   "ja": {
+    "correct": 1,
+    "n": 1
+   },
+   "n": 1
+  },
+  "L2-G4": {
+   "correct": 1,
+   "correct_rate": 1.0,
+   "en": {
+    "correct": 0,
+    "n": 0
+   },
+   "ja": {
+    "correct": 1,
+    "n": 1
+   },
+   "n": 1
+  },
+  "L2-G5": {
+   "correct": 1,
+   "correct_rate": 1.0,
+   "en": {
+    "correct": 0,
+    "n": 0
+   },
+   "ja": {
+    "correct": 1,
+    "n": 1
+   },
+   "n": 1
+  },
+  "L2-G6": {
+   "correct": 1,
+   "correct_rate": 1.0,
+   "en": {
+    "correct": 0,
+    "n": 0
+   },
+   "ja": {
+    "correct": 1,
+    "n": 1
+   },
+   "n": 1
+  },
+  "L2-G7": {
+   "correct": 1,
+   "correct_rate": 1.0,
+   "en": {
+    "correct": 0,
+    "n": 0
+   },
+   "ja": {
+    "correct": 1,
+    "n": 1
+   },
+   "n": 1
+  },
+  "L2-G8": {
+   "correct": 1,
+   "correct_rate": 1.0,
+   "en": {
+    "correct": 0,
+    "n": 0
+   },
+   "ja": {
+    "correct": 1,
+    "n": 1
+   },
+   "n": 1
+  },
+  "L2-G9": {
+   "correct": 1,
+   "correct_rate": 1.0,
+   "en": {
+    "correct": 0,
+    "n": 0
+   },
+   "ja": {
+    "correct": 1,
+    "n": 1
+   },
+   "n": 1
+  },
+  "L3-000": {
+   "correct": 1,
+   "correct_rate": 1.0,
+   "en": {
+    "correct": 0,
+    "n": 0
+   },
+   "ja": {
+    "correct": 1,
     "n": 1
    },
    "n": 1
@@ -17,10 +134,75 @@
  "milestones": {
   "board": {
    "en": 0,
-   "ja": 2,
-   "total": 2
+   "ja": 3,
+   "total": 3
+  },
+  "finale-act1": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
+  },
+  "finale-ending": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
+  },
+  "finale-q000": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
+  },
+  "finale-resumed": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
+  },
+  "lv2-G1": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
+  },
+  "lv2-G2": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
+  },
+  "lv2-G3": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
+  },
+  "lv2-G4": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
+  },
+  "lv2-G5": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
+  },
+  "lv2-G6": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
+  },
+  "lv2-G7": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
+  },
+  "lv2-G8": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
+  },
+  "lv2-G9": {
+   "en": 0,
+   "ja": 1,
+   "total": 1
   }
  },
- "updated": "2026-11-10T05:01:24+09:00",
+ "updated": "2026-11-11T04:59:21+09:00",
  "version": 1
 }
