@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>漫画 第四話「同じ傷」｜赤い糸の先</title>
+<link rel="stylesheet" href="story.css">
+<style>
+
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.4rem; font-size:clamp(1.9rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin:0 0 2.2rem; }
+.frame { position:relative; isolation:isolate; margin:0; overflow:hidden; min-width:0; background:#122126; border:1px solid #483f34; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; z-index:1; margin:0; padding:.38em .62em; line-height:1.4; font-size:clamp(.84rem,2.25vw,1rem); }
+.speech { width:max-content; max-width:78%; background:#fff9e9; color:#171d20; border:1px solid #242727; border-radius:.9em; box-shadow:0 2px 5px #0008; font-weight:650; }
+.speech::after { content:""; position:absolute; top:calc(100% - 1px); left:var(--tail,63%); border:7px solid transparent; border-top-color:#fff9e9; }
+.speech.bottom::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.speech.top { top:5%; right:4%; }
+.speech.bottom { bottom:5%; left:4%; --tail:28%; }
+.caption { top:4%; left:4%; max-width:90%; color:#fff; background:#101d23ed; border-left:2px solid #d4ac75; }
+.caption.end { top:auto; bottom:4%; }
+.photo { max-width:590px; width:100%; justify-self:center; grid-column:1/-1; }
+.photo img { box-sizing:border-box; border:6px solid #ddd0b7; }
+.folio { grid-column:1/-1; text-align:right; margin:0; color:#bcc6c5; font-size:.8rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+.comic-page { align-items:start; }
+.frame:has(.caption) .speech.top { top:16%; }
+.speech.call { top:17%; right:4%; border-radius:.25em; outline:1px dashed #263238; }
+.speech.call::after { border-width:5px; }
+.price { position:absolute; top:77.8%; left:50%; transform:translateX(-50%); color:#252019; font-size:clamp(.9rem,3.6vw,1.5rem); font-weight:800; white-space:nowrap; }
+.receipt { color:#282418; background:#eee4cb; padding:1rem; margin:0; border:1px solid #9e8d69; align-self:center; font-variant-numeric:tabular-nums; }
+.receipt figcaption { font-weight:750; margin-bottom:.5rem; }
+.receipt table { width:100%; text-align:left; border-collapse:collapse; }
+.receipt td,.receipt th { border-bottom:1px solid #b4a283; padding:.2rem .4rem; }
+.detail { width:100%; max-width:570px; } .detail .caption { top:auto; bottom:4%; } .f7 .top,.f9 .top { left:4%; right:auto; }
+.medal-comparison { display:grid; grid-column:1/-1; grid-template-columns:repeat(3,minmax(0,1fr)); gap:7px; }
+.medal-comparison .detail { min-width:0; box-sizing:border-box; }
+@media(max-width:630px) { .medal-comparison { grid-template-columns:minmax(0,1fr); } }
+</style>
+<style>
+.frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; }
+.frame > .speech { max-width:var(--bubble-width); font-size:clamp(.79rem,2.25vw,.96rem); }
+.frame > .speech.point-up::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.frame > .caption { border:1px solid #d4ac75; }
+.f1 > .caption,.f10 > .caption { max-width:92%; }
+.f4 .print-back {
+  position:absolute; inset:0; pointer-events:none;
+  clip-path:polygon(51% 32%,100% 30.1%,100% 80.9%,48.9% 79.3%,45.4% 77%,45.9% 70.6%);
+  background:linear-gradient(107deg,#908680 45%,#c2b4a9 60%,#a99d94 99%);
+}
+.f11 > .caption { top:auto; bottom:4%; }
+.medal-comparison { display:grid; grid-column:1/-1; grid-template-columns:repeat(3,minmax(0,1fr)); gap:7px; }
+.medal-comparison .detail { min-width:0; box-sizing:border-box; }
+@media(max-width:630px) { .medal-comparison { grid-template-columns:minmax(0,1fr); } }
+</style>
+<style>.review-proof { grid-column:1/-1; margin:0; padding:.7rem; border:1px solid #918060; color:#fff9e9; background:#122126; } .review-proof figcaption { margin-bottom:.45rem; } .review-tiles { display:grid; grid-template-columns:repeat(var(--columns),minmax(0,1fr)); gap:6px; text-align:center; } .detail-crop { position:relative; aspect-ratio:1; overflow:hidden; } .detail-crop img { position:absolute; height:auto; max-width:none; }</style>
+<style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-04.html"><meta property="og:url" content="https://mquizx.com/s/comic-04.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic">
+<p class="eyebrow">漫画版</p>
+<h1>第四話「同じ傷」</h1>
+<section class="comic-page" aria-label="1ページ"><aside class="story-narration">収集家に渡らなかった二枚の行方を追う中で、鑑識の瀬尾から別件の押収品について連絡が入った。</aside>
+<figure class="frame f1"><img src="comic-04/remake-01.jpg" alt="資料室で水城が鳴った携帯を取り上げる"><p class="caption">翌日・資料室。メダルの記録を調べていると、鑑識の瀬尾から電話が来た。</p><p class="speech point-down" style="right:4%;top:26%;--bubble-width:37%;--tail:13%">瀬尾さん。蔵の市の写真なら、手元にあります。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">鑑識スタッフが保管棚から押収品を出し、瀬尾に渡す準備をした。</p><img src="comic-04/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame f2"><img src="comic-04/remake-02.jpg" alt="瀬尾が鑑識室の机に置かれた押収品を見ながら話す"><p class="caption">鑑識室</p><p class="speech point-up" style="left:4%;bottom:30%;--bubble-width:73%;--tail:60%">別件の押収品に花柄が二枚。写真を送る。</p></figure>
+<figure class="frame f3"><img src="comic-04/remake-03.jpg" alt="水城と朝倉が押収写真を収集家の記録と照合する"><p class="speech point-down" style="left:5%;top:2%;--bubble-width:86%;--tail:78%">購入四枚、受取二枚。手元に渡っていないのは二枚でしたね。</p></figure>
+<figure class="frame f4"><img src="comic-04/remake-04.jpg" alt="朝倉が控えと押収写真を見比べる"><span class="print-back" aria-hidden="true"></span><p class="speech point-down" style="right:4%;top:5%;--bubble-width:39%;--tail:8%">押収品も二枚。でも、不足分と同じ品でしょうか。</p></figure>
+<p class="folio">1 / 4</p>
+</section>
+<section class="comic-page" aria-label="2ページ">
+<figure class="frame f5"><img src="comic-04/remake-05.jpg" alt="水城が収集家に渡ったメダルの写真を拡大する" loading="lazy"><p class="speech point-down" style="left:4%;top:3%;--bubble-width:86%;--tail:52%">まず収集家に渡った方の、花柄の一枚。縁を大きくしてみよう。</p></figure>
+<figure class="frame f6"><img src="comic-04/remake-06.jpg" alt="朝倉が押収品の写真を引き寄せる" loading="lazy"><p class="speech point-down" style="left:4%;top:4%;--bubble-width:39%;--tail:86%">押収品の左右も、縁を拡大して並べましょう。</p></figure>
+<p class="folio">2 / 4</p>
+</section>
+<section class="comic-page" aria-label="3ページ">
+<div class="medal-comparison"><figure class="frame detail"><img src="comic-04/sale-detail.jpg" alt="花柄のメダルの縁にある段のある欠けと斜めの傷" loading="lazy"><p class="caption">購入記録074 ／ 収集家に渡った品</p></figure>
+<figure class="frame detail"><img src="comic-04/seized-left.jpg" alt="押収品の左側のメダルの縁と斜めの傷" loading="lazy"><p class="caption">押収記録082 ／ 左の品</p></figure>
+<figure class="frame detail"><img src="comic-04/seized-right.jpg" alt="押収品の右側のメダルの縁と斜めの傷" loading="lazy"><p class="caption">押収記録082 ／ 右の品</p></figure></div>
+<figure class="review-proof"><figcaption>三枚の縁を拡大 ／ 斜めの傷と段のある欠け</figcaption><div class="review-tiles" style="--columns:3"><div><div class="detail-crop" aria-label="収集家の品"><img src="comic-04/sale-detail.jpg" alt="" style="width:238.0952380952381%;left:-95.23809523809523%;top:-111.90476190476191%"></div><span>収集家の品</span></div><div><div class="detail-crop" aria-label="押収品・左"><img src="comic-04/seized-left.jpg" alt="" style="width:238.0952380952381%;left:-95.23809523809523%;top:-111.90476190476191%"></div><span>押収品・左</span></div><div><div class="detail-crop" aria-label="押収品・右"><img src="comic-04/seized-right.jpg" alt="" style="width:222.22222222222223%;left:-84.44444444444444%;top:-113.33333333333333%"></div><span>押収品・右</span></div></div></figure><figure class="frame f7"><img src="comic-04/remake-07.jpg" alt="水城と朝倉が二枚の写真を並べて縁を見比べる" loading="lazy"><p class="speech point-down" style="left:4%;top:2%;--bubble-width:72%;--tail:37%">三枚とも、傷の傾きも欠けの段も同じ場所にある。</p></figure>
+<figure class="frame f8"><img src="comic-04/remake-08.jpg" alt="鑑識室の瀬尾が別々の袋に入ったメダルを示す" loading="lazy"><p class="caption">再び鑑識室</p><p class="speech point-down" style="right:4%;top:4%;--bubble-width:39%;--tail:8%">現物は別々の袋に一枚ずつ。購入記録と結びつけられそうか？</p></figure><figure class="frame action-panel"><p class="action-caption">現物を傷つけないよう、瀬尾はルーペを縁へ近づけた。</p><img src="comic-04/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+
+<p class="folio">3 / 4</p>
+</section>
+<section class="comic-page" aria-label="4ページ">
+<figure class="frame f9"><img src="comic-04/remake-09.jpg" alt="水城が送信を止め、二枚の写真を指す" loading="lazy"><p class="speech point-down" style="left:5%;top:4%;--bubble-width:76%;--tail:68%">型についた傷なら別々の品にも写る。品ごとの傷なら、行方を追う手掛かりになる。現物を見て。</p></figure>
+<figure class="frame f10"><img src="comic-04/remake-10.jpg" alt="以前、受付で来訪者が訂正された書類を指す" loading="lazy"><p class="caption">以前、訂正前の記録が別部署から戻ってきた。</p><p class="speech point-up" style="left:4%;bottom:7%;--bubble-width:77%;--tail:20%">訂正したほうが共有されるんですよね。</p></figure>
+<figure class="frame f11"><img src="comic-04/remake-11.jpg" alt="朝倉が記録の出所を照会し、水城が保管票を書く" loading="lazy"><p class="caption">保管票　同形の欠けと傷。現物鑑定を要請。</p><p class="speech point-down" style="left:4%;top:3%;--bubble-width:51%;--tail:90%">出所の照会もお願いします。</p></figure>
+<figure class="frame f12"><img src="comic-04/remake-12.jpg" alt="水城と朝倉が写真の拡大を閉じて売り場の全景を開く" loading="lazy"><p class="speech point-down" style="left:4%;top:4%;--bubble-width:86%;--tail:26%">鑑定を待つ間に、元の売り場写真を見よう。ケースの周りにも手掛かりがあるかも。</p></figure>
+<figure class="frame detail"><img src="comic-05/shop-record.jpg" alt="蔵の市の売り場写真。ケースの向こうに客の後ろ姿" loading="lazy"></figure><aside class="story-narration">朝倉は照合欄に「一致」と書き、その下の「同一品」は空けておいた。収集家に見つかったと伝えるのは、まだ早い。</aside>
+<p class="folio">4 / 4</p>
+</section>
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-03.html">前の話へ</a><a href="comic-05.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>漫画 第十八話「発見時」｜赤い糸の先</title><link rel="stylesheet" href="story.css">
+<style>
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.25rem; font-size:clamp(1.65rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:0 0 2rem; align-items:start; }
+.frame { position:relative; margin:0; min-width:0; border:1px solid #483f34; background:#122126; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; margin:0; padding:.35em .55em; font-size:clamp(.82rem,2vw,1rem); line-height:1.4; }
+.caption { top:4%; left:4%; background:#101d23ed; color:white; border-left:2px solid #d4ac75; }
+.speech { bottom:4%; left:4%; max-width:86%; color:#171d20; background:#fff9e9; border:1px solid #242727; border-radius:.9em; font-weight:650; }
+.speech::before { content:""; position:absolute; bottom:100%; left:var(--tail,35%); border:7px solid transparent; border-bottom-color:#fff9e9; }
+.frame:nth-of-type(3) .speech { --tail:57%; }
+#page-3 .frame:first-child .speech { --tail:72%; }
+.comparison,.folio { grid-column:1/-1; margin:0; }
+#page-2 .comparison { grid-column:auto; align-self:center; }
+.comparison { background:#eee4cb; color:#282418; padding:.65rem; }
+.comparison figcaption { font-weight:750; margin-bottom:.3rem; }
+.comparison table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+.comparison th,.comparison td { padding:.3rem .15rem; text-align:center; border-bottom:1px solid #ad9475; }
+.folio { text-align:right; font-size:.85rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+</style><style>
+.comic-page { gap:7px; }
+.comic .frame { isolation:isolate; overflow:hidden; }
+.comic .frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; z-index:1; }
+.comic .frame > .caption { color:#fff; background:#101d23ed; border:1px solid #d4ac75; max-width:92%; }
+.comic .frame > .speech {
+ position:absolute; inset:auto; max-width:76%; width:max-content; margin:0;
+ font-size:clamp(.79rem,2.25vw,.96rem);
+}
+.comic .frame > .speech::before { content:none; }
+.comic .frame > .speech::after {
+ content:""; position:absolute; left:var(--point); border:6px solid transparent;
+}
+.comic .frame > .speech.lower { bottom:4%; }
+.comic .frame > .speech.upper { top:4%; }
+.comic .frame > .speech.upper:where(.caption + *) { top:23%; }
+.comic .frame > .speech.left { left:4%; }
+.comic .frame > .speech.right { right:4%; }
+.comic .frame > .speech.lower::after { bottom:calc(100% - 1px); border-bottom-color:#fff9e9; }
+.comic .frame > .speech.upper::after { top:calc(100% - 1px); border-top-color:#fff9e9; }
+.report-attachment { grid-column:1/-1; width:min(100%,520px); margin:0 auto; }
+.report-attachment img { width:100%; height:auto; display:block; }
+.report-attachment figcaption { padding:.35rem .55rem; background:#101d23; color:#fff; }
+</style><style>.comic .frame > img:is([src*="/redraw-"],[src*="/reading-"]) { aspect-ratio:1; width:100%; height:auto; object-fit:contain; background:#122126; } .comic .frame > .speech.upper { top:2%; } .comic .frame > .speech.lower { bottom:2%; }</style><style>.discovery { grid-column:1/-1; width:min(100%,500px); justify-self:center; } </style>
+<style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-18.html"><meta property="og:url" content="https://mquizx.com/s/comic-18.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic"><p class="eyebrow">漫画版</p><h1>第十八話「発見時」</h1>
+<section class="comic-page" id="page-1" aria-label="1ページ"><aside class="story-narration">照合するのは、鉄の輪が見つかった現場の写真と回収票。</aside>
+<figure class="frame"><img src="comic-18/reading-01.jpg" alt="資料室・公開資料の撮影時点" width="268" height="354"><p class="caption">資料室・公開資料の撮影時点</p><p class="speech lower right" style="--point:20%">「発見時」の写真なのに、鉄の輪が床から浮いてます。</p></figure>
+<figure class="frame"><img src="comic-18/redraw-02.jpg" alt="手袋で持ち上げてる。床にあったときの写真も探そう。" width="309" height="414"><p class="speech lower left" style="--point:74%">手袋で持ち上げてる。床にあったときの写真も探そう。</p></figure>
+<figure class="frame"><img src="comic-18/redraw-03.jpg" alt="公開資料の写真・手袋が輪を持ち上げている" width="309" height="414"><p class="caption">公開資料の見出し「発見時」</p></figure>
+<p class="folio">1 / 4</p></section>
+<section class="comic-page" id="page-2" aria-label="2ページ">
+<figure class="frame action-panel"><p class="action-caption">朝倉は保管棚から回収票の綴りを抜いた。</p><img src="comic-18/action-01.jpg" alt="濃色のスーツ姿の朝倉が回収票の綴りを抜く" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-18/reading-04.jpg" alt="この綴りです。撮影番号を見てください。" width="266" height="357"><p class="speech upper right" style="--point:20%">この綴りです。撮影番号を見てください。</p></figure>
+<figure class="frame"><img src="comic-18/redraw-05.jpg" alt="元の撮影一覧にある写真・輪は床板の上" width="310" height="414"><p class="caption">元の撮影一覧にある写真・輪は床板の上</p></figure>
+<figure class="frame"><img src="comic-18/reading-06.jpg" alt="撮影一覧でも、床にある輪が先。公開されたのは、その後の写真です。" width="266" height="342"><p class="speech upper right" style="--point:20%">撮影一覧でも、床にある輪が先。公開されたのは、その後の写真です。</p></figure>
+<aside class="story-narration">撮影一覧と回収票の順序<br>① 床にある輪を撮影 → ② 輪を回収 → ③ 手袋で持った状態を撮影</aside><p class="folio">2 / 4</p></section>
+<section class="comic-page" id="page-3" aria-label="3ページ">
+<figure class="frame discovery"><img src="comic-18/redraw-07.jpg" alt="見出しは「発見時」。でも、この写真は回収後ね。" width="309" height="414"><p class="speech lower left" style="--point:74%">見出しは「発見時」。でも、この写真は回収後ね。</p></figure><figure class="comparison" style="grid-column:1/-1"><figcaption>鉄の輪・回収前と回収後</figcaption><div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem"><div><img src='comic-18/redraw-05.jpg' alt='床に置かれた鉄の輪' style="width:100%"><span>回収前</span></div><div><img src='comic-18/redraw-03.jpg' alt='手袋で持ち上げた鉄の輪' style="width:100%"><span>回収後</span></div></div></figure>
+
+
+<p class="folio">3 / 4</p></section>
+<section class="comic-page" id="page-4" aria-label="4ページ">
+
+<figure class="frame action-panel"><p class="action-caption">回収票を脇へ寄せ、今度は最終報告の記録を手元に引き寄せた。</p><img src="comic-18/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-18/redraw-11.jpg" alt="なら、最終報告の男の写真は、いつ撮ったことになってますか。" width="309" height="414"><p class="speech upper right" style="--point:20%">なら、最終報告の男の写真は、いつ撮ったことになってますか。</p></figure>
+<figure class="frame"><img src="comic-18/redraw-12.jpg" alt="この写真には撮影時刻が書かれていない。背景から部屋を特定して、元の写真を探そう。" width="310" height="414"><p class="speech upper right" style="--point:20%">この写真には撮影時刻が書かれていない。背景から部屋を特定して、元の写真を探そう。</p></figure>
+<aside class="story-narration">「発見時」の文字を外すと、一枚は回収の記録に戻った。水城は、そのことを最終報告の余白に書き留めた。</aside>
+<p class="folio">4 / 4</p></section>
+
+
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-17.html">前の話へ</a><a href="comic-19.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer></body></html>
+

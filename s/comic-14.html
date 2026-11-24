@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>漫画 第十四話「水の跡が残った密室」｜赤い糸の先</title><link rel="stylesheet" href="story.css">
+<style>
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.25rem; font-size:clamp(1.65rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:0 0 2rem; align-items:start; }
+.frame { position:relative; margin:0; min-width:0; border:1px solid #483f34; background:#122126; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; margin:0; padding:.35em .55em; font-size:clamp(.82rem,2vw,1rem); line-height:1.4; }
+.caption { top:4%; left:4%; background:#101d23ed; color:white; border-left:2px solid #d4ac75; }
+.speech { bottom:4%; left:4%; max-width:86%; color:#171d20; background:#fff9e9; border:1px solid #242727; border-radius:.9em; font-weight:650; }
+.speech::before { content:""; position:absolute; bottom:100%; left:var(--tail,35%); border:7px solid transparent; border-bottom-color:#fff9e9; }
+.frame:nth-of-type(3) .speech { --tail:57%; }
+#page-3 .frame:first-child .speech { --tail:72%; }
+.comparison,.folio { grid-column:1/-1; margin:0; }
+#page-2 .comparison { grid-column:auto; align-self:center; }
+.comparison { background:#eee4cb; color:#282418; padding:.65rem; }
+.comparison figcaption { font-weight:750; margin-bottom:.3rem; }
+.comparison table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+.comparison th,.comparison td { padding:.3rem .15rem; text-align:center; border-bottom:1px solid #ad9475; }
+.folio { text-align:right; font-size:.85rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+</style><style>
+.comic-page { gap:7px; }
+.comic .frame { isolation:isolate; overflow:hidden; }
+.comic .frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; z-index:1; }
+.comic .frame > .caption { color:#fff; background:#101d23ed; border:1px solid #d4ac75; max-width:92%; }
+.comic .frame > .speech {
+ position:absolute; inset:auto; max-width:76%; width:max-content; margin:0;
+ font-size:clamp(.79rem,2.25vw,.96rem);
+}
+.comic .frame > .speech::before { content:none; }
+.comic .frame > .speech::after {
+ content:""; position:absolute; left:var(--point); border:6px solid transparent;
+}
+.comic .frame > .speech.lower { bottom:4%; }
+.comic .frame > .speech.upper { top:4%; }
+.comic .frame > .speech.upper:where(.caption + *) { top:23%; }
+.comic .frame > .speech.left { left:4%; }
+.comic .frame > .speech.right { right:4%; }
+.comic .frame > .speech.lower::after { bottom:calc(100% - 1px); border-bottom-color:#fff9e9; }
+.comic .frame > .speech.upper::after { top:calc(100% - 1px); border-top-color:#fff9e9; }
+.report-attachment { grid-column:1/-1; width:min(100%,520px); margin:0 auto; }
+.report-attachment img { width:100%; height:auto; display:block; }
+.report-attachment figcaption { padding:.35rem .55rem; background:#101d23; color:#fff; }
+</style><style>.comic .frame > img[src*="/redraw-"] { aspect-ratio:1; width:100%; height:auto; object-fit:contain; background:#122126; } .comic .frame > .speech.upper { top:2%; } .comic .frame > .speech.lower { bottom:2%; }</style><style>.discovery { grid-column:1/-1; width:min(100%,500px); justify-self:center; }</style>
+<style>.review-evidence{grid-column:1/-1;margin:0;padding:.75rem;background:#ede2ca;color:#25221e;border:1px solid #918060;min-width:0}.review-evidence figcaption{font-weight:750;margin-bottom:.45rem}.review-evidence p{margin:.35rem 0}.review-evidence strong{color:#852e32}.review-evidence img{display:block;width:100%;height:auto}.review-evidence .pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.review-evidence .pair div{min-width:0} </style><style>.investigation{grid-column:1/-1;margin:0;padding:.8rem;background:#ede2ca;color:#24211e;border:1px solid #968263}.investigation figcaption{font-weight:bold;margin-bottom:.5rem}.investigation p{margin:.45rem 0}.investigation .sides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}.investigation .sides img{display:block;width:100%;height:auto}.investigation strong{color:#812d31}.investigation .sides div{min-width:0}.investigation .cropped{position:relative}.investigation .cropped::after{content:"";position:absolute;inset:0 0 0 auto;width:47%;background:#122126cf;border-left:2px dashed #dc7872;pointer-events:none}.investigation .floor-cut::after{width:auto;inset:0 auto 0 0;width:52%;border-left:0;border-right:2px dashed #dc7872}.investigation .reverse{transform:scaleX(-1)}</style><style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-14.html"><meta property="og:url" content="https://mquizx.com/s/comic-14.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic"><p class="eyebrow">漫画版</p><h1>第十四話「水の跡が残った密室」</h1>
+<section class="comic-page" id="page-1" aria-label="1ページ"><aside class="story-narration">扉の傷が配布版で見えなくなっていたため、水城たちは同じ棚の別の事件にも目を向けた。発見時の調書には、床に水が残っていたとある。</aside>
+<figure class="frame action-panel"><p class="action-caption">朝倉は隣の棚から別の箱を引き出した。</p><img src="comic-14/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-14/redraw-01.jpg" alt="二人が隣の箱を開く" width="358" height="358"><p class="caption">地下資料室・隣の箱</p><p class="speech lower right" style="--point:20%">今度の配布版には金具が写ってます。でも、調書にある床の水は見えません。</p></figure>
+<figure class="frame"><img src="comic-14/redraw-02.jpg" alt="朝倉が発見時の調書を読む" width="358" height="358"><p class="speech upper right" style="--point:20%">戸を開けたとき、床には水が残っていたそうです。</p></figure>
+<figure class="frame"><img src="comic-14/redraw-03.jpg" alt="水城が室内全景を広げる" width="358" height="358"><p class="speech upper right" style="--point:20%">床の水は時間が経てば乾く。どの写真がいつ撮られたか確認しよう。</p></figure>
+<p class="folio">1 / 4</p></section>
+<section class="comic-page" id="page-2" aria-label="2ページ">
+<figure class="frame"><img src="comic-14/redraw-04.jpg" alt="床と戸の金具を写した二枚の写真" width="358" height="358"></figure><figure class="comparison"><figcaption>現場写真の記録</figcaption><table><tr><th scope="row">室内全景</th><td>暗い床の隅に水の跡</td></tr><tr><th scope="row">金具の拡大</th><td>受け金具の脇に細いこすれ跡</td></tr></table></figure>
+<figure class="frame"><img src="comic-14/redraw-05.jpg" alt="水城が金具の拡大写真を見る" width="358" height="358"><p class="speech upper right" style="--point:20%">金具のアップだけだと、床が乾いていたかさえ分からないね。</p></figure>
+<figure class="frame"><img src="comic-14/redraw-06.jpg" alt="朝倉が戸と床の写真を見比べる" width="358" height="358"><p class="speech upper right" style="--point:20%">発見するまで、ずっと閉まっていたんでしょうか。</p></figure>
+<p class="folio">2 / 4</p></section>
+<section class="comic-page" id="page-3" aria-label="3ページ">
+<figure class="frame"><img src="comic-14/redraw-07.jpg" alt="水城が調書の発見欄をたどる" width="358" height="358"><p class="speech upper right" style="--point:20%">記録で分かるのは、発見時にかんぬきが掛かっていたことまで。</p></figure>
+<figure class="frame"><img src="comic-14/redraw-08.jpg" alt="瀬尾が撮影一覧を開く" width="358" height="358"><p class="speech upper right" style="--point:20%">撮影順は床、次に金具。欄外にも撮影時のメモがある。</p></figure>
+<figure class="frame"><img src="comic-14/redraw-09.jpg" alt="鉛筆書きが残る撮影一覧" width="358" height="358"><p style="position:absolute;top:33%;left:15%;margin:0;color:#454139;font-family:serif;font-size:clamp(1rem,3vw,1.55rem);transform:rotate(-4deg)">水が乾く前に床を撮影。<br>次に金具。</p></figure>
+<figure class="review-evidence"><figcaption>撮影一覧の順序</figcaption><p>発見 → <strong>水が乾く前に床を撮影</strong> → 金具を撮影</p></figure><p class="folio">3 / 4</p></section>
+<section class="comic-page" id="page-4" aria-label="4ページ">
+<figure class="investigation"><figcaption>濡れた床と金具 ／ 配布範囲の模式図</figcaption><div class="sides"><div><img src="comic-14/redraw-04.jpg" alt="床と金具の元記録">元資料の二つの手掛かり</div><div><div class="cropped floor-cut"><img src="comic-14/redraw-04.jpg" alt="床の部分が配布範囲に入らないことを示す"></div>配布版に残ったのは金具</div></div><p>撮影一覧をたどると、水が残っていた時点に床と金具が一緒に写った全景が見つかった。</p></figure><figure class="frame action-panel"><p class="action-caption">撮影順をたどり、水城は全景の入った封筒を開いた。</p><img src="comic-14/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame discovery"><img src="comic-14/redraw-10.jpg" alt="水城が全景写真を一枚戻す" width="358" height="358"><p class="speech upper left" style="--point:74%">この全景だ。濡れた板二枚と、その上の金具が一枚に写ってる。</p></figure>
+<figure class="frame"><img src="comic-14/redraw-11.jpg" alt="水城が撮影一覧の行を丸で囲む" width="358" height="358"><p class="speech upper right" style="--point:20%">この一枚なら、濡れた床が戸のどこまで続いていたか読める。</p></figure>
+<figure class="frame"><img src="comic-14/redraw-12.jpg" alt="朝倉が次の封筒を手渡す" width="358" height="358"><p class="speech upper left" style="--point:74%">写真の番号に「乾く前」と添えます。後で見る人にも伝わるように。</p></figure>
+<aside class="story-narration">乾けば消えるはずの水跡が、撮影順をたどった先の一枚に残っていた。</aside>
+<p class="folio">4 / 4</p></section>
+
+
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-13.html">前の話へ</a><a href="comic-15.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer></body></html>
+

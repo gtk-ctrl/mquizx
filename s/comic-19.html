@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>漫画 第十九話「同じ部屋の別の窓」｜赤い糸の先</title><link rel="stylesheet" href="story.css">
+<style>
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.25rem; font-size:clamp(1.65rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:0 0 2rem; align-items:start; }
+.frame { position:relative; margin:0; min-width:0; border:1px solid #483f34; background:#122126; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; margin:0; padding:.35em .55em; font-size:clamp(.82rem,2vw,1rem); line-height:1.4; }
+.caption { top:4%; left:4%; background:#101d23ed; color:white; border-left:2px solid #d4ac75; }
+.speech { bottom:4%; left:4%; max-width:86%; color:#171d20; background:#fff9e9; border:1px solid #242727; border-radius:.9em; font-weight:650; }
+.speech::before { content:""; position:absolute; bottom:100%; left:var(--tail,35%); border:7px solid transparent; border-bottom-color:#fff9e9; }
+.frame:nth-of-type(3) .speech { --tail:57%; }
+#page-3 .frame:first-child .speech { --tail:72%; }
+.comparison,.folio { grid-column:1/-1; margin:0; }
+#page-2 .comparison { grid-column:auto; align-self:center; }
+.comparison { background:#eee4cb; color:#282418; padding:.65rem; }
+.comparison figcaption { font-weight:750; margin-bottom:.3rem; }
+.comparison table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+.comparison th,.comparison td { padding:.3rem .15rem; text-align:center; border-bottom:1px solid #ad9475; }
+.folio { text-align:right; font-size:.85rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+</style><style>
+.comic-page { gap:7px; }
+.comic .frame { isolation:isolate; overflow:hidden; }
+.comic .frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; z-index:1; }
+.comic .frame > .caption { color:#fff; background:#101d23ed; border:1px solid #d4ac75; max-width:92%; }
+.comic .frame > .speech {
+ position:absolute; inset:auto; max-width:76%; width:max-content; margin:0;
+ font-size:clamp(.79rem,2.25vw,.96rem);
+}
+.comic .frame > .speech::before { content:none; }
+.comic .frame > .speech::after {
+ content:""; position:absolute; left:var(--point); border:6px solid transparent;
+}
+.comic .frame > .speech.lower { bottom:4%; }
+.comic .frame > .speech.upper { top:4%; }
+.comic .frame > .speech.upper:where(.caption + *) { top:23%; }
+.comic .frame > .speech.left { left:4%; }
+.comic .frame > .speech.right { right:4%; }
+.comic .frame > .speech.lower::after { bottom:calc(100% - 1px); border-bottom-color:#fff9e9; }
+.comic .frame > .speech.upper::after { top:calc(100% - 1px); border-top-color:#fff9e9; }
+.report-attachment { grid-column:1/-1; width:min(100%,520px); margin:0 auto; }
+.report-attachment img { width:100%; height:auto; display:block; }
+.report-attachment figcaption { padding:.35rem .55rem; background:#101d23; color:#fff; }
+</style><style>.comic .frame > img[src*="/redraw-"] { aspect-ratio:1; width:100%; height:auto; object-fit:contain; background:#122126; } .comic .frame > .speech.upper { top:2%; } .comic .frame > .speech.lower { bottom:2%; }</style><link rel="stylesheet" href="collection.css"><script src="spoiler.js" defer></script><style>.discovery { grid-column:1/-1; width:min(100%,500px); justify-self:center; } .masked-image { position:relative; max-width:480px; margin:auto; } .masked-image img { display:block; width:100%; } .masked-image::after { content:""; position:absolute; inset:0; background:#ddd3b9; clip-path:polygon(74% 27%,97% 27%,97% 85%,32% 85%,32% 57%,68% 57%,72% 39%); }</style>
+<style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<style>
+.comic .frame.opening-caption { display:grid; grid-template-columns:minmax(0,1fr); }
+.comic .frame.opening-caption > .caption { position:static; grid-row:1; max-width:none; padding:.35em .65em; }
+.comic .frame.opening-caption > img { grid-area:2 / 1; }
+.comic .frame.opening-caption > .speech.upper.right { position:relative; inset:auto; grid-area:2 / 1; align-self:start; justify-self:end; margin:2% 4% 0; }
+</style>
+<style>
+.evidence-spread{grid-column:1/-1;margin:0;padding:clamp(.65rem,2.5vw,1.25rem);background:#17272c;color:#f4e8cf;border:1px solid #907e60}
+.evidence-spread h2{font-size:clamp(1.1rem,3vw,1.4rem);margin:0 0 .75rem;line-height:1.4}
+.evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(.5rem,2vw,1rem)}
+.evidence-grid figure{margin:0;min-width:0}
+.evidence-grid img{display:block;width:100%;height:auto;border-radius:2px}
+.evidence-grid figcaption{font-size:.88rem;line-height:1.45;padding:.4rem 0}
+.evidence-spread p{margin:.7rem 0 0;line-height:1.6;font-size:.9rem}
+.evidence-photo{position:relative}
+.evidence-photo svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.evidence-photo line{stroke:#ffe3a6;stroke-width:.75;stroke-linecap:round}
+.evidence-photo circle{stroke:#ffe3a6;stroke-width:.8}
+.evidence-photo text{fill:#fff7df;text-anchor:middle;dominant-baseline:central;font:700 7px sans-serif}
+.evidence-knot{margin-top:1rem;padding:.6rem .7rem;background:#e9dbc0;color:#251e17;border-radius:2px}
+.evidence-knot strong{font-size:.87rem}
+.evidence-knot svg{display:block;width:100%;height:auto;margin:.45rem 0}
+</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-19.html"><meta property="og:url" content="https://mquizx.com/s/comic-19.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main id="spoiler-story" hidden class="comic"><p class="eyebrow">漫画版</p><h1>第十九話「同じ部屋の別の窓」</h1>
+<section class="comic-page" id="page-1" aria-label="1ページ"><aside class="story-narration">撮影時刻を追うために、まず部屋を特定する。</aside>
+<figure class="frame opening-caption"><p class="caption">資料室・最終報告の添付写真</p><img src="comic-19/redraw-01.jpg" alt="資料室・最終報告の添付写真" width="310" height="414"><p class="speech upper right" style="--point:20%">人物と机上の品を紙で隠そう。背景だけなら、窓枠の特徴を追える。</p></figure><figure class="report-attachment"><img src="comic-20/review-final_report.jpg" alt="書斎の人物、窓の赤い傘、机の封筒とメダル" loading="lazy"><figcaption>最終報告の添付写真 ／ 第20話でも同じ写真を使用</figcaption></figure><figure class="report-attachment"><div class="masked-image"><img src="comic-20/review-final_report.jpg" alt="同じ添付写真の人物と机上の品に紙を重ね、窓枠を確認" loading="lazy"></div><figcaption>同じ添付写真に紙を重ねた状態</figcaption></figure>
+<figure class="frame"><img src="comic-19/redraw-02.jpg" alt="窓の外は前に確認しました。今度は部屋の中ですね。" width="309" height="414"><p class="speech lower left" style="--point:74%">窓の外は前に確認しました。今度は部屋の中ですね。</p></figure>
+<figure class="frame"><img src="comic-19/redraw-03.jpg" alt="全景を保管していた箱を、この一覧で当たろう。" width="309" height="414"><p class="speech upper right" style="--point:20%">全景を保管していた箱を、この一覧で当たろう。</p></figure>
+<p class="folio">1 / 4</p></section>
+<section class="comic-page" id="page-2" aria-label="2ページ">
+<figure class="frame action-panel"><p class="action-caption">水城は保管棚を回り、書斎の写真が入りそうな箱を絞った。</p><img src="comic-19/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-19/redraw-04.jpg" alt="候補が二枚。裏の番号は〇九一と〇九五です。" width="310" height="414"><p class="speech upper right" style="--point:20%">候補が二枚。裏の番号は〇九一と〇九五です。</p></figure>
+
+
+<p class="folio">2 / 4</p></section>
+<section class="comic-page" id="page-3" aria-label="3ページ">
+<figure class="frame"><img src="comic-19/redraw-07.jpg" alt="その横の壁の傷が斜めです。棚板の黒い節も同じ段にあります。" width="309" height="414"><p class="speech upper right" style="--point:20%">その横の壁の傷が斜めです。棚板の黒い節も同じ段にあります。</p></figure>
+<figure class="frame discovery"><img src="comic-19/redraw-08.jpg" alt="窓が似ているだけじゃない。補修の木片、壁の斜め傷、棚板の黒い節まで重なるのは片方だけだ。" width="310" height="414"><p class="speech lower right" style="--point:20%">窓が似ているだけじゃない。補修の木片、壁の斜め傷、棚板の黒い節まで重なるのは片方だけだ。</p></figure>
+<section class="evidence-spread" aria-labelledby="compare-title">
+<h2 id="compare-title">書斎を特定した三つの照合点</h2>
+<div class="evidence-grid"><figure><div class="evidence-photo"><img src="comic-19/redraw-12.jpg" alt="原写真候補 〇九一。補修の木片、壁の斜め傷、棚板の黒い節に番号を付けた比較画像。" loading="lazy"><svg viewBox="0 0 100 130" preserveAspectRatio="none" aria-hidden="true"><line x1="77" y1="13" x2="88" y2="19"/><circle cx="77" cy="13" r="2" fill="none"/><circle cx="88" cy="19" r="5.4" fill="#132329"/><text x="88" y="19.3">1</text><line x1="66" y1="32" x2="48" y2="29"/><circle cx="66" cy="32" r="2" fill="none"/><circle cx="48" cy="29" r="5.4" fill="#132329"/><text x="48" y="29.3">2</text><line x1="24" y1="51" x2="9" y2="64"/><circle cx="24" cy="51" r="2" fill="none"/><circle cx="9" cy="64" r="5.4" fill="#132329"/><text x="9" y="64.3">3</text></svg></div><figcaption>原写真候補 〇九一</figcaption></figure><figure><div class="evidence-photo"><img src="comic-20/review-final_report.jpg" alt="最終報告の添付写真。補修の木片、壁の斜め傷、棚板の黒い節に番号を付けた比較画像。" loading="lazy"><svg viewBox="0 0 100 130" preserveAspectRatio="none" aria-hidden="true"><line x1="62" y1="54" x2="44" y2="69"/><circle cx="62" cy="54" r="2" fill="none"/><circle cx="44" cy="69" r="5.4" fill="#132329"/><text x="44" y="69.3">1</text><line x1="71" y1="32" x2="55" y2="21"/><circle cx="71" cy="32" r="2" fill="none"/><circle cx="55" cy="21" r="5.4" fill="#132329"/><text x="55" y="21.3">2</text><line x1="77" y1="42" x2="91" y2="29"/><circle cx="77" cy="42" r="2" fill="none"/><circle cx="91" cy="29" r="5.4" fill="#132329"/><text x="91" y="29.3">3</text></svg></div><figcaption>最終報告の添付写真</figcaption></figure></div>
+<p>① 補修の木片　② 壁の斜め傷　③ 棚板の黒い節</p>
+<div class="evidence-knot"><strong>③ 棚板の節を比較した模式図</strong><div class="evidence-grid"><figure><svg viewBox="0 0 120 35" role="img" aria-label="節あり"><rect x="1" y="1" width="118" height="33" rx="2" fill="#9f7954" stroke="#553c2b"/><path d="M4 9Q40 7 62 10T116 9M4 17Q38 15 66 20T116 17M4 27Q44 23 67 29T116 27" fill="none" stroke="#cfa680" stroke-width="1"/><ellipse cx="61" cy="18" rx="9" ry="8" fill="#5f4331" stroke="#392a21"/><ellipse cx="61" cy="18" rx="4" ry="3" fill="#36261c"/></svg><figcaption>〇九一 ／ 節あり</figcaption></figure><figure><svg viewBox="0 0 120 35" role="img" aria-label="節なし"><rect x="1" y="1" width="118" height="33" rx="2" fill="#9f7954" stroke="#553c2b"/><path d="M4 9Q40 7 62 10T116 9M4 17Q38 15 66 20T116 17M4 27Q44 23 67 29T116 27" fill="none" stroke="#cfa680" stroke-width="1"/></svg><figcaption>〇九五 ／ 節なし</figcaption></figure></div></div>
+<p>三つの特徴がそろうのは〇九一。</p>
+</section>
+<figure class="frame"><img src="comic-19/redraw-09.jpg" alt="〇九一を手掛かりに、最終報告が使った元の写真を調べてくれ。" width="310" height="414"><p class="speech lower left" style="--point:74%">〇九一を手掛かりに、最終報告が使った元の写真を調べてくれ。</p></figure>
+<p class="folio">3 / 4</p></section>
+<section class="comic-page" id="page-4" aria-label="4ページ"><aside class="story-narration">保管担当から、同じ書斎を別の角度から撮った元写真が届いた。水城は報告書の添付写真と並べ、窓と机の周りを見比べた。</aside>
+<figure class="frame action-panel"><p class="action-caption">保管担当が戻り、照合用のデータを手渡した。</p><img src="comic-19/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-19/redraw-10.jpg" alt="保管担当から作業用のデータが届きました。" width="309" height="414"><p class="speech upper right" style="--point:20%">保管担当から作業用のデータが届きました。</p></figure>
+<figure class="frame"><img src="comic-19/redraw-11.jpg" alt="元の書斎写真から確認します。" width="309" height="414"><p class="speech upper right" style="--point:20%">元の書斎写真から確認します。</p></figure>
+<figure class="report-attachment"><img src="comic-20/review-final_report.jpg" alt="最終報告の添付写真。窓の外に傘、書斎に男が写る"><figcaption>最終報告の添付写真 ／ 男が写っている</figcaption></figure><figure class="frame discovery"><img src="comic-19/redraw-12.jpg" alt="机の前には、誰も立っていなかった。" width="310" height="414"><p class="caption">元写真の机の前には、誰もいなかった。報告書の男は、どこから来たのか。</p></figure>
+<aside class="story-narration">書斎は一致した。机の前にいるはずの男だけが、元の一枚にはいなかった。</aside>
+<p class="folio">4 / 4</p></section>
+
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-18.html">前の話へ</a><a href="comic-20.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer><dialog id="spoiler-warning" aria-labelledby="spoiler-title"><form method="dialog"><h2 id="spoiler-title">ネタバレにご注意</h2><p>この話には、捜査ボードの最終結末に関わる内容が含まれます。</p><div class="spoiler-actions"><a href="../board.html">捜査ボードへ</a><a href="index.html#episodes" autofocus>目次に戻る</a><button value="continue">このまま読む</button></div></form></dialog></body></html>
+

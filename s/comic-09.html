@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>漫画 第九話「二度降った雨」｜赤い糸の先</title>
+<link rel="stylesheet" href="story.css">
+<style>
+
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.4rem; font-size:clamp(1.9rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin:0 0 2.2rem; }
+.frame { position:relative; isolation:isolate; margin:0; overflow:hidden; min-width:0; background:#122126; border:1px solid #483f34; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; z-index:1; margin:0; padding:.38em .62em; line-height:1.4; font-size:clamp(.84rem,2.25vw,1rem); }
+.speech { width:max-content; max-width:78%; background:#fff9e9; color:#171d20; border:1px solid #242727; border-radius:.9em; box-shadow:0 2px 5px #0008; font-weight:650; }
+.speech::after { content:""; position:absolute; top:calc(100% - 1px); left:var(--tail,63%); border:7px solid transparent; border-top-color:#fff9e9; }
+.speech.bottom::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.speech.top { top:5%; right:4%; }
+.speech.bottom { bottom:5%; left:4%; --tail:28%; }
+.caption { top:4%; left:4%; max-width:90%; color:#fff; background:#101d23ed; border-left:2px solid #d4ac75; }
+.caption.end { top:auto; bottom:4%; }
+.photo { max-width:590px; width:100%; justify-self:center; grid-column:1/-1; }
+.photo img { box-sizing:border-box; border:6px solid #ddd0b7; }
+.folio { grid-column:1/-1; text-align:right; margin:0; color:#bcc6c5; font-size:.8rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+.comic-page { align-items:start; }
+.frame:has(.caption) .speech.top { top:16%; }
+.speech.call { top:17%; right:4%; border-radius:.25em; outline:1px dashed #263238; }
+.speech.call::after { border-width:5px; }
+.price { position:absolute; top:77.8%; left:50%; transform:translateX(-50%); color:#252019; font-size:clamp(.9rem,3.6vw,1.5rem); font-weight:800; white-space:nowrap; }
+.receipt { color:#282418; background:#eee4cb; padding:1rem; margin:0; border:1px solid #9e8d69; align-self:center; font-variant-numeric:tabular-nums; }
+.receipt figcaption { font-weight:750; margin-bottom:.5rem; }
+.receipt table { width:100%; text-align:left; border-collapse:collapse; }
+.receipt td,.receipt th { border-bottom:1px solid #b4a283; padding:.2rem .4rem; }
+
+.seal-proof { grid-column:1/-1; margin:0; padding:.8rem; color:#27231d; background:#ede1c8; } .seal-proof svg { display:block; width:100%; max-width:540px; margin:auto; } .frame img { min-height:180px; object-fit:cover; } .rain-proof { grid-column:1/-1; margin:0; padding:.65rem; color:#27231d; background:#ede1c8; } .rain-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.6rem; } .rain-pair figure { margin:0; } .rain-pair img { aspect-ratio:1.15; object-fit:cover; object-position:top; } .rain-proof img { display:block; width:100%; } .rain-proof .report-photo { max-width:480px; margin:auto; } </style>
+
+<style>
+.comic-page { gap:7px; }
+.comic .frame { isolation:isolate; overflow:hidden; }
+.comic .frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; z-index:1; }
+.comic .frame > .caption { color:#fff; background:#101d23ed; border:1px solid #d4ac75; max-width:92%; }
+.comic .frame > .speech {
+ position:absolute; inset:auto; max-width:76%; width:max-content; margin:0;
+ font-size:clamp(.79rem,2.25vw,.96rem);
+}
+.comic .frame > .speech::before { content:none; }
+.comic .frame > .speech::after {
+ content:""; position:absolute; left:var(--point); border:6px solid transparent;
+}
+.comic .frame > .speech.lower { bottom:4%; }
+.comic .frame > .speech.upper { top:4%; }
+.comic .frame > .speech.upper:where(.caption + *) { top:23%; }
+.comic .frame > .speech.left { left:4%; }
+.comic .frame > .speech.right { right:4%; }
+.comic .frame > .speech.lower::after { bottom:calc(100% - 1px); border-bottom-color:#fff9e9; }
+.comic .frame > .speech.upper::after { top:calc(100% - 1px); border-top-color:#fff9e9; }
+.report-attachment { grid-column:1/-1; width:min(100%,520px); margin:0 auto; }
+.report-attachment img { width:100%; height:auto; display:block; }
+.report-attachment figcaption { padding:.35rem .55rem; background:#101d23; color:#fff; }
+</style>
+<style>.comic .frame > img[src*="/redraw-"] { aspect-ratio:1; width:100%; height:auto; object-fit:contain; background:#122126; }</style><style>.rain-pair img { aspect-ratio:auto; object-fit:contain; } .rain-pair { align-items:start; }</style>
+<style>.rain-pair img[src$="rain-detail.jpg"] { aspect-ratio:1.16; object-fit:cover; object-position:top; } .rain-pair img[src$="g8_046_win.jpg"] { aspect-ratio:1.16; object-fit:contain; object-position:center; background:#182428; } .rain-pair img[src$="report-window.jpg"] { aspect-ratio:1.16; object-fit:cover; object-position:top; }</style><style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-09.html"><meta property="og:url" content="https://mquizx.com/s/comic-09.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic"><p class="eyebrow">漫画版</p><h1>第九話「二度降った雨」</h1>
+<section class="comic-page" id="page-1" aria-label="1ページ"><aside class="story-narration">封の照合結果を送った翌朝、別の日の記録に付いた喫茶店の写真が資料室に届いた。担当者は、日付が違うのに似すぎていると感じていた。</aside><figure class="frame"><img src="comic-09/redraw-01.jpg" alt="瀬尾が撮影記録を持ってくる" loading="lazy" width="308" height="412"><p class="caption">翌朝・資料室</p><p class="speech lower right" style="--point:20%">封の照合写真を送った担当が、この二枚も見てくれと。別の日の記録に付いていたそうだ。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">雨の夜、喫茶店の外では足音に合わせて水が跳ねた。</p><img src="comic-09/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-09/redraw-02.jpg" alt="机の上に配布写真二枚" loading="lazy" width="307" height="412"><p class="caption">喫茶店の配布記録。添付先に記された日付は別々。</p></figure>
+<figure class="frame"><img src="comic-09/redraw-03.jpg" alt="朝倉が二枚の写真の窓を指す" loading="lazy" width="307" height="412"><p class="speech upper right" style="--point:20%">日付は別でも、同じ店なら赤い傘が写ることはあるか。</p></figure><p class="folio">1 / 4</p></section>
+<section class="comic-page" id="page-2" aria-label="2ページ"><figure class="frame"><img src="comic-09/redraw-04.jpg" alt="水城が写真を机に並べ直す" loading="lazy" width="308" height="412"><p class="speech upper right" style="--point:20%">傘だけじゃない。箱の傾きと、靴の後ろを見て。</p></figure><figure class="rain-proof"><div class="rain-pair"><figure><img src="comic-09/rain-detail.jpg" alt="赤い傘、傾いた箱、靴の後ろの水しぶき"><figcaption>配布記録 A ／ 窓外</figcaption></figure><figure><img src="../img/archive/g8_046_win.jpg" alt="同じ形の傘、箱、水しぶき"><figcaption>配布記録 B ／ 窓外</figcaption></figure></div><figcaption>赤い傘、傾いた箱、水しぶきの形が一致。</figcaption></figure>
+<figure class="frame"><img src="comic-09/redraw-05.jpg" alt="朝倉が足元のしぶきを見比べる" loading="lazy" width="308" height="412"><p class="speech lower left" style="--point:74%">しぶきの筋まで一致してる。同じ瞬間の写真が、別の日付で配られた？</p></figure>
+<figure class="frame action-panel"><p class="action-caption">その午後、捜査本部から分厚い封筒が届いた。</p><img src="comic-09/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-09/redraw-06.jpg" alt="最終報告の束が机に届く" loading="lazy" width="307" height="412"><p class="caption">その午後・捜査本部から最終報告</p></figure><p class="folio">2 / 4</p></section>
+<section class="comic-page" id="page-3" aria-label="3ページ"><aside class="story-narration">午後、捜査本部から最終報告が届いた。</aside><figure class="frame"><img src="comic-09/redraw-07.jpg" alt="係長が添付写真を開く" loading="lazy" width="307" height="412"><p class="speech upper left" style="--point:74%">この写真を根拠に、男を一連の事件の指示役としたそうだ。</p></figure><figure class="rain-proof"><img class="report-photo" src="comic-20/review-final_report.jpg" alt="書斎の男と机の上の封筒、メダル"><figcaption>最終報告の添付写真。机上に事件の関連物品があるとされる。</figcaption></figure>
+<figure class="frame"><img src="comic-09/redraw-08.jpg" alt="水城が報告写真の窓に気づく" loading="lazy" width="308" height="412"><svg aria-hidden="true" focusable="false" viewBox="0 0 308 412" style="position:absolute;inset:1px;width:calc(100% - 2px);height:calc(100% - 2px);pointer-events:none"><path d="M161 163L294 142L273 274L254 278L241 285L236 295L134 316Z" fill="#b3a28a"/></svg><p class="speech upper right" style="--point:20%">……窓に赤い傘。係長、その写真を見せてください。</p></figure>
+<figure class="frame"><img src="comic-09/redraw-09.jpg" alt="水城が喫茶店の資料を持ってくる" loading="lazy" width="308" height="412"><p class="speech upper right" style="--point:20%">書斎の窓を拡大して、さっきの窓外と並べてください。</p></figure><figure class="rain-proof"><div class="rain-pair"><figure><img src="comic-09/rain-detail.jpg" alt="喫茶店の窓外の拡大"><figcaption>喫茶店の配布写真</figcaption></figure><figure><img src="comic-09/report-window.jpg" alt="最終報告の書斎の窓を拡大"><figcaption>最終報告 ／ 書斎の窓</figcaption></figure></div></figure><p class="folio">3 / 4</p></section>
+<section class="comic-page" id="page-4" aria-label="4ページ"><figure class="frame"><img src="comic-09/redraw-10.jpg" alt="係長と朝倉が並べた写真をのぞく" loading="lazy" width="307" height="412"><p class="speech upper left" style="--point:74%">箱の傾きも、しぶきも同じだ。最終報告の写真にも、あの窓外が写っている。</p></figure>
+<figure class="frame"><img src="comic-09/redraw-11.jpg" alt="係長が印箱を閉じる" loading="lazy" width="307" height="412"><p class="speech lower left" style="--point:74%">報告の受け付けは保留だ。撮影元が分かるまで、この写真を指示役の証拠にはできない。</p></figure>
+<figure class="frame"><img src="comic-09/redraw-12.jpg" alt="水城と朝倉が記録を開き直す" loading="lazy" width="308" height="412"><p class="caption">資料室・日没後</p><p class="speech lower right" style="--point:20%">写真の出どころは空欄。手掛かりは、並んだ事件番号だけだった。</p></figure><aside class="story-narration">別の日付に添えられた写真で、雨のしぶきまで同じ形をしていた。その一瞬が最終報告の窓にも写っていたため、報告の受け付けは止まった。</aside>
+<p class="folio">4 / 4</p></section>
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-08.html">前の話へ</a><a href="comic-10.html">次の話へ</a></nav></main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer></body></html>

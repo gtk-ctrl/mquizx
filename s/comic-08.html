@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>漫画 第八話「黒い紙の継ぎ目」｜赤い糸の先</title>
+<link rel="stylesheet" href="story.css">
+<style>
+
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.4rem; font-size:clamp(1.9rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin:0 0 2.2rem; }
+.frame { position:relative; isolation:isolate; margin:0; overflow:hidden; min-width:0; background:#122126; border:1px solid #483f34; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; z-index:1; margin:0; padding:.38em .62em; line-height:1.4; font-size:clamp(.84rem,2.25vw,1rem); }
+.speech { width:max-content; max-width:78%; background:#fff9e9; color:#171d20; border:1px solid #242727; border-radius:.9em; box-shadow:0 2px 5px #0008; font-weight:650; }
+.speech::after { content:""; position:absolute; top:calc(100% - 1px); left:var(--tail,63%); border:7px solid transparent; border-top-color:#fff9e9; }
+.speech.bottom::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.speech.top { top:5%; right:4%; }
+.speech.bottom { bottom:5%; left:4%; --tail:28%; }
+.caption { top:4%; left:4%; max-width:90%; color:#fff; background:#101d23ed; border-left:2px solid #d4ac75; }
+.caption.end { top:auto; bottom:4%; }
+.photo { max-width:590px; width:100%; justify-self:center; grid-column:1/-1; }
+.photo img { box-sizing:border-box; border:6px solid #ddd0b7; }
+.folio { grid-column:1/-1; text-align:right; margin:0; color:#bcc6c5; font-size:.8rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+.comic-page { align-items:start; }
+.frame:has(.caption) .speech.top { top:16%; }
+.speech.call { top:17%; right:4%; border-radius:.25em; outline:1px dashed #263238; }
+.speech.call::after { border-width:5px; }
+.price { position:absolute; top:77.8%; left:50%; transform:translateX(-50%); color:#252019; font-size:clamp(.9rem,3.6vw,1.5rem); font-weight:800; white-space:nowrap; }
+.receipt { color:#282418; background:#eee4cb; padding:1rem; margin:0; border:1px solid #9e8d69; align-self:center; font-variant-numeric:tabular-nums; }
+.receipt figcaption { font-weight:750; margin-bottom:.5rem; }
+.receipt table { width:100%; text-align:left; border-collapse:collapse; }
+.receipt td,.receipt th { border-bottom:1px solid #b4a283; padding:.2rem .4rem; }
+
+.seal-proof { grid-column:1/-1; margin:0; padding:.8rem; color:#27231d; background:#ede1c8; } .seal-proof svg { display:block; width:100%; max-width:540px; margin:auto; } .frame img { min-height:180px; object-fit:cover; } </style>
+
+<style>
+.comic-page { gap:7px; }
+.comic .frame { isolation:isolate; overflow:hidden; }
+.comic .frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; z-index:1; }
+.comic .frame > .caption { color:#fff; background:#101d23ed; border:1px solid #d4ac75; max-width:92%; }
+.comic .frame > .speech {
+ position:absolute; inset:auto; max-width:76%; width:max-content; margin:0;
+ font-size:clamp(.79rem,2.25vw,.96rem);
+}
+.comic .frame > .speech::before { content:none; }
+.comic .frame > .speech::after {
+ content:""; position:absolute; left:var(--point); border:6px solid transparent;
+}
+.comic .frame > .speech.lower { bottom:4%; }
+.comic .frame > .speech.upper { top:4%; }
+.comic .frame > .speech.upper:where(.caption + *) { top:23%; }
+.comic .frame > .speech.left { left:4%; }
+.comic .frame > .speech.right { right:4%; }
+.comic .frame > .speech.lower::after { bottom:calc(100% - 1px); border-bottom-color:#fff9e9; }
+.comic .frame > .speech.upper::after { top:calc(100% - 1px); border-top-color:#fff9e9; }
+.report-attachment { grid-column:1/-1; width:min(100%,520px); margin:0 auto; }
+.report-attachment img { width:100%; height:auto; display:block; }
+.report-attachment figcaption { padding:.35rem .55rem; background:#101d23; color:#fff; }
+</style>
+<style>.comic .frame > img[src*="/redraw-"] { aspect-ratio:1; width:100%; height:auto; object-fit:contain; background:#122126; }</style><style>.seal-proof { border:1px solid #918060; }</style>
+<style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<style>.comic .frame.key-moment{grid-column:1/-1;width:min(100%,540px);justify-self:center}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-08.html"><meta property="og:url" content="https://mquizx.com/s/comic-08.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic"><p class="eyebrow">漫画版</p><h1>第八話「黒い紙の継ぎ目」</h1>
+<section class="comic-page" id="page-1" aria-label="1ページ"><aside class="story-narration">野鳥園と舞踏会の屋敷で撮った封の写真を持ち、朝倉は鑑識室へ向かった。二つの黒い封に関係があるか、瀬尾に見てもらうためだ。</aside>
+<figure class="frame"><img src="comic-08/redraw-01.jpg" alt="鑑識室に着いた水城と朝倉" loading="lazy" width="308" height="412"><p class="caption">翌日・鑑識室</p><p class="speech lower left" style="--point:74%">瀬尾さん、封の写真を二件ぶん持ってきました。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">鑑識スタッフが作業灯を引き寄せ、机の中央を照らした。</p><img src="comic-08/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-08/redraw-02.jpg" alt="黒い封が写った二件の写真を並べる瀬尾" loading="lazy" width="307" height="412"><p class="speech upper right" style="--point:20%">野鳥園と舞踏会の屋敷。どちらも、封に黒い紙が貼ってある。</p></figure>
+<figure class="frame"><img src="comic-08/redraw-03.jpg" alt="二片を寄せて見る朝倉" loading="lazy" width="307" height="412"><p class="speech upper left" style="--point:74%">角が斜めに切れてます。ここを合わせたら、一枚になるんじゃ？</p></figure>
+<p class="folio">1 / 4</p></section>
+<section class="comic-page" id="page-2" aria-label="2ページ">
+<figure class="frame"><img src="comic-08/redraw-04.jpg" alt="切り口にルーペを当てる水城" loading="lazy" width="308" height="412"><p class="speech upper right" style="--point:20%">切り口を合わせても、傷の線がずれる。間に何か入るのかも。</p></figure>
+<figure class="frame"><img src="comic-08/redraw-05.jpg" alt="保管棚を探る瀬尾" loading="lazy" width="308" height="412"><p class="speech lower right" style="--point:20%">黒い紙なら、停電した屋敷の宝石盗難でも見た。あの封の記録を出そう。</p></figure>
+<figure class="frame"><img src="comic-08/redraw-06.jpg" alt="停電の夜の屋敷" loading="lazy" width="307" height="412"><p class="caption">別件・宝石盗難の夜</p></figure>
+<p class="folio">2 / 4</p></section>
+<section class="comic-page" id="page-3" aria-label="3ページ">
+<figure class="frame"><img src="comic-08/redraw-07.jpg" alt="瀬尾が机に古い写真を出す" loading="lazy" width="307" height="412"><p class="speech upper left" style="--point:74%">そのときの封だ。こっちにも細い傷がある。</p></figure>
+<figure class="frame"><img src="comic-08/redraw-08.jpg" alt="三枚を入れ替える朝倉" loading="lazy" width="308" height="412"><svg aria-hidden="true" focusable="false" viewBox="0 0 308 412" style="position:absolute;inset:1px;width:calc(100% - 2px);height:calc(100% - 2px);pointer-events:none"><defs><linearGradient id="board-fill" x2="1" y2="1"><stop stop-color="#bc9f76"/><stop offset="1" stop-color="#a88f6c"/></linearGradient><filter id="board-grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".20"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"/><feBlend in2="SourceGraphic" mode="multiply"/></filter></defs><path d="M214 284L292 269L308 279V291L234 307Z" fill="url(#board-fill)" filter="url(#board-grain)"/></svg><p class="speech upper right" style="--point:20%">三枚目を端に置くと、傷がそこで途切れます。</p></figure>
+<figure class="frame"><img src="comic-08/redraw-09.jpg" alt="ランプの下で細い傷を指す水城" loading="lazy" width="308" height="412"><p class="speech upper left" style="--point:74%">端で傷が途切れるなら、間に続きがある。野鳥園と舞踏会の間に入れてみて。</p></figure>
+<p class="folio">3 / 4</p></section>
+<section class="comic-page" id="page-4" aria-label="4ページ">
+<figure class="seal-proof"><figcaption>封の切り口と傷を同じ縮尺で照合した図</figcaption><svg viewBox="0 0 360 118" role="img" aria-label="野鳥園、宝石盗難、舞踏会の順に並べると左右の切り口と傷がつながる"><path fill="#25272a" stroke="#b9ac90" d="M10 10H115L125 34L117 56L130 90H10Z M115 10H238L227 44L245 67L237 90H130L117 56L125 34Z M238 10H350V90H237L245 67L227 44Z"/><path d="M20 68L117 56L233 52L342 34" fill="none" stroke="#eed198" stroke-width="2"/><g text-anchor="middle" fill="#27231d" font-size="15"><text x="65" y="110">野鳥園</text><text x="180" y="110">宝石盗難</text><text x="295" y="110">舞踏会</text></g></svg></figure>
+<figure class="frame"><img src="comic-08/redraw-10.jpg" alt="同じ縮尺の三枚を机に並べ直す" loading="lazy" width="307" height="412"><p class="speech upper right" style="--point:20%">真ん中なら、左右の切り口がぴたりと合う……。</p></figure>
+<figure class="frame action-panel key-moment"><p class="action-caption">朝倉の指が止まった。三枚目を間へ滑り込ませたところだった。</p><img src="comic-08/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-08/redraw-11.jpg" alt="三人で並んだ封を確かめる" loading="lazy" width="307" height="412"><p class="speech upper left" style="--point:74%">切り口がはまって、傷も一本につながった。もとは一枚の紙ね。</p></figure>
+<figure class="frame"><img src="comic-08/redraw-12.jpg" alt="照合結果を送る水城と手帳に記録する朝倉" loading="lazy" width="308" height="412"><p class="caption">水城が照合写真を送ると、担当の一人から返事が来た。</p><p class="speech lower right" style="--point:20%">別の日付なのに、同じに見える写真があるそうです。こっちも見てほしいと。</p></figure>
+<aside class="story-narration">三件分の封を、瀬尾は一つの台紙に並べ直した。</aside>
+<p class="folio">4 / 4</p></section>
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-07.html">前の話へ</a><a href="comic-09.html">次の話へ</a></nav></main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer>
+</body></html>

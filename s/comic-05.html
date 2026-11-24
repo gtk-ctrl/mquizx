@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>漫画 第五話「三枚目の後ろ姿」｜赤い糸の先</title>
+<link rel="stylesheet" href="story.css">
+<style>
+
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.4rem; font-size:clamp(1.9rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin:0 0 2.2rem; }
+.frame { position:relative; isolation:isolate; margin:0; overflow:hidden; min-width:0; background:#122126; border:1px solid #483f34; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; z-index:1; margin:0; padding:.38em .62em; line-height:1.4; font-size:clamp(.84rem,2.25vw,1rem); }
+.speech { width:max-content; max-width:78%; background:#fff9e9; color:#171d20; border:1px solid #242727; border-radius:.9em; box-shadow:0 2px 5px #0008; font-weight:650; }
+.speech::after { content:""; position:absolute; top:calc(100% - 1px); left:var(--tail,63%); border:7px solid transparent; border-top-color:#fff9e9; }
+.speech.bottom::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.speech.top { top:5%; right:4%; }
+.speech.bottom { bottom:5%; left:4%; --tail:28%; }
+.caption { top:4%; left:4%; max-width:90%; color:#fff; background:#101d23ed; border-left:2px solid #d4ac75; }
+.caption.end { top:auto; bottom:4%; }
+.photo { max-width:590px; width:100%; justify-self:center; grid-column:1/-1; }
+.photo img { box-sizing:border-box; border:6px solid #ddd0b7; }
+.folio { grid-column:1/-1; text-align:right; margin:0; color:#bcc6c5; font-size:.8rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+.comic-page { align-items:start; }
+.frame:has(.caption) .speech.top { top:16%; }
+.speech.call { top:17%; right:4%; border-radius:.25em; outline:1px dashed #263238; }
+.speech.call::after { border-width:5px; }
+.price { position:absolute; top:77.8%; left:50%; transform:translateX(-50%); color:#252019; font-size:clamp(.9rem,3.6vw,1.5rem); font-weight:800; white-space:nowrap; }
+.receipt { color:#282418; background:#eee4cb; padding:1rem; margin:0; border:1px solid #9e8d69; align-self:center; font-variant-numeric:tabular-nums; }
+.receipt figcaption { font-weight:750; margin-bottom:.5rem; }
+.receipt table { width:100%; text-align:left; border-collapse:collapse; }
+.receipt td,.receipt th { border-bottom:1px solid #b4a283; padding:.2rem .4rem; }
+.f6 .top,.f9 .top { left:4%; right:auto; }
+.comic .frame:is(.f2,.f3,.f5,.f6,.f7,.f8) img { height:auto; } 
+ .f8 { grid-column:1/-1; width:min(100%,500px); justify-self:center; }
+</style>
+<style>
+.frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; }
+.frame > .speech { max-width:var(--bubble-width); font-size:clamp(.79rem,2.25vw,.96rem); }
+.frame > .speech.point-up::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.frame > .caption { border:1px solid #d4ac75; }
+.f10 > .caption { max-width:94%; }
+.f8 { grid-column:1/-1; width:min(100%,500px); justify-self:center; }
+</style>
+<style>.review-proof { grid-column:1/-1; margin:0; padding:.7rem; border:1px solid #918060; color:#fff9e9; background:#122126; } .review-proof figcaption { margin-bottom:.45rem; } .review-tiles { display:grid; grid-template-columns:repeat(var(--columns),minmax(0,1fr)); gap:6px; text-align:center; } .detail-crop { position:relative; aspect-ratio:1; overflow:hidden; } .detail-crop img { position:absolute; height:auto; max-width:none; }</style>
+<style>.in-panel-photo { display:block; position:absolute; inset:1px; width:calc(100% - 2px); height:calc(100% - 2px); pointer-events:none; }</style><style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-05.html"><meta property="og:url" content="https://mquizx.com/s/comic-05.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic">
+<p class="eyebrow">漫画版</p>
+<h1>第五話「三枚目の後ろ姿」</h1>
+<section class="comic-page" aria-label="1ページ"><aside class="story-narration">鑑定を待つ間、二人は売り場の全景を開いた。</aside>
+<figure class="frame f1"><img src="comic-05/remake-01.jpg" alt="水城と朝倉が資料室で売り場写真を開き直す"><p class="caption">資料室・前話の続き</p><p class="speech point-up" style="left:4%;bottom:4%;--bubble-width:84%;--tail:26%">メダルの写真を見たときは、ケースと値札ばかり見ていた。</p></figure>
+<figure class="frame f2"><img src="comic-05/photo-facing-02-square.jpg" alt="水城が売り場写真を表向きに机に置く"><svg class="in-panel-photo" viewBox="0 0 410 424" preserveAspectRatio="none" aria-hidden="true"><defs><clipPath id="photo-0-0"><polygon points="101,59 328,59 346,244 214,244 226,226 220,221 206,226 191,244 90,244"/></clipPath></defs><image href="comic-05/shop-record.jpg" x="88" y="58" width="261" height="190" preserveAspectRatio="xMidYMid slice" clip-path="url(#photo-0-0)"/></svg><p class="speech point-up" style="left:4%;bottom:3%;--bubble-width:82%;--tail:18%">ケースの向こうも見てみよう。</p></figure>
+<figure class="frame photo"><img src="comic-05/shop-record.jpg" alt="古道具屋の奥に紺の上着で茶色い鞄を斜めに掛けた客がいる。右肘の布が白い" loading="lazy"><p class="caption">一枚目 ／ 蔵の市の売り場全景。手前の壺は花柄の別の品。</p></figure>
+<figure class="frame f3"><img src="comic-05/photo-facing-03-square.jpg" alt="朝倉が写真の奥の客に気づき、ルーペを近づける"><svg class="in-panel-photo" viewBox="0 0 410 424" preserveAspectRatio="none" aria-hidden="true"><defs><clipPath id="photo-1-0"><polygon points="83,60 320,59 336,242 300,244 281,221 267,224 270,242 66,244"/></clipPath></defs><image href="comic-05/shop-record.jpg" x="65" y="58" width="273" height="189" preserveAspectRatio="xMidYMid slice" clip-path="url(#photo-1-0)"/><circle cx="246" cy="170" r="54" fill="#fff5c2" fill-opacity=".08" stroke="#7a5d31" stroke-width="6"/><circle cx="246" cy="170" r="51" fill="none" stroke="#c5a76a" stroke-width="1.5"/></svg><p class="speech point-up" style="right:4%;bottom:3%;--bubble-width:85%;--tail:72%">奥の客、右肘に白い布がありませんか？</p></figure>
+<p class="folio">1 / 4</p>
+</section>
+<section class="comic-page" aria-label="2ページ">
+<figure class="frame action-panel"><p class="action-caption">朝倉は橋の聞き込みを綴じた引き出しを開けた。</p><img src="comic-05/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame f4"><img src="comic-05/remake-04.jpg" alt="水城が橋の写真をしまった資料を開く"><svg class="in-panel-photo" viewBox="0 0 348 359" preserveAspectRatio="none" aria-hidden="true"><defs><clipPath id="photo-2-0"><polygon points="184,229 331,261 305,345 145,325 132,311"/></clipPath></defs><image href="comic-05/bridge-record.jpg" x="131" y="226" width="207" height="125" preserveAspectRatio="xMidYMid slice" clip-path="url(#photo-2-0)"/></svg><p class="speech point-down" style="right:4%;top:4%;--bubble-width:40%;--tail:9%">橋の写真も出して。前に見たのは時計塔の位置だった。</p></figure>
+<figure class="frame photo"><img src="comic-05/bridge-record.jpg" alt="橋を走る男の右肘に小さな白い三角があり、茶色い鞄を提げている" loading="lazy"><p class="caption">二枚目 ／ 石橋</p></figure>
+<figure class="frame f5"><img src="comic-05/photo-facing-05-square.jpg" alt="二人が橋の写真と売り場写真を見比べる" loading="lazy"><svg class="in-panel-photo" viewBox="0 0 410 424" preserveAspectRatio="none" aria-hidden="true"><defs><clipPath id="photo-3-0"><polygon points="24,71 203,70 205,240 10,240"/></clipPath><clipPath id="photo-3-1"><polygon points="222,71 391,70 402,239 222,240"/></clipPath></defs><image href="comic-05/shop-record.jpg" x="9" y="69" width="196" height="173" preserveAspectRatio="xMidYMid slice" clip-path="url(#photo-3-0)"/><image href="comic-05/bridge-record.jpg" x="220" y="69" width="184" height="173" preserveAspectRatio="xMidYMid slice" clip-path="url(#photo-3-1)"/></svg><p class="speech point-up" style="right:4%;bottom:3%;--bubble-width:87%;--tail:75%">橋の写真も、右肘に同じ白い三角。</p></figure>
+<figure class="frame f6"><img src="comic-05/photo-facing-06-square.jpg" alt="瀬尾が加わり、写真に写る鞄を指す" loading="lazy"><svg class="in-panel-photo" viewBox="0 0 410 424" preserveAspectRatio="none" aria-hidden="true"><defs><clipPath id="photo-4-0"><polygon points="102,40 309,40 325,208 294,208 291,202 285,198 279,198 275,193 267,191 261,186 253,185 246,165 242,156 237,153 232,156 231,163 234,180 237,198 232,199 228,205 228,209 93,208"/></clipPath></defs><image href="comic-05/shop-record.jpg" x="92" y="39" width="236" height="174" preserveAspectRatio="xMidYMid slice" clip-path="url(#photo-4-0)"/></svg><p class="caption">鑑識・瀬尾</p><p class="speech point-up" style="left:4%;bottom:3%;--bubble-width:90%;--tail:54%">市場の全景にも茶色い鞄が写っていた。壺の引き渡し資料を出してみよう。</p></figure>
+<p class="folio">2 / 4</p>
+</section>
+<section class="comic-page" aria-label="3ページ">
+<figure class="frame f7"><img src="comic-05/photo-facing-07-square.jpg" alt="瀬尾が三枚目の市場写真を表向きに並べる" loading="lazy"><svg class="in-panel-photo" viewBox="0 0 410 424" preserveAspectRatio="none" aria-hidden="true"><defs><clipPath id="photo-5-0"><polygon points="86,43 328,42 345,216 208,216 212,206 213,201 209,197 204,197 200,200 197,196 191,197 185,201 182,199 177,201 172,205 168,203 162,206 154,214 151,216 75,216"/></clipPath></defs><image href="comic-05/market-record.jpg" x="74" y="41" width="273" height="179" preserveAspectRatio="xMidYMid slice" clip-path="url(#photo-5-0)"/></svg><p class="caption">壺の引き渡し資料から、三枚目の写真を取り出した。</p></figure>
+<figure class="frame photo"><img src="comic-05/market-record.jpg" alt="市場の棚に近い男の後ろ姿。紺の上着の右肘に白い三角があり、茶色の鞄を斜めに掛けている" loading="lazy"><p class="caption">三枚目 ／ 古物市場の全景</p></figure>
+<figure class="review-proof"><figcaption>三枚の写真の右肘を拡大</figcaption><div class="review-tiles" style="--columns:3"><div><div class="detail-crop" aria-label="売り場"><img src="comic-05/shop-record.jpg" alt="" style="width:1111.111111111111%;left:-288.88888888888886%;top:-411.1111111111111%"></div><span>売り場</span></div><div><div class="detail-crop" aria-label="石橋"><img src="comic-05/bridge-record.jpg" alt="" style="width:434.78260869565213%;left:-265.2173913043478%;top:-134.7826086956522%"></div><span>石橋</span></div><div><div class="detail-crop" aria-label="古物市場"><img src="comic-05/market-record.jpg" alt="" style="width:833.3333333333334%;left:-691.6666666666667%;top:-316.66666666666663%"></div><span>古物市場</span></div></div></figure><figure class="frame action-panel"><p class="action-caption">鑑識スタッフも立ち会い、瀬尾が三枚の写真を机に並べた。</p><img src="comic-05/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame f8"><img src="comic-05/photo-facing-08-square.jpg" alt="三人が三枚の写真をそろえて後ろ姿を照合する" loading="lazy"><svg class="in-panel-photo" viewBox="0 0 410 424" preserveAspectRatio="none" aria-hidden="true"><defs><clipPath id="photo-6-0"><polygon points="15,67 129,66 125,191 7,192"/></clipPath><clipPath id="photo-6-1"><polygon points="145,66 266,66 268,191 143,191"/></clipPath><clipPath id="photo-6-2"><polygon points="282,66 398,66 405,191 286,191"/></clipPath></defs><image href="comic-05/shop-record.jpg" x="7" y="66" width="123" height="126" preserveAspectRatio="xMidYMid slice" clip-path="url(#photo-6-0)"/><image href="comic-05/bridge-record.jpg" x="142" y="65" width="128" height="127" preserveAspectRatio="xMidYMid slice" clip-path="url(#photo-6-1)"/><image href="comic-05/market-record.jpg" x="281" y="65" width="125" height="127" preserveAspectRatio="xMidYMid slice" clip-path="url(#photo-6-2)"/></svg><p class="speech point-up" style="left:4%;bottom:3%;--bubble-width:91%;--tail:60%">右肘の白い三角、三枚とも同じ位置だ！ 鞄も似てる。同じ人かもしれない。</p></figure>
+<figure class="frame f9"><img src="comic-05/remake-09.jpg" alt="瀬尾が画像を拡大するが、人物の顔は写っていない" loading="lazy"><p class="speech point-down" style="left:4%;top:4%;--bubble-width:67%;--tail:86%">顔は写っていない。服と鞄だけじゃ身元は分からないな。</p></figure>
+<p class="folio">3 / 4</p>
+</section>
+<section class="comic-page" aria-label="4ページ">
+<figure class="frame f10"><img src="comic-05/remake-10.jpg" alt="朝倉が照合欄に入力し、水城が確認する" loading="lazy"><p class="caption">照合欄　同一人物の可能性あり。事件への関与は未確認。</p><p class="speech point-up" style="right:4%;bottom:4%;--bubble-width:76%;--tail:66%">撮影場所と、共通している特徴を照合欄に残します。</p></figure>
+<figure class="frame f11"><img src="comic-05/remake-11.jpg" alt="水城が切り抜きだけでなく全景の写真も瀬尾に渡す" loading="lazy"><p class="speech point-down" style="left:4%;top:3%;--bubble-width:90%;--tail:24%">全景も添えて。肘だけ送ると、次の人には時計塔も売り場も見えない。</p></figure>
+<figure class="frame f12"><img src="comic-05/remake-12.jpg" alt="水城が帰り支度をしていると照会先から返信が届く" loading="lazy"><p class="caption">全景を送って数日後、携帯が震えた。画面には「野鳥園」。</p></figure>
+<aside class="story-narration">朝倉は三枚の下に「服と鞄が一致」と書いた。名前を書く欄は空けた。</aside>
+<p class="folio">4 / 4</p>
+</section>
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-04.html">前の話へ</a><a href="comic-06.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer>
+</body>
+</html>

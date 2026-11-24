@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>漫画 最終話「赤い糸の先」｜赤い糸の先</title><link rel="stylesheet" href="story.css">
+<style>
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.25rem; font-size:clamp(1.65rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:0 0 2rem; align-items:start; }
+.frame { position:relative; margin:0; min-width:0; border:1px solid #483f34; background:#122126; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; margin:0; padding:.35em .55em; font-size:clamp(.82rem,2vw,1rem); line-height:1.4; }
+.caption { top:4%; left:4%; background:#101d23ed; color:white; border-left:2px solid #d4ac75; }
+.speech { bottom:4%; left:4%; max-width:86%; color:#171d20; background:#fff9e9; border:1px solid #242727; border-radius:.9em; font-weight:650; }
+.speech::before { content:""; position:absolute; bottom:100%; left:var(--tail,35%); border:7px solid transparent; border-bottom-color:#fff9e9; }
+.frame:nth-of-type(3) .speech { --tail:57%; }
+#page-3 .frame:first-child .speech { --tail:72%; }
+.comparison,.folio { grid-column:1/-1; margin:0; }
+#page-2 .comparison { grid-column:auto; align-self:center; }
+.comparison { background:#eee4cb; color:#282418; padding:.65rem; }
+.comparison figcaption { font-weight:750; margin-bottom:.3rem; }
+.comparison table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+.comparison th,.comparison td { padding:.3rem .15rem; text-align:center; border-bottom:1px solid #ad9475; }
+.folio { text-align:right; font-size:.85rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+</style><style>
+.comic-page { gap:7px; }
+.comic .frame { isolation:isolate; overflow:hidden; }
+.comic .frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; z-index:1; }
+.comic .frame > .caption { color:#fff; background:#101d23ed; border:1px solid #d4ac75; max-width:92%; }
+.comic .frame > .speech {
+ position:absolute; inset:auto; max-width:76%; width:max-content; margin:0;
+ font-size:clamp(.79rem,2.25vw,.96rem);
+}
+.comic .frame > .speech::before { content:none; }
+.comic .frame > .speech::after {
+ content:""; position:absolute; left:var(--point); border:6px solid transparent;
+}
+.comic .frame > .speech.lower { bottom:4%; }
+.comic .frame > .speech.upper { top:4%; }
+.comic .frame > .speech.upper:where(.caption + *) { top:23%; }
+.comic .frame > .speech.left { left:4%; }
+.comic .frame > .speech.right { right:4%; }
+.comic .frame > .speech.lower::after { bottom:calc(100% - 1px); border-bottom-color:#fff9e9; }
+.comic .frame > .speech.upper::after { top:calc(100% - 1px); border-top-color:#fff9e9; }
+.report-attachment { grid-column:1/-1; width:min(100%,520px); margin:0 auto; }
+.report-attachment img { width:100%; height:auto; display:block; }
+.report-attachment figcaption { padding:.35rem .55rem; background:#101d23; color:#fff; }
+</style><style>.comic .frame > img:is([src*="/redraw-"],[src*="/reading-"]) { aspect-ratio:1; width:100%; height:auto; object-fit:contain; background:#122126; } .comic .frame > .speech.upper { top:2%; } .comic .frame > .speech.lower { bottom:2%; }</style><link rel="stylesheet" href="collection.css"><script src="spoiler.js" defer></script><style>.discovery { grid-column:1/-1; width:min(100%,500px); justify-self:center; } </style>
+<style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.photo-pair,.cast-page{grid-column:1/-1}.photo-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0 auto;width:min(100%,650px)}.photo-pair figure,.cast-page figure{margin:0;min-width:0}.photo-pair img,.photo-pair svg,.cast-page img{display:block;width:100%;height:auto}.photo-pair figcaption,.cast-page figcaption{padding:.5rem;background:#101d23;color:#fff;font-size:.9rem;line-height:1.5}.cast-page h2{margin:0 0 .8rem}.cast-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.cast-leads{grid-column:1/-1}.cast-leads img{max-height:450px;object-fit:contain;background:#101d23}.cast-leads figcaption{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.cast-page{margin:0 0 2rem}.cast-layout figure:not(.cast-leads) img{aspect-ratio:1;object-fit:cover}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<style>
+.comic .frame.opening-caption { display:grid; grid-template-columns:minmax(0,1fr); }
+.comic .frame.opening-caption > .caption { position:static; grid-row:1; max-width:none; padding:.35em .65em; }
+.comic .frame.opening-caption > img { grid-area:2 / 1; }
+.comic .frame.opening-caption > .speech.upper.right { position:relative; inset:auto; grid-area:2 / 1; align-self:start; justify-self:end; margin:2% 4% 0; }
+</style>
+<style>.reading-bonus{width:min(100%,540px);margin:3rem auto 2rem;text-align:center}.reading-bonus h2{margin:.2em 0;font-size:clamp(1.2rem,4vw,1.7rem)}.reading-bonus p{margin:.5em 0 1em;color:#e6dfd1;font-size:.94rem}.reading-bonus img{display:block;width:100%;height:auto;border-radius:4px}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-20.html"><meta property="og:url" content="https://mquizx.com/s/comic-20.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main id="spoiler-story" hidden class="comic"><p class="eyebrow">漫画版</p><h1>最終話「赤い糸の先」</h1>
+<section class="comic-page" id="page-1" aria-label="1ページ"><aside class="story-narration">元写真にはいない男が、なぜ報告書には写っているのか。水城たちは報告書を作ったときの作業用データを開いた。これなら人物の部分だけを切り替えて確かめられる。</aside>
+<figure class="frame opening-caption"><p class="caption">資料室・最終報告の確認</p><img src="comic-20/redraw-01.jpg" alt="資料室・最終報告の確認" width="310" height="353"><p class="speech upper right" style="--point:20%">報告書には男が写っています。窓の外に赤い傘、机には封筒とメダル。</p></figure><figure class="report-attachment"><img src="comic-20/review-final_report.jpg" alt="書斎の人物、窓の赤い傘、机の封筒とメダル" loading="lazy"><figcaption>最終報告の添付写真 ／ 男を指示役とした根拠</figcaption></figure>
+<figure class="frame action-panel"><p class="action-caption">水城は届いた記録媒体を端末につないだ。</p><img src="comic-20/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-20/redraw-02.jpg" alt="作業用データで人物の表示だけ外します。窓と机を見ていてください。" width="309" height="353"><p class="speech lower right" style="--point:20%">作業用データで人物の表示だけ外します。窓と机を見ていてください。</p></figure>
+
+<div class="photo-pair"><figure><img src="comic-20/review-final_report.jpg" alt="最終報告の添付写真。窓の外に傘、書斎に男が写る"><figcaption>最終報告 ／ 人物あり</figcaption></figure><figure><svg viewBox="0 0 1122 1402" role="img" aria-label="同じ添付写真で人物の部分だけを非表示にした範囲図"><defs><pattern id="layer-grid" width="34" height="34" patternUnits="userSpaceOnUse"><rect width="34" height="34" fill="#bdb8ab"/><path d="M0 0H17V17H0ZM17 17H34V34H17Z" fill="#e6e1d6"/></pattern></defs><image href="comic-20/review-final_report.jpg" width="1122" height="1402"/><path d="M873 445Q881 401 936 400Q982 400 985 451L976 492Q1003 521 1015 555L1057 588L1060 618L1037 637L995 640L988 725L978 954L869 960L869 734L837 726L774 706L778 677L801 633L806 557L817 520L852 494Z" fill="url(#layer-grid)" stroke="#f1e4c5" stroke-width="3"/></svg><figcaption>同じ画像 ／ 人物を非表示にした範囲の再現</figcaption></figure></div><p class="folio">1 / 4</p></section>
+<section class="comic-page" id="page-2" aria-label="2ページ">
+<figure class="frame discovery"><img src="comic-20/redraw-04.jpg" alt="消えたのはこの人物の部分だけ。机もランプも窓の傘も、位置は変わっていない。" width="310" height="353"><p class="speech lower right" style="--point:20%">消えたのはこの人物の部分だけ。机もランプも窓の傘も、位置は変わっていない。</p></figure>
+<figure class="report-attachment"><img src="comic-05/shop-record.jpg" alt="蔵の市の売り場。奥の男の右肘に白い三角があり、茶色い鞄の肩紐を掛けている" loading="lazy"><figcaption>第5話の売り場写真 ／ 右肘の白い三角と茶色い肩紐</figcaption></figure><figure class="frame"><img src="comic-20/reading-05.jpg" alt="男の輪郭は、蔵の市の写真と合う。肘の当て布と肩紐が同じだ。" width="321" height="284"><p class="speech upper right" style="--point:20%">男の輪郭は、蔵の市の写真と合う。肘の当て布と肩紐が同じだ。</p></figure><div class="photo-pair"><figure><svg viewBox="774 400 288 420" role="img" aria-label="報告写真の男の右肘と肩紐"><image href="comic-20/review-final_report.jpg" width="1122" height="1402"/></svg><figcaption>最終報告の人物部分</figcaption></figure><figure><svg viewBox="81 114 126 184" role="img" aria-label="第5話の写真の右肘と肩紐"><image href="comic-05/shop-record.jpg" width="615" height="619"/></svg><figcaption>第5話の同じ売り場写真から拡大</figcaption></figure></div>
+
+<aside class="story-narration">照合した写真の出どころ<br>人物は蔵の市の売り場、窓外は喫茶店の雨の記録。封筒とメダルも別写真。机の上に並んでいたように見えた。</aside><p class="folio">2 / 4</p></section>
+<section class="comic-page" id="page-3" aria-label="3ページ"><aside class="story-narration">水城は撤回の理由を、朝倉が書き取るのを待った。</aside>
+<figure class="frame"><img src="comic-20/redraw-07.jpg" alt="別々の写真を重ねた一枚で、男を指示役とした。根拠が崩れた。最終報告は撤回する。" width="309" height="344"><p class="speech lower right" style="--point:20%">別々の写真を重ねた一枚で、男を指示役とした。根拠が崩れた。最終報告は撤回する。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">撤回の手続きが済み、係長から通知が引き渡された。</p><img src="comic-20/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-20/redraw-08.jpg" alt="撤回通知が出た日" width="310" height="344"><p class="caption">撤回通知が出た日</p><p class="speech lower right" style="--point:20%">撤回通知と原本は別の袋に入れます。</p></figure>
+<figure class="frame"><img src="comic-20/redraw-09.jpg" alt="この写真では男を指示役とする証拠にならない。男の関与そのものには、別の証拠が要る。" width="310" height="381"><p class="speech upper right" style="--point:20%">この写真では男を指示役とする証拠にならない。男の関与そのものには、別の証拠が要る。</p></figure>
+<p class="folio">3 / 4</p></section>
+<section class="comic-page" id="page-4" aria-label="4ページ"><aside class="story-narration">訂正票の処理者欄は空白のまま。誰が最終報告をまとめたかも、この照合では分からなかった。水城は捜査ボードの前に立った。</aside>
+<figure class="frame"><img src="comic-20/redraw-10.jpg" alt="切り口と傷がつながった三通の封。その糸は残した。" width="309" height="381"><p class="caption">切り口と傷がつながった三通の封。その糸は残した。</p></figure>
+<figure class="frame discovery"><img src="comic-20/redraw-11.jpg" alt="男の写真と書斎を結んでいた糸を、水城は外した。" width="309" height="381"><p class="caption">男の写真と書斎を結んでいた糸を、水城は外した。</p></figure>
+
+<aside class="story-narration">壁に残った赤い糸は、傷がひと続きの三通の封を結んでいた。</aside>
+<p class="folio">4 / 4</p></section>
+
+<section class="reading-bonus" id="reading-bonus" aria-labelledby="reading-bonus-title">
+<h2 id="reading-bonus-title">おまけ　水城の休日</h2>
+<p>最後まで読んでくださり、ありがとうございました。</p>
+<img src="comic-20/mizuki-holiday.jpg" alt="青緑のビキニ姿の水城が海辺のデッキでくつろぐ" width="1080" height="1350" loading="lazy">
+</section>
+
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-19.html">前の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer><dialog id="spoiler-warning" aria-labelledby="spoiler-title"><form method="dialog"><h2 id="spoiler-title">ネタバレにご注意</h2><p>この話には、捜査ボードの最終結末に関わる内容が含まれます。</p><div class="spoiler-actions"><a href="../board.html">捜査ボードへ</a><a href="index.html#episodes" autofocus>目次に戻る</a><button value="continue">このまま読む</button></div></form></dialog></body></html>
+

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>漫画 第三話「蔵の市の壺と四通の鑑定書」｜赤い糸の先</title>
+<link rel="stylesheet" href="story.css">
+<style>
+
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.4rem; font-size:clamp(1.9rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin:0 0 2.2rem; }
+.frame { position:relative; isolation:isolate; margin:0; overflow:hidden; min-width:0; background:#122126; border:1px solid #483f34; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; z-index:1; margin:0; padding:.38em .62em; line-height:1.4; font-size:clamp(.84rem,2.25vw,1rem); }
+.speech { width:max-content; max-width:78%; background:#fff9e9; color:#171d20; border:1px solid #242727; border-radius:.9em; box-shadow:0 2px 5px #0008; font-weight:650; }
+.speech::after { content:""; position:absolute; top:calc(100% - 1px); left:var(--tail,63%); border:7px solid transparent; border-top-color:#fff9e9; }
+.speech.bottom::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.speech.top { top:5%; right:4%; }
+.speech.bottom { bottom:5%; left:4%; --tail:28%; }
+.caption { top:4%; left:4%; max-width:90%; color:#fff; background:#101d23ed; border-left:2px solid #d4ac75; }
+.caption.end { top:auto; bottom:4%; }
+.photo { max-width:590px; width:100%; justify-self:center; grid-column:1/-1; }
+.photo img { box-sizing:border-box; border:6px solid #ddd0b7; }
+.folio { grid-column:1/-1; text-align:right; margin:0; color:#bcc6c5; font-size:.8rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+.comic-page { align-items:start; }
+.frame:has(.caption) .speech.top { top:16%; }
+.speech.call { top:17%; right:4%; border-radius:.25em; outline:1px dashed #263238; }
+.speech.call::after { border-width:5px; }
+.price { position:absolute; top:77.8%; left:50%; transform:translateX(-50%); color:#252019; font-size:clamp(.9rem,3.6vw,1.5rem); font-weight:800; white-space:nowrap; }
+.receipt { color:#282418; background:#eee4cb; padding:1rem; margin:0; border:1px solid #9e8d69; align-self:center; font-variant-numeric:tabular-nums; }
+.receipt figcaption { font-weight:750; margin-bottom:.5rem; }
+.receipt table { width:100%; text-align:left; border-collapse:collapse; }
+.receipt td,.receipt th { border-bottom:1px solid #b4a283; padding:.2rem .4rem; }
+.f6 .top,.f7 .top,.f9 .top { left:4%; right:auto; } .f6 .bottom,.f7 .bottom,.f9 .bottom { left:auto; right:4%; }
+.f9 { grid-column:1/-1; width:min(100%,500px); justify-self:center; } .receipt { align-self:stretch; }
+</style>
+<style>
+.frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; }
+.frame > .speech { max-width:var(--bubble-width); font-size:clamp(.79rem,2.25vw,.96rem); }
+.frame > .speech.point-up::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.frame > .caption { border:1px solid #d4ac75; }
+.f1 .phone-back {
+  position:absolute; inset:0; pointer-events:none;
+  background:linear-gradient(105deg,#273139 49%,#3e484e 59%,#242c33 68%,#182128 72%);
+  clip-path:polygon(51.4% 48.4%,66.7% 46.6%,68.1% 47.4%,70.8% 80.3%,70% 81.6%,55.5% 83.1%,54.4% 82.3%,54.1% 77.7%,53.6% 77%,53.7% 74.8%,54.2% 74.2%,53.7% 71.1%,53.3% 70.5%,54.1% 69.7%,54.2% 66.5%,53.4% 65.1%,52.4% 65%,51% 49.7%);
+}
+.f1 .phone-back::after {
+  content:""; position:absolute; left:53%; top:49.3%; width:5%; height:4%;
+  border-radius:30%; transform:rotate(-6deg);
+  background:radial-gradient(circle at 34% 40%,#556773 0 11%,#101820 16% 37%,#252e35 44%);
+}
+.f10 > .caption { max-width:67%; }
+.f12 > .caption { top:auto; bottom:4%; max-width:90%; }
+.f9 { grid-column:1/-1; width:min(100%,500px); justify-self:center; } .receipt { align-self:stretch; }
+</style>
+<style>.review-proof { grid-column:1/-1; margin:0; padding:.7rem; border:1px solid #918060; color:#fff9e9; background:#122126; } .review-proof figcaption { margin-bottom:.45rem; } .review-tiles { display:grid; grid-template-columns:repeat(var(--columns),minmax(0,1fr)); gap:6px; text-align:center; } .detail-crop { position:relative; aspect-ratio:1; overflow:hidden; } .detail-crop img { position:absolute; height:auto; max-width:none; }</style>
+<style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-03.html"><meta property="og:url" content="https://mquizx.com/s/comic-03.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic">
+<p class="eyebrow">漫画版</p>
+<h1>第三話「蔵の市の壺と四通の鑑定書」</h1>
+<section class="comic-page" aria-label="1ページ"><aside class="story-narration">帰り道、店主から市場の壺の話を聞いた。水城は写真を店主に送り、翌朝、朝倉と市場へ向かった。</aside>
+<figure class="frame f1"><img src="comic-03/remake-01.jpg" alt="水城が市場から届いた壺の画像を朝倉に見せる"><span class="phone-back" aria-hidden="true"></span><p class="caption">帰り道・店主の電話の直後</p><p class="speech point-up" style="left:7%;bottom:8%;--bubble-width:73%;--tail:25%">青い葉が一枚。店主に写真を送って、見てもらおう。</p></figure>
+<figure class="frame f2"><img src="comic-03/remake-02.jpg" alt="水城の携帯に店主から返信が届く"><p class="caption">店主からの返信　「うちの壺かもしれません。現物を見せてください」</p></figure>
+<figure class="frame f3"><img src="comic-03/remake-03.jpg" alt="二人が屋根のある古物市場に着く"><p class="caption">翌朝・古物市場</p></figure>
+<figure class="frame action-panel"><p class="action-caption">二人は店の並ぶ通路を抜け、壺を預かっている売り場へ向かった。</p><img src="comic-03/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame f4"><img src="comic-03/remake-04.jpg" alt="市場の担当者が二人の前に青い葉の壺を置く"><p class="speech point-up" style="left:6%;bottom:6%;--bubble-width:81%;--tail:23%">写真の壺はこちらです。持ち込まれた時の書類もあります。</p></figure>
+<p class="folio">1 / 4</p>
+</section>
+<section class="comic-page" aria-label="2ページ">
+<figure class="frame f5"><img src="comic-03/remake-05.jpg" alt="市場の担当者が封筒から鑑定書を取り出す" loading="lazy"><p class="caption">壺に添えられていた四通の鑑定書</p></figure>
+<figure class="frame f6"><img src="comic-03/remake-06.jpg" alt="水城と朝倉が印や筆跡を見比べる" loading="lazy"><p class="speech point-up" style="left:3%;bottom:27%;--bubble-width:48%;--tail:69%">印のかすれ方も、文字の癖も似てますね。</p><p class="speech point-up" style="left:53%;bottom:27%;--bubble-width:44%;--tail:48%">日付も並べて確かめよう。</p></figure>
+<figure class="receipt"><figcaption>鑑定書四通の日付</figcaption><table><tbody><tr><th>一通目</th><td>1892年2月29日</td></tr><tr><th>二通目</th><td>1896年2月29日</td></tr><tr><th>三通目</th><td>1900年2月29日</td></tr><tr><th>四通目</th><td>1904年2月29日</td></tr></tbody></table></figure>
+<figure class="frame f7"><img src="comic-03/remake-07.jpg" alt="朝倉が鑑定書を順に指し、水城は考え込む" loading="lazy"><p class="speech point-down" style="left:5%;top:4%;--bubble-width:86%;--tail:76%">四年おきに、どれも二月二十九日。日付は合っていそうですね。</p></figure>
+<p class="folio">2 / 4</p>
+</section>
+<section class="comic-page" aria-label="3ページ">
+<figure class="frame f8"><img src="comic-03/remake-08.jpg" alt="水城が手帳を開き、うるう年の条件を考える" loading="lazy"><p class="speech point-down" style="left:4%;top:4%;--bubble-width:84%;--tail:60%">四年おきに見えるね。年の数字をもう一度見て。</p></figure>
+<figure class="review-proof"><figcaption>1900年2月末</figcaption><div class="review-tiles" style="--columns:3"><span>2月27日</span><strong>2月28日</strong><strong>3月1日</strong></div></figure><figure class="frame f9"><img src="comic-03/remake-09.jpg" alt="水城が三通目を手元に引いて朝倉に示す" loading="lazy"><p class="speech point-down" style="left:3%;top:4%;--bubble-width:68%;--tail:38%">待って。三通目は1900年。</p><p class="speech point-up" style="left:5%;bottom:7%;--bubble-width:85%;--tail:23%">百で割り切れるのに、四百では割り切れない。1900年には二月二十九日がない！</p></figure>
+<figure class="review-proof"><figcaption>青い葉の模様を照合</figcaption><div class="review-tiles" style="--columns:2"><div><div class="detail-crop" aria-label="蔵の市の台帳"><img src="comic-01/remake-04.jpg" alt="" style="width:454.54545454545456%;left:-127.27272727272727%;top:-154.54545454545453%"></div><span>蔵の市の台帳</span></div><div><div class="detail-crop" aria-label="市場の壺"><img src="comic-03/remake-10.jpg" alt="" style="width:370.3703703703704%;left:-251.85185185185185%;top:-144.44444444444443%"></div><span>市場の壺</span></div></div></figure><figure class="frame action-panel"><p class="action-caption">店主は壺をそっと回し、青い葉の先に指を止めた。</p><img src="comic-03/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame f10"><img src="comic-03/remake-10.jpg" alt="蔵の市の店主が壺の肩に描かれた青い葉を指で示す" loading="lazy"><p class="caption">市場に着いた蔵の市の店主が、壺を確かめる。</p><p class="speech point-up" style="left:4%;bottom:6%;--bubble-width:86%;--tail:23%">葉の先の釉薬が少し途切れている。うちの壺です。</p></figure>
+<p class="folio">3 / 4</p>
+</section>
+<section class="comic-page" aria-label="4ページ">
+<figure class="frame f11"><img src="comic-03/remake-11.jpg" alt="二人が壺の引き渡しを記録し、三通目の鑑定書を別に保管する" loading="lazy"><p class="speech point-down" style="left:4%;top:4%;--bubble-width:90%;--tail:62%">出所を偽った可能性がある。三通目を分けて、持ち込んだ人を確認しよう。</p></figure>
+<figure class="frame photo"><img src="comic-03/market-record.jpg" loading="lazy" alt="壺を預かった市場の全景"><p class="caption">壺の出所をたどれるよう、市場の全景も記録に残した。</p></figure>
+<figure class="frame f12"><img src="comic-03/remake-12.jpg" alt="資料室で水城が壺の資料を棚に収め、机のメダルの写真に目を留める" loading="lazy"><p class="caption">その夕方・資料室。壺の資料を収め、朝倉は残る二枚のメダルの照会記録を開いた。</p></figure>
+<aside class="story-narration">店主の指が、青い葉の先で止まった。四通の紙より先に、その小さな途切れが壺を見分けてくれた。</aside>
+<p class="folio">4 / 4</p>
+</section>
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-02.html">前の話へ</a><a href="comic-04.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer>
+</body>
+</html>

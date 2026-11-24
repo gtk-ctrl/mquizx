@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>漫画 第十一話「鏡の中の八時二十分」｜赤い糸の先</title>
+<link rel="stylesheet" href="story.css">
+<style>
+
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.4rem; font-size:clamp(1.9rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin:0 0 2.2rem; }
+.frame { position:relative; isolation:isolate; margin:0; overflow:hidden; min-width:0; background:#122126; border:1px solid #483f34; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; z-index:1; margin:0; padding:.38em .62em; line-height:1.4; font-size:clamp(.84rem,2.25vw,1rem); }
+.speech { width:max-content; max-width:78%; background:#fff9e9; color:#171d20; border:1px solid #242727; border-radius:.9em; box-shadow:0 2px 5px #0008; font-weight:650; }
+.speech::after { content:""; position:absolute; top:calc(100% - 1px); left:var(--tail,63%); border:7px solid transparent; border-top-color:#fff9e9; }
+.speech.bottom::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.speech.top { top:5%; right:4%; }
+.speech.bottom { bottom:5%; left:4%; --tail:28%; }
+.caption { top:4%; left:4%; max-width:90%; color:#fff; background:#101d23ed; border-left:2px solid #d4ac75; }
+.caption.end { top:auto; bottom:4%; }
+.photo { max-width:590px; width:100%; justify-self:center; grid-column:1/-1; }
+.photo img { box-sizing:border-box; border:6px solid #ddd0b7; }
+.folio { grid-column:1/-1; text-align:right; margin:0; color:#bcc6c5; font-size:.8rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+.comic-page { align-items:start; }
+.frame:has(.caption) .speech.top { top:16%; }
+.speech.call { top:17%; right:4%; border-radius:.25em; outline:1px dashed #263238; }
+.speech.call::after { border-width:5px; }
+.price { position:absolute; top:77.8%; left:50%; transform:translateX(-50%); color:#252019; font-size:clamp(.9rem,3.6vw,1.5rem); font-weight:800; white-space:nowrap; }
+.receipt { color:#282418; background:#eee4cb; padding:1rem; margin:0; border:1px solid #9e8d69; align-self:center; font-variant-numeric:tabular-nums; }
+.receipt figcaption { font-weight:750; margin-bottom:.5rem; }
+.receipt table { width:100%; text-align:left; border-collapse:collapse; }
+.receipt td,.receipt th { border-bottom:1px solid #b4a283; padding:.2rem .4rem; }
+
+.seal-proof { grid-column:1/-1; margin:0; padding:.8rem; color:#27231d; background:#ede1c8; } .seal-proof svg { display:block; width:100%; max-width:540px; margin:auto; } .frame img { min-height:180px; object-fit:cover; } .rain-proof { grid-column:1/-1; margin:0; padding:.65rem; color:#27231d; background:#ede1c8; } .rain-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.6rem; } .rain-pair figure { margin:0; } .rain-pair img { aspect-ratio:1.15; object-fit:cover; object-position:top; } .rain-proof img { display:block; width:100%; } .rain-proof .report-photo { max-width:480px; margin:auto; } .clock-overlay { position:absolute; inset:20% 0 4%; display:grid; place-items:center; background:#142027; } .clock-overlay svg { height:100%; max-width:80%; } .clock-frame .caption { z-index:1; }.mirror-proof { grid-column:1/-1; margin:0; padding:.75rem; background:#eee4cb; color:#252019; display:grid; grid-template-columns:1fr 1fr; gap:.5rem; text-align:center; } .mirror-proof svg { display:block; width:100%; max-width:145px; margin:0 auto .25rem; } .mirror-proof figcaption { grid-column:1/-1; font-size:.85rem; } </style>
+
+<style>
+.comic-page { gap:7px; }
+.comic .frame { isolation:isolate; overflow:hidden; }
+.comic .frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; z-index:1; }
+.comic .frame > .caption { color:#fff; background:#101d23ed; border:1px solid #d4ac75; max-width:92%; }
+.comic .frame > .speech {
+ position:absolute; inset:auto; max-width:76%; width:max-content; margin:0;
+ font-size:clamp(.79rem,2.25vw,.96rem);
+}
+.comic .frame > .speech::before { content:none; }
+.comic .frame > .speech::after {
+ content:""; position:absolute; left:var(--point); border:6px solid transparent;
+}
+.comic .frame > .speech.lower { bottom:4%; }
+.comic .frame > .speech.upper { top:4%; }
+.comic .frame > .speech.upper:where(.caption + *) { top:23%; }
+.comic .frame > .speech.left { left:4%; }
+.comic .frame > .speech.right { right:4%; }
+.comic .frame > .speech.lower::after { bottom:calc(100% - 1px); border-bottom-color:#fff9e9; }
+.comic .frame > .speech.upper::after { top:calc(100% - 1px); border-top-color:#fff9e9; }
+.report-attachment { grid-column:1/-1; width:min(100%,520px); margin:0 auto; }
+.report-attachment img { width:100%; height:auto; display:block; }
+.report-attachment figcaption { padding:.35rem .55rem; background:#101d23; color:#fff; }
+</style><style>.comic .frame > img[src*="/redraw-"] { aspect-ratio:1; width:100%; height:auto; object-fit:contain; background:#122126; }</style><style>.discovery { grid-column:1/-1; width:min(100%,500px); justify-self:center; }</style>
+<style>.review-evidence{grid-column:1/-1;margin:0;padding:.75rem;background:#ede2ca;color:#25221e;border:1px solid #918060;min-width:0}.review-evidence figcaption{font-weight:750;margin-bottom:.45rem}.review-evidence p{margin:.35rem 0}.review-evidence strong{color:#852e32}.review-evidence img{display:block;width:100%;height:auto}.review-evidence .pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.review-evidence .pair div{min-width:0} .mirror-proof > div:first-child{border-right:2px solid #963e40;padding-right:6px}</style><style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-11.html"><meta property="og:url" content="https://mquizx.com/s/comic-11.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic"><p class="eyebrow">漫画版</p><h1>第十一話「鏡の中の八時二十分」</h1>
+<section class="comic-page" id="page-1" aria-label="1ページ"><aside class="story-narration">宝石店に続いて、水城たちは理髪店の事件記録を開いた。今度の時刻は、機械の表示ではなく、椅子に座っていた沢村の証言だった。</aside>
+<figure class="frame"><img src="comic-11/redraw-01.jpg" alt="記録室で二人が資料を開く" width="308" height="412"><p class="caption">資料室・次の事件記録</p><p class="speech lower right" style="--point:20%">宝石店に続いて、床屋の事件です。まず沢村さんの証言から。</p></figure>
+<figure class="frame"><img src="comic-11/redraw-02.jpg" alt="朝倉が調書を読む" width="307" height="412"><p class="speech upper right" style="--point:20%">沢村さんは、椅子に座ったまま時計を見たそうです。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">事件当夜。沢村は理髪椅子に腰を下ろした。</p><img src="comic-11/action-01.jpg" alt="理容師が年配の沢村の理髪椅子を整える" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-11/redraw-03.jpg" alt="鏡の前の理髪椅子に座る沢村" width="307" height="412"><p class="caption">事件当夜・沢村の証言</p><p class="speech lower left" style="--point:74%">八時二十分でした。首は動かしていません。</p></figure>
+<p class="folio">1 / 4</p></section>
+<section class="comic-page" id="page-2" aria-label="2ページ">
+<figure class="frame"><img src="comic-11/redraw-04.jpg" alt="手帳に時刻を書く朝倉" width="308" height="412"><p class="speech upper right" style="--point:20%">八時二十分なら、本郷を含めて時間が空く人はいません。</p></figure>
+<figure class="frame"><img src="comic-11/redraw-05.jpg" alt="水城が店内の写真を調べる" width="308" height="412"><svg aria-hidden="true" focusable="false" viewBox="0 0 308 412" style="position:absolute;inset:1px;width:calc(100% - 2px);height:calc(100% - 2px);pointer-events:none"><defs><clipPath id="barber-print"><path d="M140 185L295 163L277 267L260 275L270 292L248 302L140 315L143 286L125 270Z"/></clipPath></defs><image href="comic-11/redraw-06.jpg" x="125" y="163" width="170" height="152" preserveAspectRatio="xMidYMid slice" clip-path="url(#barber-print)"/></svg><p class="speech upper right" style="--point:20%">待って。この椅子、どこを向いてる？</p></figure>
+<figure class="frame"><img src="comic-11/redraw-06.jpg" alt="椅子の正面にある大きな鏡を写した店内" width="307" height="412"><svg aria-hidden="true" focusable="false" viewBox="0 0 307 412" style="position:absolute;inset:1px;width:calc(100% - 2px);height:calc(100% - 2px);pointer-events:none"><circle cx="179.3" cy="111.6" r="33" fill="#c9ad81"/><path d="M179 112L166 117M179 112L199 124" stroke="#3d3326" stroke-width="2.3" stroke-linecap="round"/><circle cx="179" cy="112" r="2" fill="#3d3326"/></svg><p class="speech lower left" style="--point:74%">椅子の正面には鏡。沢村さんは振り向いていません。</p></figure>
+<p class="folio">2 / 4</p></section>
+<section class="comic-page" id="page-3" aria-label="3ページ">
+<figure class="review-evidence"><figcaption>理髪店の位置関係</figcaption><p>背後の壁時計 → 正面の鏡 → 椅子に座った沢村</p><p><strong>沢村の視線</strong>　椅子から正面の鏡へ</p></figure><figure class="frame"><img src="comic-11/redraw-07.jpg" alt="水城が写真の鏡を指す" width="307" height="412"><p class="speech upper right" style="--point:20%">時計があるのは椅子の後ろ。正面を向いたままなら、見えたのは鏡の中ね。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">朝倉は小さな鏡を取り出し、針がどう見えるか試した。</p><img src="comic-11/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-11/redraw-08.jpg" alt="朝倉が紙に鏡を当ててみる" width="308" height="412"><p class="speech upper right" style="--point:20%">じゃあ、針を左右に返すと……。</p></figure>
+<figure class="mirror-proof"><div><svg viewBox="0 0 120 120" role="img" aria-label="8時20分の針"><circle cx="60" cy="60" r="56" fill="#fff8e6" stroke="#42403a"/><g fill="#202525" text-anchor="middle" dominant-baseline="middle" font-size="9"><text x="82.5" y="21.02885682970026">1</text><text x="98.97114317029974" y="37.5">2</text><text x="105" y="60">3</text><text x="98.97114317029974" y="82.49999999999999">4</text><text x="82.5" y="98.97114317029974">5</text><text x="60.00000000000001" y="105">6</text><text x="37.500000000000014" y="98.97114317029974">7</text><text x="21.028856829700274" y="82.50000000000003">8</text><text x="15" y="60.00000000000001">9</text><text x="21.02885682970026" y="37.5">10</text><text x="37.49999999999998" y="21.028856829700274">11</text><text x="59.999999999999986" y="15">12</text></g><path d="M60 60L38.4 67.9" stroke="#202525" stroke-width="4" stroke-linecap="round"/><path d="M60 60L92.9 79.0" stroke="#202525" stroke-width="2.5" stroke-linecap="round"/><circle cx="60" cy="60" r="2.7" fill="#202525"/></svg><span>鏡越しに見えた針</span></div><div><svg viewBox="0 0 120 120" role="img" aria-label="3時40分の針"><circle cx="60" cy="60" r="56" fill="#fff8e6" stroke="#42403a"/><g fill="#202525" text-anchor="middle" dominant-baseline="middle" font-size="9"><text x="82.5" y="21.02885682970026">1</text><text x="98.97114317029974" y="37.5">2</text><text x="105" y="60">3</text><text x="98.97114317029974" y="82.49999999999999">4</text><text x="82.5" y="98.97114317029974">5</text><text x="60.00000000000001" y="105">6</text><text x="37.500000000000014" y="98.97114317029974">7</text><text x="21.028856829700274" y="82.50000000000003">8</text><text x="15" y="60.00000000000001">9</text><text x="21.02885682970026" y="37.5">10</text><text x="37.49999999999998" y="21.028856829700274">11</text><text x="59.999999999999986" y="15">12</text></g><path d="M60 60L81.6 67.9" stroke="#202525" stroke-width="4" stroke-linecap="round"/><path d="M60 60L27.1 79.0" stroke="#202525" stroke-width="2.5" stroke-linecap="round"/><circle cx="60" cy="60" r="2.7" fill="#202525"/></svg><span>針の向きを左右に戻す</span></div><figcaption>針の向きを比べるため、数字は読み取り用に補った。</figcaption></figure><figure class="frame discovery"><img src="comic-11/redraw-09.jpg" alt="二人で時計の図を見比べる" width="308" height="412"><p class="speech upper left" style="--point:74%">長針が四から八へ。短針も返すと……三時四十分！</p></figure>
+<p class="folio">3 / 4</p></section>
+<section class="comic-page" id="page-4" aria-label="4ページ">
+<figure class="review-evidence"><figcaption>当夜のアリバイ照合</figcaption><div class="pair"><p>8:20<br>空白のある人はいない</p><p>3:40<br><strong>本郷だけ空白</strong></p></div></figure><figure class="frame"><img src="comic-11/redraw-10.jpg" alt="アリバイ表を指す水城" width="307" height="412"><p class="speech upper right" style="--point:20%">当夜の記録で、午前三時四十分にアリバイが空くのは本郷だけ。</p></figure>
+<figure class="frame"><img src="comic-11/redraw-11.jpg" alt="朝倉が訂正票を取り出す" width="307" height="412"><p class="speech upper right" style="--point:20%">当時の担当者も午前三時四十分に直しています。訂正票がありました。</p></figure>
+<figure class="frame"><img src="comic-11/redraw-12.jpg" alt="二件の訂正票を机に並べる二人" width="308" height="412"><p class="speech upper left" style="--point:74%">訂正票は二件とも直ってる。配られた資料にも、この時刻が載ってる？</p></figure>
+<aside class="story-narration">沢村が見た針は、証言どおりだった。朝倉は手帳の「時計」を「鏡の中の時計」に直した。</aside>
+<p class="folio">4 / 4</p></section>
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-10.html">前の話へ</a><a href="comic-12.html">次の話へ</a></nav></main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer></body></html>

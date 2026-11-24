@@ -1,0 +1,62 @@
+.manga-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem 1.25rem;
+  padding: .65rem clamp(1rem, 5vw, 4.5rem);
+  border-bottom: 1px solid #394d54;
+  background: #0b151b;
+}
+
+.manga-header a,
+.manga-home a {
+  text-decoration: none;
+}
+
+.manga-wordmark {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 44px;
+  line-height: 1.35;
+  color: #f4f6fa;
+}
+
+.manga-wordmark strong {
+  font-size: clamp(1rem, 2.4vw, 1.35rem);
+  letter-spacing: .06em;
+}
+
+.manga-wordmark span {
+  color: #c5ced0;
+  font-size: .75rem;
+}
+
+.manga-header .manga-episodes {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  white-space: nowrap;
+  color: #e4c479;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.manga-home {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 1rem 2.25rem;
+  border-top: 1px solid #394d54;
+  text-align: center;
+}
+
+.comic .manga-reading-nav {
+  justify-content: center;
+  text-align: center;
+}
+
+.manga-header a:focus-visible,
+.manga-home a:focus-visible {
+  outline: 2px solid #e4c479;
+  outline-offset: 4px;
+}

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>漫画 第二話「半額セールの買い付け」｜赤い糸の先</title>
+<link rel="stylesheet" href="story.css">
+<style>
+
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.4rem; font-size:clamp(1.9rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin:0 0 2.2rem; }
+.frame { position:relative; isolation:isolate; margin:0; overflow:hidden; min-width:0; background:#122126; border:1px solid #483f34; }
+.frame img { display:block; width:100%; height:auto; }
+.photo { max-width:590px; width:100%; justify-self:center; grid-column:1/-1; }
+.photo img { box-sizing:border-box; border:6px solid #ddd0b7; }
+.folio { grid-column:1/-1; text-align:right; margin:0; color:#bcc6c5; font-size:.8rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+.comic-page { align-items:start; }
+.price { position:absolute; top:77.8%; left:50%; transform:translateX(-50%); color:#252019; font-size:clamp(.9rem,3.6vw,1.5rem); font-weight:800; white-space:nowrap; }
+.receipt { color:#282418; background:#eee4cb; padding:1rem; margin:0; border:1px solid #9e8d69; align-self:center; font-variant-numeric:tabular-nums; }
+.receipt figcaption { font-weight:750; margin-bottom:.5rem; }
+.receipt table { width:100%; text-align:left; border-collapse:collapse; }
+.receipt td,.receipt th { border-bottom:1px solid #b4a283; padding:.2rem .4rem; }
+.f12 .call { --tail:25% !important; }
+
+/* Each panel reserves room above or below the artwork where the drawing is crowded. */
+.frame { align-self:start; }
+.panel-art { position:relative; }
+.speech,.caption {
+  box-sizing:border-box;
+  z-index:1;
+  margin:0;
+  font-size:clamp(.84rem,2.25vw,1rem);
+  line-height:1.45;
+}
+.speech {
+  position:relative;
+  width:max-content;
+  max-width:76%;
+  padding:.46em .78em;
+  color:#171d20;
+  background:#fff9e9;
+  border:1px solid #302c26;
+  border-radius:1.15em;
+  font-weight:650;
+  overflow-wrap:anywhere;
+}
+.speech.start { margin-inline:5% auto; }
+.speech.end { margin-inline:auto 5%; }
+.speech.above { margin-block:.6rem .7rem; }
+.speech.below { margin-block:.7rem .6rem; }
+.speech.over { position:absolute; inset:auto auto 6% 5%; margin:0; }
+.speech.over.end { inset:auto 5% 6% auto; }
+.speech::after {
+  content:"";
+  position:absolute;
+  left:clamp(9px,var(--tail),calc(100% - 9px));
+  width:10px;
+  height:10px;
+  background:inherit;
+  border:solid #302c26;
+  border-width:1px 0 0 1px;
+  bottom:calc(100% - 4px);
+  transform:translateX(-50%) rotate(45deg);
+}
+.speech.above::after {
+  bottom:auto;
+  top:calc(100% - 4px);
+  transform:translateX(-50%) rotate(225deg);
+}
+.speech.call { border-style:dashed; border-radius:.35em; }
+.speech.call::after { border-style:dashed; }
+.caption {
+  position:relative;
+  width:fit-content;
+  max-width:90%;
+  margin:.6rem auto .6rem 5%;
+  padding:.35em .6em;
+  color:#fff;
+  background:#101d23;
+  border:1px solid #bdab8a;
+  border-radius:0;
+}
+
+/* Dialogue is placed on the artwork, inside the illustrated panel. */
+.speech.on-art {
+  position:absolute;
+  inset:auto;
+  margin:0;
+  max-width:var(--bubble-width, 64%);
+  padding:.32em .58em;
+}
+.speech.on-art.start { left:5%; }
+.speech.on-art.end { right:5%; }
+.speech.on-art.middle { left:50%; transform:translateX(-50%); }
+.speech.on-art.top { top:5%; }
+.speech.on-art.bottom { bottom:calc(5% + var(--lift, 0px)); }
+.speech.on-art.top::after {
+  bottom:auto;
+  top:calc(100% - 4px);
+  transform:translateX(-50%) rotate(225deg);
+}
+.sale-comparison { grid-column:1/-1; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.8fr); align-items:center; gap:7px; padding:7px; border:1px solid #918060; }
+.sale-comparison .photo { grid-column:auto; }
+.f9 { grid-column:1/-1; width:min(100% - 2px,500px); justify-self:center; }
+@media(max-width:630px) { .sale-comparison { grid-template-columns:minmax(0,1fr); } }
+</style>
+<style>.review-proof { grid-column:1/-1; margin:0; padding:.7rem; border:1px solid #918060; color:#fff9e9; background:#122126; } .review-proof figcaption { margin-bottom:.45rem; } .review-tiles { display:grid; grid-template-columns:repeat(var(--columns),minmax(0,1fr)); gap:6px; text-align:center; } .detail-crop { position:relative; aspect-ratio:1; overflow:hidden; } .detail-crop img { position:absolute; height:auto; max-width:none; } .sale-comparison { grid-template-columns:minmax(0,1fr); }</style>
+<style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<style>.comic .frame.key-moment{grid-column:1/-1;width:min(100%,540px);justify-self:center}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-02.html"><meta property="og:url" content="https://mquizx.com/s/comic-02.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic">
+<p class="eyebrow">漫画版</p>
+<h1>第二話「半額セールの買い付け」</h1>
+<section class="comic-page" aria-label="1ページ"><aside class="story-narration">前日に撮った売り場の写真を持ち、水城たちは収集家の家へ向かった。壺が消えたころ、売り場にいた人の話を聞くためだ。</aside>
+<figure class="frame f1"><p class="caption">翌日・警察署の資料室</p><div class="panel-art"><img src="comic-02/remake-01.jpg" alt="資料室で水城が店主からの電話を受ける"><p class="speech over end" style="--tail:44%">昨日のセールに来た方ですね。売り場の写真を持って、伺います。</p></div></figure>
+<figure class="frame f2"><div class="panel-art"><img src="comic-02/remake-02.jpg" alt="住所と昨日の写真を確認する水城と朝倉"><p class="speech on-art bottom start" style="--tail:25%;--lift:24%;--bubble-width:50%">壺の聞き込みも続けますか？</p><p class="speech on-art bottom end" style="--tail:75%;--lift:0px;--bubble-width:64%">ええ。壺が消えたころ、売り場で何を見たか聞きましょう。</p></div></figure>
+<figure class="frame action-panel"><p class="action-caption">収集家の家へ。朝倉は売り場の写真を携えていた。</p><img src="comic-02/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame f3"><p class="caption">収集家の家</p><div class="panel-art"><img src="comic-02/remake-03.jpg" alt="水城と朝倉が収集家の家を訪ねる"></div></figure>
+<figure class="frame f4"><div class="panel-art"><img src="comic-02/remake-04.jpg" alt="収集家が応接間の机で二千円を預けたと説明する"><p class="speech on-art bottom start" style="--tail:84%;--lift:25%;--bubble-width:45%">田中君に二千円を預けて、メダルを買ってきてもらったんです。</p></div></figure>
+<p class="folio">1 / 4</p>
+</section>
+<section class="comic-page" aria-label="2ページ">
+<figure class="frame f5"><div class="panel-art"><img src="comic-02/remake-05.jpg" alt="田中がテーブルのメダル二枚を指す" loading="lazy"><p class="speech on-art bottom end" style="--tail:15%;--lift:22%;--bubble-width:45%">半額で一枚千円。二枚で二千円です。お釣りはありません。</p></div></figure><figure class="frame action-panel"><p class="action-caption">収集家が、受け取った二枚を机の中央へ滑らせた。</p><img src="comic-02/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+
+<figure class="frame f6"><div class="panel-art"><img src="comic-02/remake-06.jpg" alt="朝倉が机のメダルを数えてレシートを取る" loading="lazy"><p class="speech on-art bottom end" style="--tail:51%;--lift:0px;--bubble-width:64%">金額が合うと、僕はそこで安心してしまうんです。</p></div></figure>
+<figure class="frame f7"><div class="panel-art"><img src="comic-02/remake-07.jpg" alt="収集家が首をかしげ、田中が椅子から身を起こす" loading="lazy"><p class="speech on-art bottom start" style="--tail:20%;--lift:19%;--bubble-width:61%">一枚に千円の札が付いていた覚えがなくてね。</p><p class="speech on-art bottom end" style="--tail:82%;--lift:0px;--bubble-width:49%">半額の札はありましたよ。</p></div></figure>
+<figure class="frame f8 key-moment"><div class="panel-art"><img src="comic-02/remake-08.jpg" alt="水城が昨日の売り場写真を机に置く" loading="lazy"><p class="speech on-art bottom start" style="--tail:22%;--lift:29%;--bubble-width:44%">昨日の売り場を撮ってあります。</p><p class="speech on-art bottom end" style="--tail:78%;--lift:17%;--bubble-width:45%">その千円、何に付いてる札ですか？</p></div></figure>
+<p class="folio">2 / 4</p>
+</section>
+<section class="comic-page" aria-label="3ページ">
+<div class="sale-comparison"><figure class="frame photo"><p class="caption">昨日の売り場写真</p><div class="panel-art"><img src="comic-02/sale-evidence.jpg" alt="一つのケースの中に二枚の記念メダル。ケースの手前に半額千円の札" loading="lazy"><span class="price">半額 1,000円</span></div></figure>
+<figure class="receipt"><figcaption>レシートの控え</figcaption><table><tbody><tr><th>品名</th><td>記念メダルセット</td></tr><tr><th>数量</th><td>2</td></tr><tr><th>単価</th><td>1,000円</td></tr><tr><th>合計</th><td>2,000円</td></tr></tbody></table></figure></div>
+<figure class="frame f9"><div class="panel-art"><img src="comic-02/remake-09.jpg" alt="水城が写真に写った値札の足元を示す" loading="lazy"><p class="speech on-art bottom end" style="--tail:73%;--lift:45%;--bubble-width:49%">一箱千円。二箱なら……四枚だ！</p></div></figure>
+<p class="folio">3 / 4</p>
+</section>
+<section class="comic-page" aria-label="4ページ">
+<figure class="frame f10"><div class="panel-art"><img src="comic-02/remake-10.jpg" alt="収集家が田中を見つめ、田中が黙り込む" loading="lazy"><p class="speech on-art bottom end" style="--tail:12%;--lift:24%;--bubble-width:47%">田中君、残りの二枚はどこだい？</p></div></figure>
+<figure class="frame f11"><p class="caption">朝倉の記録　購入四枚・受取二枚。残る二枚の所在は未確認。</p><div class="panel-art"><img src="comic-02/remake-11.jpg" alt="朝倉が二人の前で購入した数と受け取った数を記録する" loading="lazy"><p class="speech on-art bottom start" style="--tail:25%;--lift:0px;--bubble-width:64%">壺が消えた時刻と照らしたいんです。田中さん、何時に店へ？</p></div></figure>
+<figure class="review-proof"><figcaption>購入した四枚のうち、収集家に渡ったのは二枚。残る二枚はどこへ。</figcaption></figure><figure class="frame f12"><p class="caption">帰り道・蔵の市の店主から着信</p><div class="panel-art"><img src="comic-02/remake-12.jpg" alt="帰り道に水城が店主の電話を受け、朝倉が手帳を開く" loading="lazy"><p class="speech on-art top end call" style="--tail:30%;--lift:0px;--bubble-width:54%">探していた青い葉の壺に似た写真が、市場から届きました。</p><p class="speech on-art bottom start" style="--tail:40%;--lift:0px;--bubble-width:54%">写真を送ってください。朝倉、市場の住所も。</p></div></figure>
+<aside class="story-narration">収集家は、机の上の二枚を包み直した。田中が戻ったら、まず本人の話を聞くつもりだった。</aside>
+<p class="folio">4 / 4</p>
+</section>
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-01.html">前の話へ</a><a href="comic-03.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer>
+</body>
+</html>

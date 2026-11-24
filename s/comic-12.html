@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>漫画 第十二話「二度目の訂正」｜赤い糸の先</title><link rel="stylesheet" href="story.css">
+<style>
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.25rem; font-size:clamp(1.65rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:0 0 2rem; align-items:start; }
+.frame { position:relative; margin:0; min-width:0; border:1px solid #483f34; background:#122126; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; margin:0; padding:.35em .55em; font-size:clamp(.82rem,2vw,1rem); line-height:1.4; }
+.caption { top:4%; left:4%; background:#101d23ed; color:white; border-left:2px solid #d4ac75; }
+.speech { bottom:4%; left:4%; max-width:86%; color:#171d20; background:#fff9e9; border:1px solid #242727; border-radius:.9em; font-weight:650; }
+.speech::before { content:""; position:absolute; bottom:100%; left:var(--tail,35%); border:7px solid transparent; border-bottom-color:#fff9e9; }
+.frame:nth-of-type(3) .speech { --tail:57%; }
+#page-3 .frame:first-child .speech { --tail:72%; }
+.comparison,.folio { grid-column:1/-1; margin:0; }
+#page-1 .comparison { grid-column:auto; align-self:center; }
+.comparison { background:#eee4cb; color:#282418; padding:.65rem; }
+.comparison figcaption { font-weight:750; margin-bottom:.3rem; }
+.comparison table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+.comparison th,.comparison td { padding:.3rem .15rem; text-align:center; border-bottom:1px solid #ad9475; }
+.folio { text-align:right; font-size:.85rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+</style><style>
+.comic-page { gap:7px; }
+.comic .frame { isolation:isolate; overflow:hidden; }
+.comic .frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; z-index:1; }
+.comic .frame > .caption { color:#fff; background:#101d23ed; border:1px solid #d4ac75; max-width:92%; }
+.comic .frame > .speech {
+ position:absolute; inset:auto; max-width:76%; width:max-content; margin:0;
+ font-size:clamp(.79rem,2.25vw,.96rem);
+}
+.comic .frame > .speech::before { content:none; }
+.comic .frame > .speech::after {
+ content:""; position:absolute; left:var(--point); border:6px solid transparent;
+}
+.comic .frame > .speech.lower { bottom:4%; }
+.comic .frame > .speech.upper { top:4%; }
+.comic .frame > .speech.upper:where(.caption + *) { top:23%; }
+.comic .frame > .speech.left { left:4%; }
+.comic .frame > .speech.right { right:4%; }
+.comic .frame > .speech.lower::after { bottom:calc(100% - 1px); border-bottom-color:#fff9e9; }
+.comic .frame > .speech.upper::after { top:calc(100% - 1px); border-top-color:#fff9e9; }
+.report-attachment { grid-column:1/-1; width:min(100%,520px); margin:0 auto; }
+.report-attachment img { width:100%; height:auto; display:block; }
+.report-attachment figcaption { padding:.35rem .55rem; background:#101d23; color:#fff; }
+</style><style>.comic .frame > img[src*="/redraw-"] { aspect-ratio:1; width:100%; height:auto; object-fit:contain; background:#122126; } .comic .frame > .speech.upper { top:2%; } .comic .frame > .speech.lower { bottom:2%; }</style><style>.discovery { grid-column:1/-1; width:min(100%,500px); justify-self:center; }</style>
+<style>.review-evidence{grid-column:1/-1;margin:0;padding:.75rem;background:#ede2ca;color:#25221e;border:1px solid #918060;min-width:0}.review-evidence figcaption{font-weight:750;margin-bottom:.45rem}.review-evidence p{margin:.35rem 0}.review-evidence strong{color:#852e32}.review-evidence img{display:block;width:100%;height:auto}.review-evidence .pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.review-evidence .pair div{min-width:0} </style><style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-12.html"><meta property="og:url" content="https://mquizx.com/s/comic-12.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic"><p class="eyebrow">漫画版</p><h1>第十二話「二度目の訂正」</h1>
+<section class="comic-page" id="page-1" aria-label="1ページ"><aside class="story-narration">宝石店と理髪店では、当時の訂正票で時刻を直していた。朝倉は、その訂正があとから配られた資料にどう反映されたかを確かめた。</aside><figure class="frame"><img src="comic-12/redraw-01.jpg" alt="水城と朝倉が資料を開く" width="380" height="338"><p class="caption">資料室・二件の訂正票</p><p class="speech lower right" style="--point:20%">宝石店と床屋、どちらも当時の訂正票があります。</p></figure>
+<figure class="frame"><img src="comic-12/redraw-02.jpg" alt="朝倉が配布版を机に置く" width="380" height="338"><p class="speech upper left" style="--point:74%">訂正のあとに配られた資料も見つかりました。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">朝倉が訂正票と配布資料の束を横に並べた。</p><img src="comic-12/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-12/redraw-03.jpg" alt="水城が資料を三列に並べる" width="380" height="338"><p class="speech upper right" style="--point:20%">元の記録から訂正票へ。そのあと配布版でどう変わった？</p></figure><figure class="comparison"><figcaption>二件の時刻の照合</figcaption><table><thead><tr><th scope="col">事件</th><th scope="col">元の記録</th><th scope="col">訂正票</th><th scope="col">配布版</th></tr></thead><tbody><tr><th scope="row">宝石店</th><td>2:17</td><td>2:10</td><td>2:03</td></tr><tr><th scope="row">床屋</th><td>8:20</td><td>3:40</td><td>8:20</td></tr></tbody></table></figure><p class="folio">1 / 4</p></section>
+<section class="comic-page" id="page-2" aria-label="2ページ"><figure class="frame"><img src="comic-12/redraw-04.jpg" alt="朝倉が配布版を指す" width="380" height="338"><p class="speech upper right" style="--point:20%">床屋は証言の時刻に戻ってます。宝石店は、さらに早まってる。</p></figure>
+<figure class="frame"><img src="comic-12/redraw-05.jpg" alt="水城が時刻を見比べて考える" width="380" height="337"><p class="speech lower left" style="--point:74%">訂正票から配布版の間に、何をしたらこの時刻になる？</p></figure>
+<figure class="review-evidence"><figcaption>訂正票から配布版へ、何が起きたか</figcaption><p>宝石店　2:17 → <strong>−7分</strong> → 2:10 → <strong>−7分</strong> → 2:03</p><p>床屋　8:20 → <strong>左右反転</strong> → 3:40 → <strong>左右反転</strong> → 8:20</p></figure><figure class="frame discovery"><img src="comic-12/redraw-06.jpg" alt="瀬尾が二人の机をのぞく" width="380" height="337"><p class="speech upper right" style="--point:20%">二件とも、訂正済みの時刻に同じ処理がもう一度かかってる。</p></figure><p class="folio">2 / 4</p></section>
+<section class="comic-page" id="page-3" aria-label="3ページ"><figure class="frame"><img src="comic-12/redraw-07.jpg" alt="瀬尾が時計の資料を取り出す" width="268" height="337"><p class="speech lower left" style="--point:74%">逆さのデジタル時計を読んだ事件もあったな。</p></figure>
+<figure class="frame"><img src="comic-12/redraw-08.jpg" alt="朝倉が三件目を並べる" width="236" height="337"><p class="speech upper right" style="--point:20%">これも配布版で逆さに戻ってます。同じ処理を二度した形です。</p></figure>
+<figure class="frame"><img src="comic-12/redraw-09.jpg" alt="水城が訂正票を裏返す" width="252" height="337"><p class="speech upper right" style="--point:20%">処理した人の欄は空白。でも裏に地下の棚番号がある。</p></figure><figure class="review-evidence"><figcaption>訂正票の確認</figcaption><div class="pair"><p>表　処理者欄は空白</p><p>裏　<strong>地下資料室の棚番号</strong></p></div></figure><p class="folio">3 / 4</p></section>
+<section class="comic-page" id="page-4" aria-label="4ページ"><figure class="frame"><img src="comic-12/redraw-10.jpg" alt="係長が番号を書き写しかける" width="236" height="337"><p class="speech upper left" style="--point:74%">棚番号だけ控えて、箱を探すか。</p></figure>
+<figure class="frame"><img src="comic-12/redraw-11.jpg" alt="係長が受領印のある訂正票を持つ" width="246" height="337"><p class="speech upper right" style="--point:20%">票も持っていこう。番号と受領印を、箱の元資料と照らせる。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">水城たちは訂正票を持ち、地下へ続く階段を下りた。</p><img src="comic-12/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-12/redraw-12.jpg" alt="水城たちが階段を下りる" width="274" height="337"><p class="caption">地下資料室へ</p><p class="speech lower left" style="--point:74%">棚の箱と、この受領印つきの票を照合しましょう。</p></figure><aside class="story-narration">数字の謎は解けた。だが「処理者」の欄には、名前がなかった。</aside>
+<p class="folio">4 / 4</p></section>
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-11.html">前の話へ</a><a href="comic-13.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer></body></html>
+

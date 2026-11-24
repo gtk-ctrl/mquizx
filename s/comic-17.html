@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>漫画 第十七話「写真に残らなかったもの」｜赤い糸の先</title><link rel="stylesheet" href="story.css">
+<style>
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.25rem; font-size:clamp(1.65rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:0 0 2rem; align-items:start; }
+.frame { position:relative; margin:0; min-width:0; border:1px solid #483f34; background:#122126; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; margin:0; padding:.35em .55em; font-size:clamp(.82rem,2vw,1rem); line-height:1.4; }
+.caption { top:4%; left:4%; background:#101d23ed; color:white; border-left:2px solid #d4ac75; }
+.speech { bottom:4%; left:4%; max-width:86%; color:#171d20; background:#fff9e9; border:1px solid #242727; border-radius:.9em; font-weight:650; }
+.speech::before { content:""; position:absolute; bottom:100%; left:var(--tail,35%); border:7px solid transparent; border-bottom-color:#fff9e9; }
+.frame:nth-of-type(3) .speech { --tail:57%; }
+#page-3 .frame:first-child .speech { --tail:72%; }
+.comparison,.folio { grid-column:1/-1; margin:0; }
+#page-2 .comparison { grid-column:auto; align-self:center; }
+.comparison { background:#eee4cb; color:#282418; padding:.65rem; }
+.comparison figcaption { font-weight:750; margin-bottom:.3rem; }
+.comparison table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+.comparison th,.comparison td { padding:.3rem .15rem; text-align:center; border-bottom:1px solid #ad9475; }
+.folio { text-align:right; font-size:.85rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+</style><style>
+.comic-page { gap:7px; }
+.comic .frame { isolation:isolate; overflow:hidden; }
+.comic .frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; z-index:1; }
+.comic .frame > .caption { color:#fff; background:#101d23ed; border:1px solid #d4ac75; max-width:92%; }
+.comic .frame > .speech {
+ position:absolute; inset:auto; max-width:76%; width:max-content; margin:0;
+ font-size:clamp(.79rem,2.25vw,.96rem);
+}
+.comic .frame > .speech::before { content:none; }
+.comic .frame > .speech::after {
+ content:""; position:absolute; left:var(--point); border:6px solid transparent;
+}
+.comic .frame > .speech.lower { bottom:4%; }
+.comic .frame > .speech.upper { top:4%; }
+.comic .frame > .speech.upper:where(.caption + *) { top:23%; }
+.comic .frame > .speech.left { left:4%; }
+.comic .frame > .speech.right { right:4%; }
+.comic .frame > .speech.lower::after { bottom:calc(100% - 1px); border-bottom-color:#fff9e9; }
+.comic .frame > .speech.upper::after { top:calc(100% - 1px); border-top-color:#fff9e9; }
+.report-attachment { grid-column:1/-1; width:min(100%,520px); margin:0 auto; }
+.report-attachment img { width:100%; height:auto; display:block; }
+.report-attachment figcaption { padding:.35rem .55rem; background:#101d23; color:#fff; }
+</style><style>.comic .frame > img:is([src*="/redraw-"],[src*="/reading-"]) { aspect-ratio:1; width:100%; height:auto; object-fit:contain; background:#122126; } .comic .frame > .speech.upper { top:2%; } .comic .frame > .speech.lower { bottom:2%; }</style><style>.discovery { grid-column:1/-1; width:min(100%,500px); justify-self:center; } </style>
+<style>.investigation{grid-column:1/-1;margin:0;padding:.8rem;background:#ede2ca;color:#24211e;border:1px solid #968263}.investigation figcaption{font-weight:bold;margin-bottom:.5rem}.investigation p{margin:.45rem 0}.investigation .sides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}.investigation .sides img{display:block;width:100%;height:auto}.investigation strong{color:#812d31}.investigation .sides div{min-width:0}.investigation .cropped{position:relative}.investigation .cropped::after{content:"";position:absolute;inset:0 0 0 auto;width:47%;background:#122126cf;border-left:2px dashed #dc7872;pointer-events:none}.investigation .floor-cut::after{width:auto;inset:0 auto 0 0;width:52%;border-left:0;border-right:2px dashed #dc7872}.investigation .reverse{transform:scaleX(-1)}</style><style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<style>.review-summary{grid-column:1/-1}.review-summary th{text-align:left;white-space:nowrap}.review-summary td,.review-summary th{padding:.3em .5em;border-bottom:1px solid #9d8c70}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-17.html"><meta property="og:url" content="https://mquizx.com/s/comic-17.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic"><p class="eyebrow">漫画版</p><h1>第十七話「写真に残らなかったもの」</h1>
+<section class="comic-page" id="page-1" aria-label="1ページ"><aside class="story-narration">最終報告には、あの男が事件を指示したとある。水城は、その根拠だという一枚を広げた。</aside><figure class="report-attachment"><img src="comic-20/review-final_report.jpg" alt="最終報告の添付写真。書斎に男が写っている" loading="lazy"><figcaption>最終報告の添付写真</figcaption></figure>
+<figure class="frame action-panel"><p class="action-caption">地下から戻った二人は、原本の箱を資料室へ運び込んだ。</p><img src="comic-17/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-17/reading-01.jpg" alt="資料室・元写真と配布版" width="302" height="355"><p class="caption">資料室・元写真と配布版</p><p class="speech lower right" style="--point:20%">もし自分なら、この一枚だけで犯人扱いされるのは嫌です。</p></figure>
+
+
+<p class="folio">1 / 4</p></section>
+<section class="comic-page" id="page-2" aria-label="2ページ">
+
+
+<figure class="comparison review-summary"><figcaption>写真を読むときの三つの確認</figcaption><table><tbody><tr><th scope="row">範囲</th><td>扉の傷が切り抜きで消えた</td></tr><tr><th scope="row">向き</th><td>石段の手すりが左右逆だった</td></tr><tr><th scope="row">撮影時点</th><td>床が乾く前の一枚に水跡が残った</td></tr></tbody></table></figure>
+<figure class="frame"><img src="comic-17/redraw-06.jpg" alt="待って。この報告、撮影時刻が書いてありません。" width="309" height="345"><p class="speech upper right" style="--point:20%">待って。この報告、撮影時刻が書いてありません。</p></figure>
+<p class="folio">2 / 4</p></section>
+<section class="comic-page" id="page-3" aria-label="3ページ">
+
+<figure class="frame discovery"><img src="comic-17/reading-08.jpg" alt="見出しが撮影時刻の代わりになってない？ 本当にその瞬間の写真か、撮影一覧を見て。" width="320" height="357"><p class="speech upper right" style="--point:20%">見出しが撮影時刻の代わりになってない？ 本当にその瞬間の写真か、撮影一覧を見て。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">あとから原本を引けるよう、朝倉は該当箇所に付箋を貼った。</p><img src="comic-17/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+
+<p class="folio">3 / 4</p></section>
+<section class="comic-page" id="page-4" aria-label="4ページ">
+<figure class="frame"><img src="comic-17/redraw-10.jpg" alt="この一覧を保管担当に渡します。写真の元の記録を探す手掛かりになります。" width="309" height="326"><p class="speech lower left" style="--point:74%">この一覧を保管担当に渡します。写真の元の記録を探す手掛かりになります。</p></figure>
+<figure class="frame"><img src="comic-17/reading-11.jpg" alt="保管担当から、窓と庭の全景の原本が届きました。" width="337" height="356"><p class="speech upper right" style="--point:20%">保管担当から、窓と庭の全景の原本が届きました。</p></figure>
+<figure class="frame"><img src="comic-17/redraw-12.jpg" alt="最終報告の写真に戻る前に、「発見時」と書かれた一枚を撮影一覧で確かめよう。" width="310" height="326"><p class="speech lower left" style="--point:74%">最終報告の写真に戻る前に、「発見時」と書かれた一枚を撮影一覧で確かめよう。</p></figure>
+<aside class="story-narration">水城が選んだのは「発見時」と書かれた、床の鉄の輪の写真だった。</aside>
+<p class="folio">4 / 4</p></section>
+
+
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-16.html">前の話へ</a><a href="comic-18.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer></body></html>
+

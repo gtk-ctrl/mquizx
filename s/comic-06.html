@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>漫画 第六話「野鳥園への予告状」｜赤い糸の先</title>
+<link rel="stylesheet" href="story.css">
+<style>
+
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.4rem; font-size:clamp(1.9rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin:0 0 2.2rem; }
+.frame { position:relative; isolation:isolate; margin:0; overflow:hidden; min-width:0; background:#122126; border:1px solid #483f34; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; z-index:1; margin:0; padding:.38em .62em; line-height:1.4; font-size:clamp(.84rem,2.25vw,1rem); }
+.speech { width:max-content; max-width:78%; background:#fff9e9; color:#171d20; border:1px solid #242727; border-radius:.9em; box-shadow:0 2px 5px #0008; font-weight:650; }
+.speech::after { content:""; position:absolute; top:calc(100% - 1px); left:var(--tail,63%); border:7px solid transparent; border-top-color:#fff9e9; }
+.speech.bottom::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.speech.top { top:5%; right:4%; }
+.speech.bottom { bottom:5%; left:4%; --tail:28%; }
+.caption { top:4%; left:4%; max-width:90%; color:#fff; background:#101d23ed; border-left:2px solid #d4ac75; }
+.caption.end { top:auto; bottom:4%; }
+.photo { max-width:590px; width:100%; justify-self:center; grid-column:1/-1; }
+.photo img { box-sizing:border-box; border:6px solid #ddd0b7; }
+.folio { grid-column:1/-1; text-align:right; margin:0; color:#bcc6c5; font-size:.8rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+.comic-page { align-items:start; }
+.frame:has(.caption) .speech.top { top:16%; }
+.speech.call { top:17%; right:4%; border-radius:.25em; outline:1px dashed #263238; }
+.speech.call::after { border-width:5px; }
+.price { position:absolute; top:77.8%; left:50%; transform:translateX(-50%); color:#252019; font-size:clamp(.9rem,3.6vw,1.5rem); font-weight:800; white-space:nowrap; }
+.receipt { color:#282418; background:#eee4cb; padding:1rem; margin:0; border:1px solid #9e8d69; align-self:center; font-variant-numeric:tabular-nums; }
+.receipt figcaption { font-weight:750; margin-bottom:.5rem; }
+.receipt table { width:100%; text-align:left; border-collapse:collapse; }
+.receipt td,.receipt th { border-bottom:1px solid #b4a283; padding:.2rem .4rem; }
+.f5 .bottom { left:auto; right:4%; }
+</style>
+<style>
+.frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; }
+.frame > .speech { max-width:var(--bubble); font-size:clamp(.79rem,2.25vw,.96rem); }
+.frame > .speech.point-up::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.frame > .caption { border:1px solid #d4ac75; }
+.letter-back,.notebook-back { position:absolute; inset:0; pointer-events:none; }
+.letter-back {
+ clip-path:polygon(73% 60%,100% 56%,100% 83%,87% 86%,76% 96%,53% 98%,53% 96%,55% 94%,54% 92%,50% 90%,44% 89%,54% 82%,63% 82%,68% 80%,70% 77%,68% 74%,65% 71%);
+ background:linear-gradient(147deg,#d0c1aa 60%,#b1a08c 92%);
+}
+.notebook-back {
+ clip-path:polygon(14% 85%,42% 77%,72% 71%,100% 68%,100% 100%,20% 100%);
+ background:linear-gradient(158deg,#d2c3ad 65%,#9e8c78 100%);
+}
+</style>
+<style>.f9 { grid-column:1/-1; width:min(100%,500px); justify-self:center; } .receipt { grid-column:1/-1; }</style>
+<style>.bird-line { font-size:clamp(1.05rem,4.1vw,1.85rem); line-height:1.7; } .bird-line mark { color:inherit; background:none; border-bottom:3px solid #a63436; }</style><style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-06.html"><meta property="og:url" content="https://mquizx.com/s/comic-06.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic">
+<p class="eyebrow">漫画版</p>
+<h1>第六話「野鳥園への予告状」</h1>
+<section class="comic-page" aria-label="1ページ"><aside class="story-narration">野鳥園から連絡を受け、水城と朝倉は閉園間際の園に着いた。今夜狙われる鳥の名前が、予告状に隠されていた。</aside>
+<figure class="frame f1"><img src="comic-06/remake-01.jpg" alt="閉園時刻を過ぎても開いた野鳥園の門"><p class="caption">数日後・閉園時刻の野鳥園</p></figure>
+<figure class="frame f2"><img src="comic-06/remake-02.jpg" alt="園長のもとへ向かう水城と朝倉"><p class="speech point-up" style="left:7%;bottom:4%;--tail:58%;--bubble:84%">園長から連絡があった。今夜、鳥を一羽盗むという手紙が届いたそうよ。</p></figure>
+<figure class="frame f3"><img src="comic-06/remake-03.jpg" alt="園長が封筒を水城に渡す"><p class="speech point-up" style="left:4%;bottom:4%;--tail:18%;--bubble:86%">狙う鳥の名前は、手紙の一行に隠したそうです。</p></figure>
+<p class="folio">1 / 4</p>
+</section>
+<section class="comic-page" aria-label="2ページ">
+<figure class="frame f4"><img src="comic-06/remake-04.jpg" alt="水城が警備室で手紙を開く"><p class="caption">園内の警備室</p></figure>
+<figure class="receipt"><figcaption>手紙の一行</figcaption><p>君たちの宝、すべていただく</p></figure>
+<figure class="frame f5"><img src="comic-06/remake-05.jpg" alt="朝倉が手紙の一語を指す" loading="lazy"><span class="letter-back" aria-hidden="true"></span><p class="speech point-up" style="left:4%;bottom:3%;--tail:72%;--bubble:61%">『宝』は『たから』。最初の二文字は『タカ』です。</p></figure>
+<figure class="frame f6"><img src="comic-06/remake-06.jpg" alt="園長が飼育区画の案内図の前で首を振る" loading="lazy"><p class="speech point-up" style="left:4%;bottom:4%;--tail:38%;--bubble:82%">うちにタカはいません。</p></figure>
+<p class="folio">2 / 4</p>
+</section>
+<section class="comic-page" aria-label="3ページ">
+<figure class="frame f7"><img src="comic-06/remake-07.jpg" alt="水城が手紙の一行をひらがなで書き直す" loading="lazy"><p class="speech point-down" style="right:3%;top:3%;--tail:10%;--bubble:43%">タカはいない。なら、単語の境目を外して一行を読んでみよう。</p></figure>
+<figure class="receipt"><figcaption>水城の手帳</figcaption><p class="bird-line">きみたちのた<mark>から、す</mark>べていただく</p></figure>
+<figure class="frame f8"><img src="comic-06/remake-08.jpg" alt="朝倉が書き写した一行を見つめて考え込む" loading="lazy"><span class="notebook-back" aria-hidden="true"></span><p class="speech point-down" style="left:3%;top:3%;--tail:82%;--bubble:34%">単語の中だけだと思い込んでました。読点の前後は？</p></figure>
+<figure class="frame f9"><img src="comic-06/remake-09.jpg" alt="水城が読点の前後を鉛筆でなぞる" loading="lazy"><p class="speech point-down" style="right:3%;top:3%;--tail:14%;--bubble:41%">「たから、すべて」。読点をまたぐと、カラス！</p></figure>
+<p class="folio">3 / 4</p>
+</section>
+<section class="comic-page" aria-label="4ページ">
+<figure class="frame f10"><img src="comic-06/remake-10.jpg" alt="園長が職員を呼び止めて指示する" loading="lazy"><p class="speech point-up" style="left:4%;bottom:4%;--tail:64%;--bubble:88%">カラスの区画へ。裏の出入口にも一人お願いします。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">指示を受けた職員が、奥の飼育区画へ急いだ。</p><img src="comic-06/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame f11"><img src="comic-06/remake-11.jpg" alt="職員が灯りを頼りにカラスの区画へ向かう" loading="lazy"><p class="caption">職員は園内と裏の出入口に分かれた。夜明けまでカラスに被害はなかった。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">裏手では、職員が門を閉めてからカラスの区画を見回った。</p><img src="comic-06/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame f12"><img src="comic-06/remake-12.jpg" alt="水城が封筒を裏返し、角が斜めに切れた黒い封を撮影する" loading="lazy"><p class="speech point-down" style="right:4%;top:3%;--tail:12%;--bubble:80%">封に黒い紙が貼ってある。切り口が分かるよう、裏も撮っておこう。</p></figure>
+<aside class="story-narration">夜明け、カラスが鳴いた。無事を確かめて、園長はようやく裏門の鍵から手を離した。</aside>
+<p class="folio">4 / 4</p>
+</section>
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-05.html">前の話へ</a><a href="comic-07.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer>
+</body>
+</html>

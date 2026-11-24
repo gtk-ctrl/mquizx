@@ -1,0 +1,19 @@
+/* Separate dialogue from the artwork so text never obscures expressions. */
+.comic .frame > p.speech {
+  position: relative;
+  inset: auto;
+  box-sizing: border-box;
+  max-width: calc(100% - 1.5rem);
+  margin: .55rem .75rem .65rem;
+  overflow-wrap: anywhere;
+}
+.comic .frame > p.speech.top,
+.comic .frame > p.speech.call {
+  margin-left: auto;
+}
+.comic .frame > p.speech::after {
+  top: auto;
+  bottom: calc(100% - 1px);
+  border-top-color: transparent;
+  border-bottom-color: #fff9e9;
+}

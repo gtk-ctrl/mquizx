@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>漫画 第十三話「閉じた扉のチェーン」｜赤い糸の先</title><link rel="stylesheet" href="story.css">
+<style>
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.25rem; font-size:clamp(1.65rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:0 0 2rem; align-items:start; }
+.frame { position:relative; margin:0; min-width:0; border:1px solid #483f34; background:#122126; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; margin:0; padding:.35em .55em; font-size:clamp(.82rem,2vw,1rem); line-height:1.4; }
+.caption { top:4%; left:4%; background:#101d23ed; color:white; border-left:2px solid #d4ac75; }
+.speech { bottom:4%; left:4%; max-width:86%; color:#171d20; background:#fff9e9; border:1px solid #242727; border-radius:.9em; font-weight:650; }
+.speech::before { content:""; position:absolute; bottom:100%; left:var(--tail,35%); border:7px solid transparent; border-bottom-color:#fff9e9; }
+.frame:nth-of-type(3) .speech { --tail:57%; }
+#page-3 .frame:first-child .speech { --tail:72%; }
+.comparison,.folio { grid-column:1/-1; margin:0; }
+#page-2 .comparison { grid-column:auto; align-self:center; }
+.comparison { background:#eee4cb; color:#282418; padding:.65rem; }
+.comparison figcaption { font-weight:750; margin-bottom:.3rem; }
+.comparison table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+.comparison th,.comparison td { padding:.3rem .15rem; text-align:center; border-bottom:1px solid #ad9475; }
+.folio { text-align:right; font-size:.85rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+</style><style>
+.comic-page { gap:7px; }
+.comic .frame { isolation:isolate; overflow:hidden; }
+.comic .frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; z-index:1; }
+.comic .frame > .caption { color:#fff; background:#101d23ed; border:1px solid #d4ac75; max-width:92%; }
+.comic .frame > .speech {
+ position:absolute; inset:auto; max-width:76%; width:max-content; margin:0;
+ font-size:clamp(.79rem,2.25vw,.96rem);
+}
+.comic .frame > .speech::before { content:none; }
+.comic .frame > .speech::after {
+ content:""; position:absolute; left:var(--point); border:6px solid transparent;
+}
+.comic .frame > .speech.lower { bottom:4%; }
+.comic .frame > .speech.upper { top:4%; }
+.comic .frame > .speech.upper:where(.caption + *) { top:23%; }
+.comic .frame > .speech.left { left:4%; }
+.comic .frame > .speech.right { right:4%; }
+.comic .frame > .speech.lower::after { bottom:calc(100% - 1px); border-bottom-color:#fff9e9; }
+.comic .frame > .speech.upper::after { top:calc(100% - 1px); border-top-color:#fff9e9; }
+.report-attachment { grid-column:1/-1; width:min(100%,520px); margin:0 auto; }
+.report-attachment img { width:100%; height:auto; display:block; }
+.report-attachment figcaption { padding:.35rem .55rem; background:#101d23; color:#fff; }
+</style><style>.comic .frame > img[src*="/redraw-"] { aspect-ratio:1; width:100%; height:auto; object-fit:contain; background:#122126; } .comic .frame > .speech.upper { top:2%; } .comic .frame > .speech.lower { bottom:2%; }</style><style>.discovery { grid-column:1/-1; width:min(100%,500px); justify-self:center; }</style>
+<style>.review-evidence{grid-column:1/-1;margin:0;padding:.75rem;background:#ede2ca;color:#25221e;border:1px solid #918060;min-width:0}.review-evidence figcaption{font-weight:750;margin-bottom:.45rem}.review-evidence p{margin:.35rem 0}.review-evidence strong{color:#852e32}.review-evidence img{display:block;width:100%;height:auto}.review-evidence .pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.review-evidence .pair div{min-width:0} </style><style>.investigation{grid-column:1/-1;margin:0;padding:.8rem;background:#ede2ca;color:#24211e;border:1px solid #968263}.investigation figcaption{font-weight:bold;margin-bottom:.5rem}.investigation p{margin:.45rem 0}.investigation .sides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}.investigation .sides img{display:block;width:100%;height:auto}.investigation strong{color:#812d31}.investigation .sides div{min-width:0}.investigation .cropped{position:relative}.investigation .cropped::after{content:"";position:absolute;inset:0 0 0 auto;width:47%;background:#122126cf;border-left:2px dashed #dc7872;pointer-events:none}.investigation .floor-cut::after{width:auto;inset:0 auto 0 0;width:52%;border-left:0;border-right:2px dashed #dc7872}.investigation .reverse{transform:scaleX(-1)}</style><style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<style>
+.evidence-spread{grid-column:1/-1;margin:0;padding:clamp(.65rem,2.5vw,1.25rem);background:#17272c;color:#f4e8cf;border:1px solid #907e60}
+.evidence-spread h2{font-size:clamp(1.1rem,3vw,1.4rem);margin:0 0 .75rem;line-height:1.4}
+.evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(.5rem,2vw,1rem)}
+.evidence-grid figure{margin:0;min-width:0}
+.evidence-grid img{display:block;width:100%;height:auto;border-radius:2px}
+.evidence-grid figcaption{font-size:.88rem;line-height:1.45;padding:.4rem 0}
+.evidence-spread p{margin:.7rem 0 0;line-height:1.6;font-size:.9rem}
+.evidence-photo{position:relative}
+.evidence-photo svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.evidence-photo line{stroke:#ffe3a6;stroke-width:.75;stroke-linecap:round}
+.evidence-photo circle{stroke:#ffe3a6;stroke-width:.8}
+.evidence-photo text{fill:#fff7df;text-anchor:middle;dominant-baseline:central;font:700 7px sans-serif}
+.evidence-knot{margin-top:1rem;padding:.6rem .7rem;background:#e9dbc0;color:#251e17;border-radius:2px}
+.evidence-knot strong{font-size:.87rem}
+.evidence-knot svg{display:block;width:100%;height:auto;margin:.45rem 0}
+</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-13.html"><meta property="og:url" content="https://mquizx.com/s/comic-13.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic"><p class="eyebrow">漫画版</p><h1>第十三話「閉じた扉のチェーン」</h1>
+<section class="comic-page" id="page-1" aria-label="1ページ"><aside class="story-narration">訂正票の裏の棚番号を頼りに、水城たちは地下資料室へ下りた。時刻が変わった経緯を追ううち、写真も元の記録と照らす必要があると考えた。</aside>
+<figure class="frame"><img src="comic-13/redraw-01.jpg" alt="水城と朝倉が棚の間に着く" width="310" height="414"><p class="caption">地下資料室</p><p class="speech lower left" style="--point:74%">時刻は配布版で変わっていた。写真にも違いがあるか、棚番号を頼りに原本を探そう。</p></figure>
+<figure class="frame"><img src="comic-13/redraw-02.jpg" alt="朝倉が棚の箱を机に運ぶ" width="309" height="414"><p class="speech lower right" style="--point:20%">箱の番号も合っています。開けますね。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">朝倉は棚から運んだ箱を机に下ろした。</p><img src="comic-13/action-01.jpg" alt="朝倉が資料の箱を机に置く" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-13/redraw-03.jpg" alt="水城が箱を開ける" width="309" height="414"><p class="speech upper right" style="--point:20%">扉の全景と金具の拡大、それに当日の聞き取りね。配布版と並べよう。</p></figure>
+<p class="folio">1 / 4</p></section>
+<section class="comic-page" id="page-2" aria-label="2ページ">
+<figure class="frame"><img src="comic-13/redraw-04.jpg" alt="朝倉が聞き取り調書を読む" width="310" height="414"><p class="speech upper right" style="--point:20%">管理人が来たとき、内側からチェーンが掛かっていたそうです。</p></figure>
+<figure class="frame"><img src="comic-13/redraw-05.jpg" alt="机の上の扉の全景と金具の拡大写真" width="310" height="414"></figure>
+<figure class="comparison"><figcaption>現場写真の記録</figcaption><table><tbody><tr><th scope="row">扉の全景</th><td>足元に切れた輪ゴム</td></tr><tr><th scope="row">金具の拡大</th><td>金具のすぐ脇に細いこすれ跡</td></tr></tbody></table></figure>
+<figure class="frame"><img src="comic-13/redraw-06.jpg" alt="水城が拡大写真を持ち上げて考える" width="309" height="414"><p class="speech upper right" style="--point:20%">切れた輪ゴムと、この細い跡。何があったか、当日の記録を探そう。</p></figure>
+<p class="folio">2 / 4</p></section>
+<section class="comic-page" id="page-3" aria-label="3ページ">
+<figure class="frame"><img src="comic-13/redraw-07.jpg" alt="朝倉が扉の写真を見る" width="309" height="414"><p class="speech lower left" style="--point:74%">チェーンが内側なら、誰かが中に残っていたんでしょうか。</p></figure>
+<figure class="frame"><img src="comic-13/redraw-08.jpg" alt="瀬尾が束の底から記録を抜く" width="310" height="414"><p class="speech upper right" style="--point:20%">当日の検証だ。室内を無人にして、同じ扉で確かめてる。</p></figure>
+<figure class="review-evidence"><figcaption>現場の記録と当日の検証</figcaption><div class="pair"><p>現場<br>切れた輪ゴムと金具脇のこすれ跡</p><p>同じ扉での検証<br>室内に人がいないことを確認 → 廊下から扉を閉める → 室内側のチェーンが掛かった</p></div></figure><section class="evidence-spread" aria-labelledby="reconstruction-title">
+<h2 id="reconstruction-title">当日の検証 ／ 無人の室内</h2>
+<div class="evidence-grid">
+<figure><img src="comic-13/reconstruction-1.jpg" alt="扉を少し開けた状態。受け金具のそばにチェーンと輪ゴムが見える。" loading="lazy"><figcaption>① 閉める前 ／ チェーンは外れている</figcaption></figure>
+<figure><img src="comic-13/reconstruction-2.jpg" alt="扉を閉めた状態。チェーンが張って受け金具に掛かっている。" loading="lazy"><figcaption>② 閉めた後 ／ チェーンが掛かった</figcaption></figure>
+</div>
+<p>輪ゴムを使った検証では、室内に誰もいない状態でもチェーンが掛かった。受け金具の脇のこすれ跡も、輪ゴムが引っ掛かったと考えれば説明できる。</p>
+</section>
+<figure class="investigation"><figcaption>扉の記録 ／ 配布版に載った範囲の模式図</figcaption><div class="sides"><div><img src="comic-13/redraw-05.jpg" alt="扉の全景と金具の拡大記録">元資料</div><div><div class="cropped"><img src="comic-13/redraw-05.jpg" alt="配布範囲では右側の拡大記録が枠外になることを示す"></div>右の手掛かりが枠外</div></div><p>元資料で読めた金具脇の傷が、配布版では見えない。こすれ跡は、閉じたチェーンだけを見ても分からなかった痕跡。無人で掛かった検証記録と合わせ、室内に人がいたという推定を外す。</p></figure><figure class="frame action-panel"><p class="action-caption">配布版を元の記録に寄せ、どこで範囲が途切れるか確かめた。</p><img src="comic-13/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame discovery"><img src="comic-13/redraw-09.jpg" alt="朝倉と瀬尾が記録を見比べる" width="310" height="414"><p class="speech upper right" style="--point:20%">検証でもチェーンは掛かった。朝倉、報告の「中に人がいた」は外せる。</p></figure>
+<p class="folio">3 / 4</p></section>
+<section class="comic-page" id="page-4" aria-label="4ページ">
+<figure class="frame"><img src="comic-13/redraw-10.jpg" alt="水城が二枚の写真の裏を合わせる" width="309" height="414"><p class="speech upper right" style="--point:20%">拡大の裏にも、全景と同じ現場番号が振ってある。</p></figure>
+<figure class="frame"><img src="comic-13/redraw-11.jpg" alt="朝倉が二枚をまとめて封筒に戻す" width="309" height="414"><p class="speech upper left" style="--point:74%">同じ現場番号ですね。傷の位置を追えるよう、全景と拡大を一緒に戻します。</p></figure>
+<figure class="frame"><img src="comic-13/redraw-12.jpg" alt="水城が箱の次の資料に手をかける" width="310" height="414"><p class="speech upper right" style="--point:20%">傷が写る拡大も、全景と一緒に残して。切り離したら、また理由が分からなくなる。</p></figure>
+<aside class="story-narration">朝倉は「室内に人物あり」に一本線を引いた。扉が閉じていた事実は、その下に残した。</aside>
+<p class="folio">4 / 4</p></section>
+
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-12.html">前の話へ</a><a href="comic-14.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer></body></html>
+

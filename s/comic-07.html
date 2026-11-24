@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>漫画 第七話「予告状の消印」｜赤い糸の先</title>
+<link rel="stylesheet" href="story.css">
+<style>
+
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.4rem; font-size:clamp(1.9rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin:0 0 2.2rem; }
+.frame { position:relative; isolation:isolate; margin:0; overflow:hidden; min-width:0; background:#122126; border:1px solid #483f34; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; z-index:1; margin:0; padding:.38em .62em; line-height:1.4; font-size:clamp(.84rem,2.25vw,1rem); }
+.speech { width:max-content; max-width:78%; background:#fff9e9; color:#171d20; border:1px solid #242727; border-radius:.9em; box-shadow:0 2px 5px #0008; font-weight:650; }
+.speech::after { content:""; position:absolute; top:calc(100% - 1px); left:var(--tail,63%); border:7px solid transparent; border-top-color:#fff9e9; }
+.speech.bottom::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.speech.top { top:5%; right:4%; }
+.speech.bottom { bottom:5%; left:4%; --tail:28%; }
+.caption { top:4%; left:4%; max-width:90%; color:#fff; background:#101d23ed; border-left:2px solid #d4ac75; }
+.caption.end { top:auto; bottom:4%; }
+.photo { max-width:590px; width:100%; justify-self:center; grid-column:1/-1; }
+.photo img { box-sizing:border-box; border:6px solid #ddd0b7; }
+.folio { grid-column:1/-1; text-align:right; margin:0; color:#bcc6c5; font-size:.8rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+.comic-page { align-items:start; }
+.frame:has(.caption) .speech.top { top:16%; }
+.speech.call { top:17%; right:4%; border-radius:.25em; outline:1px dashed #263238; }
+.speech.call::after { border-width:5px; }
+.price { position:absolute; top:77.8%; left:50%; transform:translateX(-50%); color:#252019; font-size:clamp(.9rem,3.6vw,1.5rem); font-weight:800; white-space:nowrap; }
+.receipt { color:#282418; background:#eee4cb; padding:1rem; margin:0; border:1px solid #9e8d69; align-self:center; font-variant-numeric:tabular-nums; }
+.receipt figcaption { font-weight:750; margin-bottom:.5rem; }
+.receipt table { width:100%; text-align:left; border-collapse:collapse; }
+.receipt td,.receipt th { border-bottom:1px solid #b4a283; padding:.2rem .4rem; }
+
+</style>
+
+<style>
+.comic-page { gap:7px; }
+.comic .frame { isolation:isolate; overflow:hidden; }
+.comic .frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; z-index:1; }
+.comic .frame > .caption { color:#fff; background:#101d23ed; border:1px solid #d4ac75; max-width:92%; }
+.comic .frame > .speech {
+ position:absolute; inset:auto; max-width:76%; width:max-content; margin:0;
+ font-size:clamp(.79rem,2.25vw,.96rem);
+}
+.comic .frame > .speech::before { content:none; }
+.comic .frame > .speech::after {
+ content:""; position:absolute; left:var(--point); border:6px solid transparent;
+}
+.comic .frame > .speech.lower { bottom:4%; }
+.comic .frame > .speech.upper { top:4%; }
+.comic .frame > .speech.upper:where(.caption + *) { top:23%; }
+.comic .frame > .speech.left { left:4%; }
+.comic .frame > .speech.right { right:4%; }
+.comic .frame > .speech.lower::after { bottom:calc(100% - 1px); border-bottom-color:#fff9e9; }
+.comic .frame > .speech.upper::after { top:calc(100% - 1px); border-top-color:#fff9e9; }
+.report-attachment { grid-column:1/-1; width:min(100%,520px); margin:0 auto; }
+.report-attachment img { width:100%; height:auto; display:block; }
+.report-attachment figcaption { padding:.35rem .55rem; background:#101d23; color:#fff; }
+</style>
+<style>.f9 { grid-column:1/-1; width:min(100%,500px); justify-self:center; } .receipt { grid-column:1/-1; }</style>
+<style>.day-route,.day-error{display:block}.day-route strong{color:#952d31}.day-error{margin-top:.45rem;padding-top:.45rem;border-top:1px dashed currentColor;font-size:.9em}</style><style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-07.html"><meta property="og:url" content="https://mquizx.com/s/comic-07.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic">
+<p class="eyebrow">漫画版</p>
+<h1>第七話「予告状の消印」</h1>
+<section class="comic-page" aria-label="1ページ"><aside class="story-narration">仮面舞踏会が開かれた屋敷に、その翌朝、予告状が届いた。水城たちは、警備をいつ始めるべきか確かめに来た。</aside>
+<figure class="frame f1"><img src="comic-07/remake-01.jpg" alt="仮面の客が踊る屋敷の舞踏会"><p class="caption">土曜の夜・仮面舞踏会</p></figure>
+<figure class="frame action-panel"><p class="action-caption">次の日の朝、水城と朝倉は屋敷へ向かった。</p><img src="comic-07/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame f2"><img src="comic-07/remake-02.jpg" alt="水城と朝倉が屋敷を訪れる"><p class="caption">翌日・予告状が届いた屋敷</p></figure>
+<figure class="frame f3"><img src="comic-07/remake-03.jpg" alt="屋敷の主人が二人に封筒を差し出す"><p class="speech upper right" style="--point:20%">舞踏会の翌朝、これが届いたんです。</p></figure>
+<p class="folio">1 / 4</p>
+</section>
+<section class="comic-page" aria-label="2ページ">
+<figure class="frame f4"><img src="comic-07/remake-04.jpg" alt="朝倉が封筒の消印を調べる"><p class="speech upper right" style="--point:20%">消印は土曜。差し出した日を起点にすると、決行は火曜ですね。</p></figure>
+<figure class="frame f5"><img src="comic-07/remake-05.jpg" alt="屋敷の主人が卓上カレンダーの日付を見る" loading="lazy"><p class="speech lower left" style="--point:74%">舞踏会は、消印と同じ土曜の夜でした。</p></figure>
+<figure class="frame f6"><img src="comic-07/remake-06.jpg" alt="水城が便箋を開き、最初の一文に目を留める" loading="lazy"><p class="speech upper right" style="--point:20%">消印の日に書いたとは限らない。手紙の最初を読んで。</p></figure>
+<figure class="receipt"><figcaption>怪盗の予告状</figcaption><p>明日は仮面舞踏会。決行は、あさっての昨日の、そのまた翌々日。</p></figure>
+<p class="folio">2 / 4</p>
+</section>
+<section class="comic-page" aria-label="3ページ">
+<figure class="frame f7"><img src="comic-07/remake-07.jpg" alt="水城と朝倉が消印と文面を突き合わせる" loading="lazy"><p class="speech upper right" style="--point:20%">『明日』が土曜なら、これを書いた日は金曜ですね。</p></figure>
+<figure class="frame f8"><img src="comic-07/remake-08.jpg" alt="水城が手帳に曜日を並べる" loading="lazy"><p class="speech upper right" style="--point:20%">金曜を出発点にして、一つずつ数えよう。</p></figure>
+<figure class="receipt"><figcaption>舞踏会を基準にした曜日</figcaption><p><span class="day-route">金曜（執筆） → 土曜（舞踏会・消印） → 日曜（到着） → <strong>月曜（決行）</strong></span><span class="day-error">消印の土曜から数えた場合 → 火曜</span></p></figure>
+<figure class="frame f9"><img src="comic-07/remake-09.jpg" alt="水城が手帳の月曜を指し、朝倉が無線を取る" loading="lazy"><p class="speech upper left" style="--point:74%">金曜のあさっては日曜。その前日、土曜から二日後。決行は月曜ね。</p></figure>
+<p class="folio">3 / 4</p>
+</section>
+<section class="comic-page" aria-label="4ページ">
+<figure class="frame f10"><img src="comic-07/remake-10.jpg" alt="朝倉が無線で屋敷の警備予定を変更する" loading="lazy"><p class="speech lower right" style="--point:20%">届いたのは今日、日曜。決行は明日です。門と裏口の警備をお願いします。</p></figure>
+<figure class="frame f11"><img src="comic-07/remake-11.jpg" alt="水城が封の裏を撮り、野鳥園の写真と並べる" loading="lazy"><p class="speech upper left" style="--point:74%">この黒い封、野鳥園にもあった。停電した屋敷の宝石盗難にも、似た記録がなかった？</p></figure>
+<figure class="frame action-panel"><p class="action-caption">月曜の夜。巡回の灯りが門柱を照らした。</p><img src="comic-07/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame f12"><img src="comic-07/remake-12.jpg" alt="月曜の夜、屋敷の門と裏口を警備する職員" loading="lazy"><p class="caption">月曜の夜。警備が明けるまで、屋敷から盗まれた品はなかった。</p></figure>
+<aside class="story-narration">火曜の朝、屋敷の主人は玄関の鍵を開け、門の警備員に深く頭を下げた。</aside>
+<p class="folio">4 / 4</p>
+</section>
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-06.html">前の話へ</a><a href="comic-08.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>漫画 第十話「七分進んだカメラ」｜赤い糸の先</title>
+<link rel="stylesheet" href="story.css">
+<style>
+
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.4rem; font-size:clamp(1.9rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin:0 0 2.2rem; }
+.frame { position:relative; isolation:isolate; margin:0; overflow:hidden; min-width:0; background:#122126; border:1px solid #483f34; }
+.frame img { display:block; width:100%; height:auto; }
+.speech,.caption { position:absolute; z-index:1; margin:0; padding:.38em .62em; line-height:1.4; font-size:clamp(.84rem,2.25vw,1rem); }
+.speech { width:max-content; max-width:78%; background:#fff9e9; color:#171d20; border:1px solid #242727; border-radius:.9em; box-shadow:0 2px 5px #0008; font-weight:650; }
+.speech::after { content:""; position:absolute; top:calc(100% - 1px); left:var(--tail,63%); border:7px solid transparent; border-top-color:#fff9e9; }
+.speech.bottom::after { top:auto; bottom:calc(100% - 1px); border-top-color:transparent; border-bottom-color:#fff9e9; }
+.speech.top { top:5%; right:4%; }
+.speech.bottom { bottom:5%; left:4%; --tail:28%; }
+.caption { top:4%; left:4%; max-width:90%; color:#fff; background:#101d23ed; border-left:2px solid #d4ac75; }
+.caption.end { top:auto; bottom:4%; }
+.photo { max-width:590px; width:100%; justify-self:center; grid-column:1/-1; }
+.photo img { box-sizing:border-box; border:6px solid #ddd0b7; }
+.folio { grid-column:1/-1; text-align:right; margin:0; color:#bcc6c5; font-size:.8rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+.comic-page { align-items:start; }
+.frame:has(.caption) .speech.top { top:16%; }
+.speech.call { top:17%; right:4%; border-radius:.25em; outline:1px dashed #263238; }
+.speech.call::after { border-width:5px; }
+.price { position:absolute; top:77.8%; left:50%; transform:translateX(-50%); color:#252019; font-size:clamp(.9rem,3.6vw,1.5rem); font-weight:800; white-space:nowrap; }
+.receipt { color:#282418; background:#eee4cb; padding:1rem; margin:0; border:1px solid #9e8d69; align-self:center; font-variant-numeric:tabular-nums; }
+.receipt figcaption { font-weight:750; margin-bottom:.5rem; }
+.receipt table { width:100%; text-align:left; border-collapse:collapse; }
+.receipt td,.receipt th { border-bottom:1px solid #b4a283; padding:.2rem .4rem; }
+
+.seal-proof { grid-column:1/-1; margin:0; padding:.8rem; color:#27231d; background:#ede1c8; } .seal-proof svg { display:block; width:100%; max-width:540px; margin:auto; } .frame img { min-height:180px; object-fit:cover; } .rain-proof { grid-column:1/-1; margin:0; padding:.65rem; color:#27231d; background:#ede1c8; } .rain-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.6rem; } .rain-pair figure { margin:0; } .rain-pair img { aspect-ratio:1.15; object-fit:cover; object-position:top; } .rain-proof img { display:block; width:100%; } .rain-proof .report-photo { max-width:480px; margin:auto; } .clock-overlay { position:absolute; inset:20% 0 4%; display:grid; place-items:center; background:#142027; } .clock-overlay svg { height:100%; max-width:80%; } .clock-frame .caption { z-index:1; }</style>
+
+<style>
+.comic-page { gap:7px; }
+.comic .frame { isolation:isolate; overflow:hidden; }
+.comic .frame > :is(.speech,.caption) { box-sizing:border-box; overflow-wrap:anywhere; z-index:1; }
+.comic .frame > .caption { color:#fff; background:#101d23ed; border:1px solid #d4ac75; max-width:92%; }
+.comic .frame > .speech {
+ position:absolute; inset:auto; max-width:76%; width:max-content; margin:0;
+ font-size:clamp(.79rem,2.25vw,.96rem);
+}
+.comic .frame > .speech::before { content:none; }
+.comic .frame > .speech::after {
+ content:""; position:absolute; left:var(--point); border:6px solid transparent;
+}
+.comic .frame > .speech.lower { bottom:4%; }
+.comic .frame > .speech.upper { top:4%; }
+.comic .frame > .speech.upper:where(.caption + *) { top:23%; }
+.comic .frame > .speech.left { left:4%; }
+.comic .frame > .speech.right { right:4%; }
+.comic .frame > .speech.lower::after { bottom:calc(100% - 1px); border-bottom-color:#fff9e9; }
+.comic .frame > .speech.upper::after { top:calc(100% - 1px); border-top-color:#fff9e9; }
+.report-attachment { grid-column:1/-1; width:min(100%,520px); margin:0 auto; }
+.report-attachment img { width:100%; height:auto; display:block; }
+.report-attachment figcaption { padding:.35rem .55rem; background:#101d23; color:#fff; }
+</style><style>.comic .frame > img[src*="/redraw-"] { aspect-ratio:1; width:100%; height:auto; object-fit:contain; background:#122126; }</style><style>.clock-frame { grid-column:1/-1; width:min(100%,490px); justify-self:center; }</style>
+<style>.time-comparison{grid-column:1/-1;margin:0;padding:.75rem;background:#eee4cb;color:#242019}.time-comparison dl{display:grid;grid-template-columns:1fr 1fr;margin:.45rem 0 0;gap:8px}.time-comparison dd{margin:0;font-size:clamp(1.15rem,4.5vw,1.7rem);font-weight:750;color:#842e2d}</style><style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.action-panel img{display:block;width:100%;height:auto;aspect-ratio:1}.action-caption{margin:0;padding:.42rem .65rem;color:#fff;background:#101d23;font-size:clamp(.84rem,2.25vw,.96rem);line-height:1.45}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-10.html"><meta property="og:url" content="https://mquizx.com/s/comic-10.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic"><p class="eyebrow">漫画版</p><h1>第十話「七分進んだカメラ」</h1>
+<section class="comic-page" id="page-1" aria-label="1ページ"><aside class="story-narration">翌朝、水城たちは資料室で最終報告に並ぶ事件番号を手掛かりに、元の記録を探した。まず開いたのは宝石店の防犯映像だった。</aside>
+<figure class="frame"><img src="comic-10/redraw-01.jpg" alt="水城が最終報告の添付欄を指す" width="308" height="411"><p class="caption">翌朝・資料室</p><p class="speech lower right" style="--point:20%">最終報告の写真に結びつく資料を、事件番号から探します。</p></figure>
+<figure class="frame"><img src="comic-10/redraw-02.jpg" alt="係長が書棚を指す" width="307" height="411"><p class="speech lower right" style="--point:20%">番号から戻ろう。元の記録と、配られた版を出してくれ。</p></figure>
+<figure class="frame"><img src="comic-10/redraw-03.jpg" alt="朝倉が記録の箱を運ぶ" width="307" height="411"><p class="speech upper left" style="--point:74%">最初は宝石店の侵入事件です。防犯映像が残っています。</p></figure>
+<p class="folio">1 / 4</p></section>
+<section class="comic-page" id="page-2" aria-label="2ページ">
+<figure class="frame action-panel"><p class="action-caption">二人は映像を再生できる席に移った。</p><img src="comic-10/action-01.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-10/redraw-04.jpg" alt="朝倉が防犯映像を再生する" width="308" height="411"><p class="speech upper right" style="--point:20%">棚を越えたところで止めます。</p></figure>
+<figure class="frame action-panel"><p class="action-caption">朝倉が一時停止を押した。映像が止まり、店の奥まで見渡せた。</p><img src="comic-10/action-02.jpg" alt="" width="480" height="480" loading="lazy"></figure>
+<figure class="frame"><img src="comic-10/redraw-05.jpg" alt="宝石店の防犯画面に映る侵入者と店内の壁時計" width="308" height="319"><svg aria-hidden="true" focusable="false" viewBox="0 0 308 319" style="position:absolute;inset:1px;width:calc(100% - 2px);height:calc(100% - 2px);pointer-events:none"><ellipse cx="262" cy="43" rx="24" ry="28" fill="#899daa"/><path d="M262 43L274 35M262 43L280 33" stroke="#202b34" stroke-width="2" stroke-linecap="round"/></svg><p class="caption">宝石店・防犯カメラの表示　02:17:30</p></figure>
+<figure class="frame"><img src="comic-10/redraw-06.jpg" alt="朝倉がアリバイ表を指す" width="307" height="319"><p class="speech upper right" style="--point:20%">捜査線上の上野には、二時十五分からアリバイがある。映像どおりなら、侵入はその後です。</p></figure>
+<p class="folio">2 / 4</p></section>
+<section class="comic-page" id="page-3" aria-label="3ページ">
+<figure class="frame"><img src="comic-10/redraw-07.jpg" alt="水城が映像を止め、画面を拡大する" width="307" height="319"><p class="speech upper left" style="--point:74%">待って。映像の時刻表示とは別に、右奥の壁にも時計がある。</p></figure>
+<figure class="frame clock-frame"><img src="comic-10/redraw-08.jpg" alt="映像に写った壁時計の拡大" width="308" height="319"><svg aria-hidden="true" focusable="false" viewBox="0 0 308 319" style="position:absolute;inset:1px;width:calc(100% - 2px);height:calc(100% - 2px);pointer-events:none"><ellipse cx="204" cy="99" rx="65" ry="68" fill="#91a3af"/><path d="M204 99L235 83M204 99L251 74" stroke="#27333c" stroke-width="4" stroke-linecap="round"/></svg><div class="clock-overlay"><svg viewBox="0 0 150 150" aria-label="長針は二、短針も二を少し過ぎた位置" role="img"><circle cx="75" cy="75" r="68" fill="#eee5cf" stroke="#3e332b" stroke-width="3"/><g fill="#18232b" text-anchor="middle" dominant-baseline="middle" font-size="10"><text x="103" y="26.50257738807143">1</text><text x="123.49742261192856" y="46.99999999999999">2</text><text x="131" y="75">3</text><text x="123.49742261192857" y="102.99999999999999">4</text><text x="103" y="123.49742261192857">5</text><text x="75" y="131">6</text><text x="47.000000000000014" y="123.49742261192857">7</text><text x="26.50257738807145" y="103.00000000000003">8</text><text x="19" y="75.00000000000001">9</text><text x="26.502577388071437" y="46.99999999999999">10</text><text x="46.99999999999997" y="26.50257738807145">11</text><text x="74.99999999999999" y="19">12</text></g><path d="M75 75L101 62" stroke="#18232b" stroke-width="5" stroke-linecap="round"/><path d="M75 75L115 54" stroke="#18232b" stroke-width="3" stroke-linecap="round"/><path d="M75 75V124" stroke="#834b3e" stroke-width="1.5"/><circle cx="75" cy="75" r="3" fill="#18232b"/></svg></div><p class="caption">画面右奥・時計の針を拡大</p></figure>
+<figure class="frame"><img src="comic-10/redraw-09.jpg" alt="二人で点検票と画面を見比べる" width="308" height="318"><p class="speech upper right" style="--point:20%">当時の聞き取りでは、壁は電波時計。カメラは手で時刻を合わせていたそうよ。</p></figure>
+<p class="folio">3 / 4</p></section>
+<section class="comic-page" id="page-4" aria-label="4ページ">
+<figure class="frame"><img src="comic-10/redraw-10.jpg" alt="水城が元の映像記録の横に当時の訂正票を置く" width="307" height="318"><p class="speech lower right" style="--point:20%">表示は二時十七分三十秒。壁は二時十分ごろ。約七分ずれてる。訂正票も二時十分ね。</p></figure>
+<figure class="frame"><img src="comic-10/redraw-11.jpg" alt="朝倉がアリバイの時刻を考え直す" width="307" height="318"><p class="speech upper left" style="--point:74%">二時十分はアリバイが始まる前。上野を外す根拠が崩れました。</p></figure>
+<figure class="frame"><img src="comic-10/redraw-12.jpg" alt="水城と朝倉が配布版を開く" width="308" height="318"><p class="speech upper right" style="--point:20%">上野さんを外した理由は七分で消えた。誰が入ったかは、別に確かめよう。</p></figure>
+<figure class="time-comparison"><figcaption>侵入時刻の照合</figcaption><dl><div><dt>映像の表示</dt><dd>02:17:30</dd></div><div><dt>壁時計と訂正票</dt><dd>02:10ごろ</dd></div></dl></figure>
+<p class="folio">4 / 4</p></section>
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-09.html">前の話へ</a><a href="comic-11.html">次の話へ</a></nav></main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer></body></html>

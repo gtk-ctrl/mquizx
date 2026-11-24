@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>漫画 第一話「橋へ向かった男」｜赤い糸の先</title>
+<link rel="stylesheet" href="story.css">
+<style>
+.comic { max-width:860px; margin:auto; padding:1.4rem 12px 3rem; }
+.comic h1 { margin:.3rem 0 1.4rem; font-size:clamp(1.9rem,5.2vw,3.4rem); text-wrap:balance; }
+.comic-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin:0 0 2.2rem; }
+.frame { position:relative; isolation:isolate; margin:0; overflow:hidden; min-width:0; background:#122126; border:1px solid #483f34; }
+.frame img { display:block; width:100%; height:auto; }
+.f6 .phone { position:absolute; left:33.3%; top:43%; width:15%; height:28%; object-fit:contain; transform:rotate(-6deg); background:#0a1114; border-radius:3px; }
+.photo { max-width:590px; width:100%; justify-self:center; grid-column:1/-1; }
+.photo img { box-sizing:border-box; border:6px solid #ddd0b7; }
+.map { display:grid; grid-template-columns:1fr 1.3fr 1fr; grid-template-rows:auto repeat(3,minmax(2.4rem,1fr)); align-items:center; text-align:center; padding:12px; margin:0; color:#222522; background:#e7d8b6; border:1px solid #918060; font-weight:650; }
+.map span { padding:.24rem; }
+.map-title { grid-area:1/1/2/4; text-align:left; border-bottom:1px solid #b1a080; }
+.tower { grid-area:2/1; white-space:nowrap; font-size:clamp(.78rem,2.1vw,.93rem); }
+.water { grid-area:3/1/4/4; align-self:stretch; display:grid; align-items:center; background:#acc6ca; text-align:left; }
+.bridge { grid-area:3/2; position:relative; background:#d4bc95; border-inline:2px solid #8a7555; }
+.town { grid-area:4/2; }
+.flip { grid-template-rows:auto repeat(4,minmax(2.4rem,1fr)); }
+.flip .town { grid-area:2/2; }
+.flip .tower { grid-area:4/3; }
+.camera { grid-area:5/2; color:#812d25; }
+.folio { grid-column:1/-1; text-align:right; margin:0; color:#bcc6c5; font-size:.8rem; }
+.comic nav { display:flex; flex-wrap:wrap; gap:.7rem 1.2rem; }
+@media(max-width:630px) { .comic-page { grid-template-columns:minmax(0,1fr); } }
+
+/* Each panel reserves room above or below the artwork where the drawing is crowded. */
+.frame { align-self:start; }
+.panel-art { position:relative; }
+.speech,.caption {
+  box-sizing:border-box;
+  z-index:1;
+  margin:0;
+  font-size:clamp(.84rem,2.25vw,1rem);
+  line-height:1.45;
+}
+.speech {
+  position:relative;
+  width:max-content;
+  max-width:76%;
+  padding:.46em .78em;
+  color:#171d20;
+  background:#fff9e9;
+  border:1px solid #302c26;
+  border-radius:1.15em;
+  font-weight:650;
+  overflow-wrap:anywhere;
+}
+.speech.start { margin-inline:5% auto; }
+.speech.end { margin-inline:auto 5%; }
+.speech.above { margin-block:.6rem .7rem; }
+.speech.below { margin-block:.7rem .6rem; }
+.speech.over { position:absolute; inset:auto auto 6% 5%; margin:0; }
+.speech.over.end { inset:auto 5% 6% auto; }
+.speech::after {
+  content:"";
+  position:absolute;
+  left:clamp(9px,var(--tail),calc(100% - 9px));
+  width:10px;
+  height:10px;
+  background:inherit;
+  border:solid #302c26;
+  border-width:1px 0 0 1px;
+  bottom:calc(100% - 4px);
+  transform:translateX(-50%) rotate(45deg);
+}
+.speech.above::after {
+  bottom:auto;
+  top:calc(100% - 4px);
+  transform:translateX(-50%) rotate(225deg);
+}
+.speech.call { border-style:dashed; border-radius:.35em; }
+.speech.call::after { border-style:dashed; }
+.caption {
+  position:relative;
+  width:fit-content;
+  max-width:90%;
+  margin:.6rem auto .6rem 5%;
+  padding:.35em .6em;
+  color:#fff;
+  background:#101d23;
+  border:1px solid #bdab8a;
+  border-radius:0;
+}
+
+/* Dialogue is placed on the artwork, inside the illustrated panel. */
+.speech.on-art {
+  position:absolute;
+  inset:auto;
+  margin:0;
+  max-width:var(--bubble-width, 64%);
+  padding:.32em .58em;
+}
+.speech.on-art.start { left:5%; }
+.speech.on-art.end { right:5%; }
+.speech.on-art.middle { left:50%; transform:translateX(-50%); }
+.speech.on-art.top { top:5%; }
+.speech.on-art.bottom { bottom:calc(5% + var(--lift, 0px)); }
+.speech.on-art.top::after {
+  bottom:auto;
+  top:calc(100% - 4px);
+  transform:translateX(-50%) rotate(225deg);
+}
+.f9 { grid-column:1/-1; width:min(100%,420px); justify-self:center; }
+.deduction { grid-column:1/-1; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; padding:7px; border:1px solid #918060; background:#122126; }
+.deduction .photo { align-self:center; grid-column:auto; }
+.deduction .flip { position:relative; isolation:isolate; }
+.deduction .flip::before { content:""; position:absolute; inset:22% 8% 16%; background:#b24f3d40; clip-path:polygon(50% 100%,0 0,100% 0); pointer-events:none; z-index:1; }
+.deduction .flip span { z-index:2; }
+@media(max-width:480px) { .deduction { grid-template-columns:minmax(0,1fr); } }
+</style>
+<style>.story-narration{grid-column:1/-1;margin:0;padding:.55rem .75rem;color:#fff;background:#101d23;border:1px solid #bdab8a;font-size:clamp(.875rem,2.3vw,1rem);line-height:1.6}</style><style>.cast-page{grid-template-columns:minmax(0,1fr)}.cast-page h2{margin:0 0 .5rem}.cast-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.cast-page figure{margin:0;min-width:0}.cast-page img{display:block;width:100%;height:auto}.cast-page figcaption{padding:.5rem;background:#101d23;color:#fff;font-size:.9rem;line-height:1.5}.cast-layout figure:not(.cast-leads) img{aspect-ratio:1;object-fit:cover}.cast-leads{grid-column:1/-1}.cast-leads img{max-height:450px;object-fit:contain;background:#101d23}.cast-leads figcaption{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}</style>
+<style>.comic .frame.key-moment{grid-column:1/-1;width:min(100%,540px);justify-self:center}</style>
+<link rel="stylesheet" href="manga-navigation.css">
+<link rel="canonical" href="https://mquizx.com/s/comic-01.html"><meta property="og:url" content="https://mquizx.com/s/comic-01.html"></head>
+<body>
+<header class="manga-header"><a class="manga-wordmark" href="index.html"><strong>未解決ファイル</strong><span>ー別館：ミステリークイズ漫画ー</span></a><a class="manga-episodes" href="index.html#episodes">エピソード</a></header>
+<main class="comic">
+<p class="eyebrow">漫画版</p>
+<h1>第一話「橋へ向かった男」</h1>
+<section class="comic-page cast-page" id="characters" aria-labelledby="cast-title"><h2 id="cast-title" style="grid-column:1/-1">主な登場人物</h2><div class="cast-layout" style="grid-column:1/-1"><figure class="cast-leads"><img src="comic-01/cast-mizuki-asakura.jpg" alt="青緑のコート姿の水城と濃色スーツ姿の朝倉"><figcaption><span><strong>水城（左）</strong><br>聞き取りや写真を照らし合わせ、証拠がどこから来たかを追う捜査担当。</span><span><strong>朝倉（右）</strong><br>水城と現場を回る記録担当。証言を書き留め、写真や時刻の食い違いを一緒に調べる。</span></figcaption></figure><figure><img src="comic-01/cast-seo.jpg" alt="鑑識室の瀬尾"><figcaption><strong>瀬尾</strong><br>鑑識担当。現物に残った傷や痕跡を調べる。</figcaption></figure><figure><img src="comic-01/cast-chief.jpg" alt="書類を手にした係長"><figcaption><strong>係長</strong><br>水城たちの上司。証拠の確認を指示し、捜査の進め方を判断する。</figcaption></figure><figure><img src="comic-01/cast-owner.jpg" alt="古道具屋の店主"><figcaption><strong>蔵の市の店主</strong><br>古道具屋「蔵の市」の主人。店の古道具をよく知り、水城たちの聞き込みに応じる。</figcaption></figure></div></section>
+<section class="comic-page" aria-label="1ページ"><aside class="story-narration">古道具屋「蔵の市」から、展示の壺が消えたと連絡が入った。水城は記録担当の朝倉を連れ、まず店に向かった。</aside>
+<figure class="frame f1"><p class="caption">警察署・資料室</p><div class="panel-art"><img src="comic-01/remake-01.jpg" alt="資料室で係長が朝倉を水城に紹介する"><p class="speech over start" style="--tail:18%">今日から現場記録を手伝う朝倉だ。蔵の市で展示品が消えた。二人で聞いてきてくれ。</p></div></figure>
+<figure class="frame f2"><div class="panel-art"><img src="comic-01/remake-02.jpg" alt="署の廊下を歩く水城と朝倉"><p class="speech on-art bottom end" style="--tail:80%;--lift:22%;--bubble-width:48%">記録担当も現場へ？</p><p class="speech on-art bottom start" style="--tail:38%;--lift:0px;--bubble-width:55%">記録からこぼれる声を、じかに聞きたい。</p></div></figure>
+<figure class="frame"><p class="caption">少し前・蔵の市</p><div class="panel-art"><img src="comic-01/action-owner.jpg" alt="値札を替えて戻った店主が、壺のない展示台に手を伸ばす" width="720" height="720"></div></figure><figure class="frame f3"><p class="caption">聞き込み・蔵の市</p><div class="panel-art"><img src="comic-01/remake-03.jpg" alt="古道具屋の店主が空の展示台を示す"><p class="speech over start" style="--tail:48%">値札を替えて戻ったら、空っぽで。毎朝、私が拭いていた壺です。</p></div></figure>
+<figure class="frame f4"><p class="caption">店主が見せた台帳写真</p><div class="panel-art"><img src="comic-01/remake-04.jpg" alt="展示台の丸い跡と青い葉が一枚描かれた壺の台帳写真"></div></figure>
+<p class="folio">1 / 4</p>
+</section>
+
+<section class="comic-page" aria-label="2ページ"><aside class="story-narration">店先にいた客が声をかけてきた。ちょうど男が走り出すのを見たという。</aside>
+<figure class="frame f5"><div class="panel-art"><img src="comic-01/remake-05.jpg" alt="客が店先から橋の方を指す" loading="lazy"><p class="speech on-art top middle" style="--tail:35%;--lift:0px;--bubble-width:54%">店の前を走る男がいました。橋の方へ。</p><p class="speech on-art bottom end" style="--tail:82%;--lift:0px;--bubble-width:54%">壺は持っていましたか？</p></div></figure>
+<figure class="frame f6"><p class="caption">最初の客が見たのは背中だけだった。</p><div class="panel-art"><img src="comic-01/remake-06.jpg" alt="もう一人の客が携帯電話を差し出す" loading="lazy"><img class="phone" src="comic-01/bridge-evidence.jpg" alt="" loading="lazy"><p class="speech over end" style="--tail:58%">橋のたもとで時計塔を撮っていたら、この人が走り込んできて。</p></div></figure>
+<figure class="frame photo"><p class="caption">目撃者の写真</p><div class="panel-art"><img src="comic-01/bridge-evidence.jpg" alt="石橋を走る男の後ろ姿。写真の右に白い時計塔があり、男の手に壺は見えない" loading="lazy"></div></figure>
+<figure class="frame"><p class="caption">店を出た朝倉は、橋のたもとまで駆けた。</p><div class="panel-art"><img src="comic-01/action-bridge.jpg" alt="朝倉が無線機を手に橋のたもとへ駆ける。左手に白い時計塔が見える" width="720" height="720" loading="lazy"></div></figure><figure class="frame f7"><div class="panel-art"><img src="comic-01/remake-07.jpg" alt="朝倉が無線を手に取る" loading="lazy"><p class="speech over start" style="--tail:58%">橋を渡って対岸へ逃げたんでしょうか。向こうを捜してもらいます。</p></div></figure>
+<figure class="map" aria-label="橋の北西に白い時計塔、橋の南に町"><span class="map-title">町の案内図　北 ↑</span><span class="tower">● 白い時計塔</span><span class="water">川</span><span class="bridge">石橋</span><span class="town">町（南）</span></figure>
+<p class="folio">2 / 4</p>
+</section>
+
+<section class="comic-page" aria-label="3ページ"><aside class="story-narration">蔵の市に戻ると、水城は町の案内図を広げた。</aside>
+<figure class="frame f8 key-moment"><div class="panel-art"><img src="comic-01/remake-08.jpg" alt="水城と朝倉が案内図をのぞき込む" loading="lazy"><p class="speech on-art bottom start" style="--tail:23%;--lift:23%;--bubble-width:53%">町から橋を見ると、塔はどっちの手の側？</p><p class="speech on-art bottom end" style="--tail:76%;--lift:0px;--bubble-width:64%">左です。でも、写真では男の右にある。どうしてだ？</p></div></figure>
+<figure class="frame f9"><p class="caption">水城は案内図を半回転させた。</p><div class="panel-art"><img src="comic-01/remake-09.jpg" alt="水城が案内図を手に取る" loading="lazy"></div></figure>
+<div class="deduction"><figure class="frame photo"><img src="comic-01/bridge-evidence.jpg" alt="男の背中と右奥の時計塔" loading="lazy"></figure><figure class="map flip" aria-label="北側から町を向くと塔は右側"><span class="map-title">北側から見た案内図</span><span class="tower">● 白い時計塔</span><span class="water">川</span><span class="bridge">石橋</span><span class="town">町（南）</span><span class="camera">↑ 町を見る<br>撮影者（北側）</span></figure></div>
+<figure class="frame f10"><div class="panel-art"><img src="comic-01/remake-10.jpg" alt="案内図を見比べる水城と朝倉" loading="lazy"><p class="speech on-art bottom end" style="--tail:89%;--lift:17%;--bubble-width:78%">塔が右に来た。……この人、町のほうへ走ってる！</p></div></figure>
+<p class="folio">3 / 4</p>
+</section>
+
+<section class="comic-page" aria-label="4ページ">
+<figure class="frame f11"><div class="panel-art"><img src="comic-01/remake-11.jpg" alt="朝倉が店の窓際で無線を入れる" loading="lazy"><p class="speech over start" style="--tail:47%">橋の北側に加えて、町側の路地もお願いします。壺には青い葉が一枚。</p></div></figure>
+<figure class="frame f12"><p class="caption">無線を切ったあと、店主は、壺が消えたころは記念メダルの半額セールで売り場が混んでいたと話した。</p><div class="panel-art"><img src="comic-01/remake-12.jpg" alt="朝倉が聞き取った話を手帳に書き、水城がメダルの並ぶ売り場を撮影する" loading="lazy"><p class="speech on-art bottom end" style="--tail:78%;--lift:0px;--bubble-width:64%">その売り場にいた人なら、壺を見てるかもしれない。売り場も撮っておこう。</p></div></figure>
+<aside class="story-narration">朝倉は無線を置き、手帳の矢印を町の方へ引き直した。</aside>
+<p class="folio">4 / 4</p>
+</section>
+<nav class="manga-reading-nav" aria-label="読書案内"><a href="index.html#episodes">エピソード</a><a href="comic-02.html">次の話へ</a></nav>
+</main>
+<footer class="manga-home"><a class="manga-wordmark" href="../index.html"><strong>未解決ファイル</strong><span>ー図解と証拠で解く推理クイズー</span></a></footer>
+</body>
+</html>
+
